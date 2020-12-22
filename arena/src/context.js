@@ -4,7 +4,7 @@ const animalContext = React.createContext();
 // Producer, Consumer
 export class animalProvider extends Component {
     state = {
-        animals=[
+        animals:[
             {
                 commonName:"Gray Wolf",
                 spesificName:"Canis lupus",
@@ -23,4 +23,4 @@ export class animalProvider extends Component {
     }
 }
 const animalConsumer = animalContext.Consumer;
-export default animalContext;
+export default animalConsumer;
