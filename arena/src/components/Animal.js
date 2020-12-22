@@ -6,7 +6,7 @@ class Animal extends Component {
     isVisible: false,
   };
 
-  onCardHeaderClickEvent = (e) => {
+  viewCardDetails = (e) => {
     this.setState({
       isVisible: !this.state.isVisible,
     })
@@ -26,17 +26,30 @@ class Animal extends Component {
           const { dispatch } = value;
           return (
             <div className="col-md-8 mb-4">
-              <div className="card" key={id}>
+              <div className="card">
+              <div className="card-header d-flex justify-content-between">
+                  <h4 className="d-inline">{commonName}</h4>
+                 <div style={{cursor:"pointer"}}>
+                 <div class="btn-group-xs">
+                 <button className="btn btn-xs btn-primary mr-1"  onClick={this.viewCardDetails}>
+                 <i className="fa fa-eye"></i>
+                 </button>
+                 <button className="btn btn-xs btn-success mr-1" >
+                 <i className="fa fa-plus-square"></i>
+                 </button>
+                 <button className="btn btn-xs btn-danger mr-1"  onClick={this.onDeleteAnimal.bind(this, dispatch)}>
+                 <i className="far fa-trash-alt text-white"></i>
+                 </button>
+</div>
+                 </div>
+                </div>
+                <div className="mt-2 text-center">
                 <img
                   className="card-img-top"
+                  style={{width: "18rem"}}
                   src={ image }
                   alt={ commonName }
                 />
-                <div className="card-header d-flex justify-content-between" onClick={this.onCardHeaderClickEvent}>
-                  <h4 className="d-inline">{commonName}</h4>
-                  <i className="far fa-trash-alt text-danger" style={{cursor:"pointer"}}
-                    onClick={this.onDeleteAnimal.bind(this, dispatch)}
-                  ></i>
                 </div>
                   {
                     isVisible ?
