@@ -3,12 +3,13 @@ import AnimalConsumer from '../context';
 
 class Animal extends Component {
   state = {
-    isVisible: false,
+    formVisible: false,
+    cardVisible: false,
   };
 
   viewCardDetails = (e) => {
     this.setState({
-      isVisible: !this.state.isVisible,
+      cardVisible: !this.state.cardVisible,
     })
   }
   onDeleteAnimal = (dispatch, e) => {
@@ -16,11 +17,12 @@ class Animal extends Component {
     dispatch({ type: 'DELETE_ANIMAL', payload: id });
   }
   onAddAnimal = (dispatch, e) => {
+    dispatch({ type: 'OPEN_FORM', payload: true });
   }
   render() {
     // Destructing
-    const {id, commonName, spesificName, type, groupName, image } = this.props;
-    const { isVisible } = this.state;
+    const {commonName, spesificName, type, groupName, image } = this.props;
+    const { cardVisible } = this.state;
     return (
       <AnimalConsumer>
         {(value) => {
@@ -44,7 +46,7 @@ class Animal extends Component {
                  </div>
                  </div>
                 </div>
-                <div className="mt-2 text-center">
+                <div className="text-center">
                 <img
                   className="card-img-top"
                   style={{width: "18rem"}}
@@ -53,7 +55,7 @@ class Animal extends Component {
                 />
                 </div>
                   {
-                    isVisible ?
+                    cardVisible ?
                     <div className="card-body">
                     <p className="card-text"> Tür Adı: {spesificName} </p>
                     <p className="card-text"> Grup Adı: {groupName} </p>

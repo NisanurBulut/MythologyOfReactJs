@@ -4,6 +4,7 @@ const AnimalContext = React.createContext();
 // Producer, Consumer
 
 const reducer = (state, action) => {
+  debugger;
   switch (action.type) {
     case "DELETE_ANIMAL":
       return {
@@ -15,6 +16,11 @@ const reducer = (state, action) => {
         ...state, // eski
         animals:[...state.animals, action.payload]
       }
+      case "OPEN_FORM":
+        return {
+          ...state, // eski
+          visible:action.payload
+        }
     default:
       return state;
   }
@@ -22,6 +28,7 @@ const reducer = (state, action) => {
 
 export class AnimalProvider extends Component {
   state = {
+    visible:false,
     animals: [
       {
         id: "1",

@@ -18,6 +18,7 @@ const AnimBox = posed.div({
   },
 });
 class FormAddAnimal extends Component {
+
   state = {
     visible: false,
     commonName: '',
@@ -26,19 +27,16 @@ class FormAddAnimal extends Component {
     type: '',
     image:''
   };
+  closeForm = (dispatch, e) => {
+    dispatch({ type: 'OPEN_FORM', payload: false });
+  }
 
-  changeFormVisibility = (e) => {
-    this.setState({
-      visible: !this.state.visible,
-    });
-  };
   changeAddForm = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
   addAnimal = (dispatch,e) => {
-    debugger;
     e.preventDefault()
     const { commonName, spesificName, groupName, type,image } = this.state;
     const newAnimal = {
@@ -50,33 +48,27 @@ class FormAddAnimal extends Component {
       image: image,
     };
     dispatch({ type: 'ADD_ANIMAL', payload: newAnimal });
+    dispatch({ type: 'OPEN_FORM', payload: false }); // kayıt işleminden sonra form kapansın
   };
   render() {
-    const {
-      visible,
-      commonName,
-      spesificName,
-      groupName,
-      type,
-      image,
-    } = this.state;
+    const {commonName,spesificName,groupName,type,image} = this.state;
     return (
       <AnimalConsumer>
         {(value) => {
-          const { dispatch } = value;
+          const {dispatch } = value;
+          const {visible } = value;
           return (
             <div className="col-md-8 mb-4">
-              <button
-                onClick={this.changeFormVisibility}
-                className="mb-2 btn btn-dark btn-block"
-              >
-                {visible ? 'Formu Gizle' : 'Formu Aç'}
-              </button>
               <AnimBox pose={visible ? 'visible' : 'hidden'}>
                 <div className="card">
-                  <div className="card-header">
-                    <h4 className="d-inline">Kayıt Formu</h4>
-                  </div>
+                <div className="card-header d-flex justify-content-between">
+                  <h4 className="d-inline">Kayıt Formu</h4>
+                 <div style={{cursor:"pointer"}}>
+                 <button className="btn btn-xs"  onClick={this.closeForm.bind(this,dispatch)}>
+                 <i className="fa fa-times-circle"></i>
+                 </button>
+                 </div>
+                </div>
                   <div className="card-body">
                     <form onSubmit={this.addAnimal.bind(this, dispatch)}>
                       <div className="form-row">
