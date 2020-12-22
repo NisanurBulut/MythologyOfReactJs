@@ -10,6 +10,11 @@ const reducer = (state, action) => {
         ...state, // eski
         animals: state.animals.filter((animal) => action.payload !== animal.id), // yeni
       };
+      case 'ADD_ANIMAL':
+      return {
+        ...state, // eski
+        animals:[...state, action.payload]
+      };
     default:
       return state;
   }
@@ -19,7 +24,7 @@ export class AnimalProvider extends Component {
   state = {
     animals: [
       {
-        id: 1,
+        id: "1",
         commonName: "Gray Wolf",
         spesificName: "Canis lupus",
         type: "Mammals",
@@ -27,7 +32,7 @@ export class AnimalProvider extends Component {
         image:'https://images.unsplash.com/photo-1607350999170-b893fef057ea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       },
     ],
-    dispathc: (action) => {
+    dispatch: (action) => {
       this.setState((state) => reducer(state, action));
     },
   };

@@ -15,7 +15,8 @@ class Animal extends Component {
     const { id } = this.props;
     dispatch({ type: 'DELETE_ANIMAL', payload: id });
   }
-
+  onAddAnimal = (dispatch, e) => {
+  }
   render() {
     // Destructing
     const {id, commonName, spesificName, type, groupName, image } = this.props;
@@ -30,17 +31,17 @@ class Animal extends Component {
               <div className="card-header d-flex justify-content-between">
                   <h4 className="d-inline">{commonName}</h4>
                  <div style={{cursor:"pointer"}}>
-                 <div class="btn-group-xs">
+                 <div className="btn-group">
                  <button className="btn btn-xs btn-primary mr-1"  onClick={this.viewCardDetails}>
                  <i className="fa fa-eye"></i>
                  </button>
-                 <button className="btn btn-xs btn-success mr-1" >
+                 <button className="btn btn-xs btn-success mr-1" onClick={this.onAddAnimal.bind(this, dispatch)}>
                  <i className="fa fa-plus-square"></i>
                  </button>
                  <button className="btn btn-xs btn-danger mr-1"  onClick={this.onDeleteAnimal.bind(this, dispatch)}>
                  <i className="far fa-trash-alt text-white"></i>
                  </button>
-</div>
+                 </div>
                  </div>
                 </div>
                 <div className="mt-2 text-center">
