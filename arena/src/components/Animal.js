@@ -9,17 +9,16 @@ class Animal extends Component {
   onCardHeaderClickEvent = (e) => {
     this.setState({
       isVisible: !this.state.isVisible,
-    });
-  };
+    })
+  }
   onDeleteAnimal = (dispatch, e) => {
     const { id } = this.props;
     dispatch({ type: 'DELETE_ANIMAL', payload: id });
-  };
+  }
 
   render() {
     // Destructing
     const {id, commonName, spesificName, type, groupName, image } = this.props;
-    console.log(this.props);
     const { isVisible } = this.state;
     return (
       <AnimalConsumer>
@@ -33,14 +32,12 @@ class Animal extends Component {
                   src={ image }
                   alt={ commonName }
                 />
-                <div className="card-header d-flex justify-content-between">
-                  <h4 className="d-inline" onClick={this.onCardHeaderClickEvent}>{commonName}</h4>
-                  <i
-                    className="far fa-trash-alt text-danger" style={{cursor:"pointer"}}
+                <div className="card-header d-flex justify-content-between" onClick={this.onCardHeaderClickEvent}>
+                  <h4 className="d-inline">{commonName}</h4>
+                  <i className="far fa-trash-alt text-danger" style={{cursor:"pointer"}}
                     onClick={this.onDeleteAnimal.bind(this, dispatch)}
                   ></i>
                 </div>
-
                   {
                     isVisible ?
                     <div className="card-body">
