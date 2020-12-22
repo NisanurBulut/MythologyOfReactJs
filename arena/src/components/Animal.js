@@ -1,17 +1,61 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import AnimalConsumer from '../context';
 
 class Animal extends Component {
-    render() {
-        return (
-            <div className="card" style="width:400px">
-            <img className="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%"/>
-            <div className="card-body">
-              <h4 className="card-title">John Doe</h4>
-              <p className="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a className="btn btn-primary">See Profile</a>
+  state = {
+    isVisible: false,
+  };
+
+  onCardHeaderClickEvent = (e) => {
+    this.setState({
+      isVisible: !this.state.isVisible,
+    });
+  };
+  onDeleteAnimal = (dispatch, e) => {
+    const { id } = this.props;
+    dispatch({ type: 'DELETE_ANIMAL', payload: id });
+  };
+
+  render() {
+    // Destructing
+    const {id, commonName, spesificName, type, groupName, image } = this.props;
+    console.log(this.props);
+    const { isVisible } = this.state;
+    return (
+      <AnimalConsumer>
+        {(value) => {
+          const { dispatch } = value;
+          return (
+            <div className="col-md-8 mb-4">
+              <div className="card" key={id}>
+                <img
+                  className="card-img-top"
+                  src={ image }
+                  alt={ commonName }
+                />
+                <div className="card-header d-flex justify-content-between">
+                  <h4 className="d-inline" onClick={this.onCardHeaderClickEvent}>{commonName}</h4>
+                  <i
+                    className="far fa-trash-alt text-danger" style={{cursor:"pointer"}}
+                    onClick={this.onDeleteAnimal.bind(this, dispatch)}
+                  ></i>
+                </div>
+
+                  {
+                    isVisible ?
+                    <div className="card-body">
+                    <p className="card-text"> Tür Adı: {spesificName} </p>
+                    <p className="card-text"> Grup Adı: {groupName} </p>
+                    <p className="card-text"> Cins: {type} </p>
+                    </div>
+                    : null
+                  }
+              </div>
             </div>
-          </div>
-        )
-    }
+          );
+        }}
+      </AnimalConsumer>
+    );
+  }
 }
 export default Animal;

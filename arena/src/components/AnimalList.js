@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Animal from './Animal';
-import { animalConsumer } from "../context";
+import AnimalConsumer from "../context";
 class AnimalList extends Component {
   render() {
     return (
-      <animalConsumer>
-        {(value) => {
-          const { animalList } = value;
+      <AnimalConsumer>
+        { value => {
+          const { animals } = value;
           return (
             <div>
-              {animalList.map((animal) => {
+              {animals.map((animal) => {
                 return (
                   <Animal
                     key={animal.id}
@@ -25,7 +25,7 @@ class AnimalList extends Component {
             </div>
           );
         }}
-      </animalConsumer>
+      </AnimalConsumer>
     );
   }
 }

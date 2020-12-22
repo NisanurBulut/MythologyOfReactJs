@@ -1,11 +1,14 @@
 import './App.css';
 import AnimalList from './components/AnimalList';
+import FormAddAnimal from './components/FormAddAnimal';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
    <div className="container">
-     <h4>Arena APP</h4>
+     <Navbar/>
      <hr/>
+     <FormAddAnimal/>
      <AnimalList/>
    </div>
 
