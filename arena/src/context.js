@@ -28,16 +28,7 @@ const reducer = (state, action) => {
 export class AnimalProvider extends Component {
   state = {
     visible:false,
-    animals: [
-      {
-        id: "1",
-        commonName: "Gray Wolf",
-        spesificName: "Canis lupus",
-        type: "Mammals",
-        groupName: "Pack",
-        image:'https://images.unsplash.com/photo-1607350999170-b893fef057ea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
-      },
-    ],
+    animals: [],
     dispatch: (action) => {
       this.setState((state) => reducer(state, action));
     }
