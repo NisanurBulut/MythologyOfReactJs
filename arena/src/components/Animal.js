@@ -19,6 +19,9 @@ class Animal extends Component {
   onAddAnimal = (dispatch, e) => {
     dispatch({ type: 'OPEN_FORM', payload: true });
   }
+  componentWillUnmount(){
+    console.log("component will unmount");
+  }
   render() {
     // Destructing
     const {commonName, spesificName, type, groupName, image } = this.props;

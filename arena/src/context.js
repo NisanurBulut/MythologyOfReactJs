@@ -4,7 +4,6 @@ const AnimalContext = React.createContext();
 // Producer, Consumer
 
 const reducer = (state, action) => {
-  debugger;
   switch (action.type) {
     case "DELETE_ANIMAL":
       return {
