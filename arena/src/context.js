@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 const AnimalContext = React.createContext();
 // Producer, Consumer
-
+// Reducer'ın görevi sadece state değiştirmek olmalı
 const reducer = (state, action) => {
   switch (action.type) {
     case 'DELETE_ANIMAL':
@@ -41,7 +41,7 @@ export class AnimalProvider extends Component {
   };
   render() {
     return (
-      <AnimalContext.Provider value={this.state}>
+      <AnimalContext.Provider value={this.state} >
         {this.props.children}
       </AnimalContext.Provider>
     );

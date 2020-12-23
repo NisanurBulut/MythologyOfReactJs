@@ -6,11 +6,14 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-   <div className="container">
+   <div>
      <Navbar/>
-     <hr/>
-     <FormAddAnimal/>
-     <AnimalList/>
+     <div className="container">
+       <div className="row">
+         <FormAddAnimal/>
+         </div>
+         <AnimalList/>
+     </div>
    </div>
 
   );

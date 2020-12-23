@@ -58,10 +58,10 @@ class FormAddAnimal extends Component {
           const {dispatch } = value;
           const {visible } = value;
           return (
-            <div className="col-md-8 mb-4">
+
               <AnimBox pose={visible ? 'visible' : 'hidden'}>
                 <div className="card">
-                <div className="card-header d-flex justify-content-between">
+                <div className="card-header justify-content-between">
                   <h4 className="d-inline">Kayıt Formu</h4>
                  <div style={{cursor:"pointer"}}>
                  <button className="btn btn-xs"  onClick={this.closeForm.bind(this,dispatch)}>
@@ -140,7 +140,7 @@ class FormAddAnimal extends Component {
                   </div>
                 </div>
               </AnimBox>
-            </div>
+
           );
         }}
       </AnimalConsumer>
