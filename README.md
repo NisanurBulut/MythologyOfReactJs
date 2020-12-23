@@ -5,12 +5,14 @@
 1. <b> Hera </b> </br>
 Hera is a birthday reminder application.
 Refers to the input level to ReactJs.
+
 ![App-Hera](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailer_Hera.gif)
 <br>
 <hr>
-1. <b> Arena </b> </br>
+2. <b> Arena </b> </br>
 Arena is the mix project
 Refers to the  context Api
+
 ![App-Arena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailer_Arena.JPG)
 <br>
 <hr>
