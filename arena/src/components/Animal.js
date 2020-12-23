@@ -35,21 +35,21 @@ class Animal extends Component {
               <div className="card-header d-flex justify-content-between">
                 <h4 className="d-inline">{commonName}</h4>
                 <div style={{ cursor: 'pointer' }}>
-                  <div className="btn-group float-right">
+                  <div className="btn-group-sm">
                     <button
-                      className="btn btn-xs btn-primary mr-1"
+                      className="btn btn-primary mr-1"
                       onClick={this.viewCardDetails}
                     >
                       <i className="fa fa-eye"></i>
                     </button>
                     <button
-                      className="btn btn-xs btn-success mr-1"
+                      className="btn btn-success mr-1"
                       onClick={this.onAddAnimal.bind(this, dispatch)}
                     >
                       <i className="fa fa-plus-square"></i>
                     </button>
                     <button
-                      className="btn btn-xs btn-danger mr-1"
+                      className="btn btn-danger"
                       onClick={this.onDeleteAnimal.bind(this, dispatch)}
                     >
                       <i className="far fa-trash-alt text-white"></i>
@@ -58,27 +58,24 @@ class Animal extends Component {
                 </div>
               </div>
               <img
-                   className="card-img-top"
-                   src={ image }
-                   alt={ commonName }
-                   style={{height:"220px", width:"100%"}}
-                 />
+                className="card-img-top"
+                src={image}
+                alt={commonName}
+                style={{ height: '220px', width: '100%' }}
+              />
 
               <div className="card-body">
-
-             <div className="card-text">
-             {
-                     cardVisible ?
-                     <div className="card-body">
-                     <p className="card-text"> Tür Adı: {spesificName} </p>
-                     <p className="card-text"> Grup Adı: {groupName} </p>
-                     <p className="card-text"> Cins: {type} </p>
-                     </div>
-                     : null
-                   }
-             </div>
-               </div>
+                <div className="card-text">
+                  {cardVisible ? (
+                    <div className="card-body">
+                      <p className="card-text"> Tür Adı: {spesificName} </p>
+                      <p className="card-text"> Grup Adı: {groupName} </p>
+                      <p className="card-text"> Cins: {type} </p>
+                    </div>
+                  ) : null}
+                </div>
               </div>
+            </div>
           );
         }}
       </AnimalConsumer>
