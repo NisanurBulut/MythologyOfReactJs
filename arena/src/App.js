@@ -15,7 +15,7 @@ function App() {
        <div className="row">
          <Switch>
      <Route exact path="/" component={AnimalList}></Route>
-     <Route exact path="/add" component={FormAddAnimal}></Route>
+     <Route exact path="/add/:id" component={FormAddAnimal}></Route>
      <Route exact path="/edit/:id" component={FormUpdateAnimal}></Route>
      <Route exact path="/contribute" component={Contribute}></Route>
      <Route  component={NotFound}></Route>
