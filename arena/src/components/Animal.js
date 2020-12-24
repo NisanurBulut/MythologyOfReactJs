@@ -53,7 +53,7 @@ class Animal extends Component {
                     >
                       <i className="fa fa-eye"></i>
                     </button>
-                    <Link to ={`add/${id}`}  className="btn btn-success mr-1">
+                    <Link to ={`form/${id}`}  className="btn btn-success mr-1">
                     <i className="fa fa-edit"></i>
                     </Link>
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AnimalConsumer from '../context';
 import axios from 'axios';
 
-class FormAddAnimal extends Component {
+class FormAnimal extends Component {
   state = {
     error: '',
     commonName: '',
@@ -20,52 +20,31 @@ class FormAddAnimal extends Component {
   validateForm = () => {
     const { commonName, spesificName, groupName, type, image } = this.state;
     if (
-      commonName == '' ||
-      spesificName == '' ||
-      groupName == '' ||
-      type == '' ||
-      image == ''
+      commonName === '' ||
+      spesificName === '' ||
+      groupName === '' ||
+      type === '' ||
+      image === ''
     )
       return false;
     else return true;
   };
-  componentDidMount = async () => {
-    const { id } = this.props.match.params;
-    if (id !== 0) {
-      const response = await axios.get(`http://localhost:3001/animals/${id}`);
-      const {
-        commonName,
-        spesificName,
-        groupName,
-        type,
-        image,
-      } = response.data;
-      this.setState({
-        commonName,
-        spesificName,
-        groupName,
-        type,
-        image,
-      });
+  componentDidUpdate = (prevProps) => {
+    if (this.props.match.params.id !== prevProps.match.params.id) {
+      this.componentDidMount();
     }
   };
-  addAnimal = async (dispatch, e) => {
-    e.preventDefault();
-debugger;
-    const { commonName, spesificName, groupName, type, image } = this.state;
-    const { id } = this.props.match.params;
+  componentDidMount = async () => {
 
-    const newAnimal = {
-      commonName: commonName,
-      spesificName: spesificName,
-      groupName: groupName,
-      type: type,
-      image: image,
-    };
-    debugger;
-    if (id === 0) {
-      const postResponse = await axios.post(`http://localhost:3001/animals`, newAnimal );
-      dispatch({ type: 'ADD_ANIMAL', payload: postResponse.data });
+    const { id } = this.props.match.params;
+    if (Number.parseInt(id) === 0) {
+      this.setState({
+        commonName: '',
+        spesificName: '',
+        groupName: '',
+        type: '',
+        image: '',
+      });
     } else {
       const response = await axios.get(`http://localhost:3001/animals/${id}`);
       const {
@@ -83,24 +62,67 @@ debugger;
         image,
       });
     }
+  };
+  submitForm = async (dispatch, e) => {
+    e.preventDefault();
+
+    const { commonName, spesificName, groupName, type, image } = this.state;
+    const { id } = this.props.match.params;
+
+    if(!this.validateForm())
+    {
+      this.setState({error:true})
+      return;
+    }
+
+    const animalItem = {
+      commonName: commonName,
+      spesificName: spesificName,
+      groupName: groupName,
+      type: type,
+      image: image,
+    };
+
+    if (Number.parseInt(id) === 0) {
+      const postResponse = await axios.post(
+        `http://localhost:3001/animals`,
+        animalItem
+      );
+      dispatch({ type: 'ADD_ANIMAL', payload: postResponse.data });
+    } else {
+      var response = await axios.put(
+        `http://localhost:3001/animals/${id}`,
+        animalItem
+      );
+      dispatch({ type: 'UPDATE_ANIMAL', payload: response.data });
+      // redirect to home
+    }
 
     // redirect to home
     this.props.history.push('/');
   };
   render() {
-    const { commonName, spesificName, groupName, type, image } = this.state;
+    const { commonName, spesificName, groupName, type, image, error } = this.state;
     return (
       <AnimalConsumer>
         {(value) => {
           const { dispatch } = value;
           return (
+
             <div className="mt-5 container-fluid">
               <div className="card justify-content-center">
                 <div className="card-header d-flex justify-content-between">
                   <h4 className="d-inline">Kayıt Formu</h4>
                 </div>
                 <div className="card-body">
-                  <form onSubmit={this.addAnimal.bind(this, dispatch)}>
+                  {
+                    error ?
+                    <div className="alert alert-danger">
+                    <p>Boş alan bırakmayınız</p>
+                  </div>
+                    :null
+                  }
+                  <form onSubmit={this.submitForm.bind(this, dispatch)}>
                     <div className="form-row">
                       <div className="form-group col-md-6">
                         <label htmlFor="commonName">İsim</label>
@@ -173,4 +195,4 @@ debugger;
     );
   }
 }
-export default FormAddAnimal;
+export default FormAnimal;

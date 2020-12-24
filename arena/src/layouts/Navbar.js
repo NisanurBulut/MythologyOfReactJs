@@ -13,7 +13,7 @@ function Navbar({title}) {
           <Link className="nav-link active" to="/">Home</Link>
         </li>
         <li className="nav-item">
-        <Link to ={`edit/${0}`}  className="nav-link">Add</Link>
+        <Link to ={`/form/${0}`}  className="nav-link">Add</Link>
         </li>
         <li className="nav-item">
         <Link className="nav-link" to="/contribute">Contribute</Link>
