@@ -1,9 +1,10 @@
 import './App.css';
 import AnimalList from './components/AnimalList';
 import FormAddAnimal from './components/FormAddAnimal';
-import Navbar from './components/Navbar';
+import Navbar from './layouts/Navbar';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import NotFound from "./components/NotFound";
+import NotFound from "./pages/NotFound";
+import Contribute from './pages/Contribute';
 function App() {
   return (
     <Router>
@@ -14,6 +15,7 @@ function App() {
          <Switch>
      <Route exact path="/" component={AnimalList}></Route>
      <Route exact path="/add" component={FormAddAnimal}></Route>
+     <Route exact path="/contribute" component={Contribute}></Route>
      <Route  component={NotFound}></Route>
          </Switch>
          </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function Navbar(props) {
   return (
@@ -15,7 +15,9 @@ function Navbar(props) {
         <li className="nav-item">
         <Link className="nav-link" to="/add">Add</Link>
         </li>
-
+        <li className="nav-item">
+        <Link className="nav-link" to="/contribute">Contribute</Link>
+        </li>
       </ul>
       </div>
       </div>
