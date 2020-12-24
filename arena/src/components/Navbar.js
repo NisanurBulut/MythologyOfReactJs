@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-md bg-dark navbar-dark">
-       <div class="container-fluid">
+       <div className="container-fluid">
     <a className="navbar-brand" href="#">{props.title}</a>
      <div className="justify-content-end">
       <ul className="navbar-nav">
