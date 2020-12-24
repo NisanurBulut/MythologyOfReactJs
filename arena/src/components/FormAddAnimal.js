@@ -20,7 +20,7 @@ const AnimBox = posed.div({
 class FormAddAnimal extends Component {
 
   state = {
-    visible: false,
+    visible: true,
     commonName: '',
     spesificName: '',
     groupName: '',
@@ -58,11 +58,10 @@ class FormAddAnimal extends Component {
       <AnimalConsumer>
         {(value) => {
           const {dispatch } = value;
-          const {visible } = value;
           return (
 
-              <AnimBox pose={visible ? 'visible' : 'hidden'}>
-                <div className="card">
+              <AnimBox className="mt-5 container-fluid">
+                <div className="card justify-content-center">
                 <div className="card-header d-flex justify-content-between">
                   <h4 className="d-inline">Kayıt Formu</h4>
                  <div style={{cursor:"pointer"}}>
