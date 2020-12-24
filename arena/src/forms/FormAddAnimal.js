@@ -135,7 +135,7 @@ class FormAddAnimal extends Component {
                         className="btn btn-success btn-block"
                         type="submit"
                       >
-                        Kaydet
+                        Save
                       </button>
                     </form>
                   </div>

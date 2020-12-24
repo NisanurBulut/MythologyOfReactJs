@@ -9,7 +9,7 @@ class AnimalList extends Component {
         { value => {
           const { animals } = value;
           return (
-            <div className="mt-2 row">
+            <div className="mt-5 row">
               {animals.map((animal) => {
                 return (
                  <div className="col-lg-4 col-md-4 col-sm-4 col-xs-6"  key={animal.id}>
