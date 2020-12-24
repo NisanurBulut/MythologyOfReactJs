@@ -44,7 +44,7 @@ class Animal extends Component {
           return (
             <div className="card text-white bg-dark mb-3">
               <div className="card-header d-flex justify-content-between">
-                <h4 className="d-inline">{commonName}</h4>
+                <h6 className="d-inline">{commonName}</h6>
                 <div style={{ cursor: 'pointer' }}>
                   <div className="btn-group-sm">
                     <button
