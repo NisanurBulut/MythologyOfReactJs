@@ -6,14 +6,14 @@
 Hera is a birthday reminder application.
 Refers to the input level to ReactJs.
 
-![App-Hera](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailer_Hera.gif)
+![App-Hera](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hera.gif)
 <br>
 <hr>
 2. <b> Arena </b> </br>
 Arena is the mix project
 Refers to the  context Api
 
-![App-Arena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailer_Arena.gif)
+![App-Arena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Arena.gif)
 <br>
 <hr>
 Helpfull Websites :
