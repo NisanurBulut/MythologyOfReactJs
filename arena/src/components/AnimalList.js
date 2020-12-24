@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Animal from './Animal';
 import AnimalConsumer from "../context";
 class AnimalList extends Component {
+
   render() {
     return (
       <AnimalConsumer>

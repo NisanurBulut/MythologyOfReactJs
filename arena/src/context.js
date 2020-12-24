@@ -26,6 +26,7 @@ const reducer = (state, action) => {
 };
 
 export class AnimalProvider extends Component {
+
   state = {
     visible: false,
     animals: [],
