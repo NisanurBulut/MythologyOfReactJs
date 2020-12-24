@@ -18,14 +18,34 @@ class FormUpdateAnimal extends Component {
   };
   updateAnimal = async (dispatch, e) => {
     e.preventDefault();
+    const { id } = this.props.match.params;
+    const { commonName, spesificName, groupName, type, image } = this.state;
+    const updatedUser = {
+      commonName,
+      spesificName,
+      groupName,
+      type,
+      image,
+    };
+    var response = await axios.put(
+      `http://localhost:3001/animals/${id}`,
+      updatedUser
+    );
+    dispatch({ type: 'UPDATE_ANIMAL', payload: response.data });
+    // redirect to home
+    this.props.history.push('/');
   };
   componentDidMount = async () => {
     const { id } = this.props.match.params;
     const response = await axios.get(`http://localhost:3001/animals/${id}`);
     const { commonName, spesificName, groupName, type, image } = response.data;
     this.setState({
-        commonName, spesificName, groupName, type, image
-    })
+      commonName,
+      spesificName,
+      groupName,
+      type,
+      image,
+    });
   };
   render() {
     const { commonName, spesificName, groupName, type, image } = this.state;

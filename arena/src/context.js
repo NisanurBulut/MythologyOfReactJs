@@ -15,6 +15,13 @@ const reducer = (state, action) => {
         ...state, // eski
         animals: [...state.animals, action.payload],
       };
+    case 'UPDATE_ANIMAL':
+      return {
+        ...state, // eski
+        animals: state.animals.map((anim) =>
+          anim.id == action.payload.id ? action.payload : anim
+        ),
+      };
     case 'OPEN_FORM':
       return {
         ...state, // eski
@@ -26,7 +33,6 @@ const reducer = (state, action) => {
 };
 
 export class AnimalProvider extends Component {
-
   state = {
     visible: false,
     animals: [],
@@ -42,7 +48,7 @@ export class AnimalProvider extends Component {
   };
   render() {
     return (
-      <AnimalContext.Provider value={this.state} >
+      <AnimalContext.Provider value={this.state}>
         {this.props.children}
       </AnimalContext.Provider>
     );

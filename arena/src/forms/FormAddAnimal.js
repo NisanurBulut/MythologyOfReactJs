@@ -50,7 +50,8 @@ class FormAddAnimal extends Component {
     };
     const postResponse = await axios.post(`http://localhost:3001/animals`,newAnimal);
     dispatch({ type: 'ADD_ANIMAL', payload: postResponse.data });
-    dispatch({ type: 'OPEN_FORM', payload: false }); // kayıt işleminden sonra form kapansın
+    // redirect to home
+    this.props.history.push("/");
   };
   render() {
     const {commonName,spesificName,groupName,type,image} = this.state;
