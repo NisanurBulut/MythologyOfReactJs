@@ -1,6 +1,7 @@
 import './App.css';
 import AnimalList from './components/AnimalList';
-import FormAddAnimal from './components/FormAddAnimal';
+import FormAddAnimal from './forms/FormAddAnimal';
+import FormUpdateAnimal from "./forms/FormUpdateAnimal";
 import Navbar from './layouts/Navbar';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NotFound from "./pages/NotFound";
@@ -15,6 +16,7 @@ function App() {
          <Switch>
      <Route exact path="/" component={AnimalList}></Route>
      <Route exact path="/add" component={FormAddAnimal}></Route>
+     <Route exact path="/edit/:id" component={FormUpdateAnimal}></Route>
      <Route exact path="/contribute" component={Contribute}></Route>
      <Route  component={NotFound}></Route>
          </Switch>

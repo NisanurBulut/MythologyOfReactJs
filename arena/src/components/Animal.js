@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AnimalConsumer from '../context';
 import axios from "axios";
+import {Link} from 'react-router-dom';
 
 class Animal extends Component {
   state = {
@@ -28,15 +29,13 @@ class Animal extends Component {
     // remove state
     dispatch({ type: 'DELETE_ANIMAL', payload: id });
   };
-  onAddAnimal = (dispatch, e) => {
-    dispatch({ type: 'OPEN_FORM', payload: true });
-  };
+
   componentWillUnmount() {
     console.log('component will unmount');
   }
   render() {
     // Destructing
-    const { commonName, spesificName, type, groupName, image } = this.props;
+    const { id, commonName, spesificName, type, groupName, image } = this.props;
     const { cardVisible } = this.state;
     return (
       <AnimalConsumer>
@@ -54,12 +53,10 @@ class Animal extends Component {
                     >
                       <i className="fa fa-eye"></i>
                     </button>
-                    <button
-                      className="btn btn-success mr-1"
-                      onClick={this.onAddAnimal.bind(this, dispatch)}
-                    >
-                      <i className="fa fa-plus-square"></i>
-                    </button>
+                    <Link to ={`edit/${id}`}  className="btn btn-success mr-1">
+                    <i className="fa fa-edit"></i>
+                    </Link>
+
                     <button
                       className="btn btn-danger"
                       onClick={this.onDeleteAnimal.bind(this, dispatch)}
