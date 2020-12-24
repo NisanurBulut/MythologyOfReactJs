@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import posed from 'react-pose';
 import AnimalConsumer from '../context';
+import axios from 'axios';
 
-var uniqid = require('uniqid');
 const AnimBox = posed.div({
   visible: {
     opacity: 1,
@@ -36,18 +36,20 @@ class FormAddAnimal extends Component {
       [e.target.name]: e.target.value,
     });
   };
-  addAnimal = (dispatch,e) => {
+  addAnimal = async (dispatch,e) => {
     e.preventDefault()
+
     const { commonName, spesificName, groupName, type,image } = this.state;
+
     const newAnimal = {
-      id: uniqid(),
       commonName: commonName,
       spesificName: spesificName,
       groupName: groupName,
       type: type,
       image: image,
     };
-    dispatch({ type: 'ADD_ANIMAL', payload: newAnimal });
+    const postResponse = await axios.post(`http://localhost:3001/animals`,newAnimal);
+    dispatch({ type: 'ADD_ANIMAL', payload: postResponse.data });
     dispatch({ type: 'OPEN_FORM', payload: false }); // kayıt işleminden sonra form kapansın
   };
   render() {
@@ -61,7 +63,7 @@ class FormAddAnimal extends Component {
 
               <AnimBox pose={visible ? 'visible' : 'hidden'}>
                 <div className="card">
-                <div className="card-header justify-content-between">
+                <div className="card-header d-flex justify-content-between">
                   <h4 className="d-inline">Kayıt Formu</h4>
                  <div style={{cursor:"pointer"}}>
                  <button className="btn btn-xs"  onClick={this.closeForm.bind(this,dispatch)}>
