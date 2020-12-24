@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
 import AnimalConsumer from '../context';
+import axios from "axios";
 
 class Animal extends Component {
   state = {
     formVisible: false,
     cardVisible: false,
   };
-
+  static defaultProps={
+    "commonName":"",
+    "spesificName":"",
+    "groupName":"",
+    "type":"",
+    "image":""
+  }
   viewCardDetails = (e) => {
     this.setState({
       cardVisible: !this.state.cardVisible,
     });
   };
-  onDeleteAnimal = (dispatch, e) => {
+  onDeleteAnimal = async (dispatch, e) => {
     const { id } = this.props;
+
+    // delete request
+    await axios.delete(`http://localhost:3001/animals/${id}`)
+
+    // remove state
     dispatch({ type: 'DELETE_ANIMAL', payload: id });
   };
   onAddAnimal = (dispatch, e) => {

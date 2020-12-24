@@ -34,7 +34,7 @@ export class AnimalProvider extends Component {
     },
   };
   componentDidMount = async () => {
-    const response = await axios.get('http://localhost:3000/animals');
+    const response = await axios.get('http://localhost:3001/animals');
     this.setState({
       animals: response.data,
     });
