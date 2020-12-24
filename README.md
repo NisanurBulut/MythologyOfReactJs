@@ -13,7 +13,7 @@ Refers to the input level to ReactJs.
 Arena is the mix project
 Refers to the  context Api
 
-![App-Arena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailer_Arena.JPG)
+![App-Arena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailer_Arena.gif)
 <br>
 <hr>
 Helpfull Websites :

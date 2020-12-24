@@ -6,7 +6,7 @@ function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-md bg-dark navbar-dark">
        <div className="container-fluid">
-    <a className="navbar-brand" href="#">{props.title}</a>
+         <Link to="/" className="navbar-brand">{props.title}</Link>
      <div className="justify-content-end">
       <ul className="navbar-nav">
         <li className="nav-item">
@@ -15,9 +15,7 @@ function Navbar(props) {
         <li className="nav-item">
         <Link className="nav-link" to="/add">Add</Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Link 3</a>
-        </li>
+
       </ul>
       </div>
       </div>
