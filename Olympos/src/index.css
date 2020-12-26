@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -45,7 +45,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -147,8 +147,8 @@ p {
   font-size: 1.2rem;
 }
 /*
-=============== 
-Tours
+===============
+citys
 ===============
 */
 main {
@@ -171,33 +171,33 @@ main {
   margin-right: auto;
 }
 
-.single-tour {
+.single-city {
   background: var(--clr-white);
   border-radius: var(--radius);
   margin: 2rem 0;
   box-shadow: var(--light-shadow);
   transition: var(--transition);
 }
-.single-tour:hover {
+.single-city:hover {
   box-shadow: var(--dark-shadow);
 }
-.single-tour img {
+.single-city img {
   width: 100%;
   height: 20rem;
   object-fit: cover;
   border-top-right-radius: var(--radius);
   border-top-left-radius: var(--radius);
 }
-.tour-info {
+.city-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
 }
-.tour-info h4 {
+.city-info h4 {
   margin-bottom: 0;
 }
-.single-tour button {
+.single-city button {
   background: transparent;
   border-color: transparent;
   text-transform: capitalize;
@@ -206,16 +206,16 @@ main {
   cursor: pointer;
   padding-left: 0.25rem;
 }
-.tour-price {
+.city-famous {
   color: var(--clr-primary-5);
   background: var(--clr-primary-10);
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
 }
-.single-tour footer {
+.single-city footer {
   padding: 1.5rem 2rem;
 }
-.single-tour .delete-btn {
+.single-city .delete-btn {
   display: block;
   width: 200px;
   margin: 1rem auto 0 auto;

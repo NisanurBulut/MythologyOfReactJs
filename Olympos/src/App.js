@@ -30,7 +30,7 @@ function App() {
   }
   return (
     <main>
-      <Cities></Cities>
+      <Cities cities={cities}></Cities>
     </main>
   );
 }

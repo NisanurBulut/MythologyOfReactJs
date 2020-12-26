@@ -3,8 +3,16 @@
     {
       "id": "1",
       "name": "Eskişehir",
-      "description": "Eskişehir, Türkiye'nin bir ili ve en kalabalık yirmi beşinci şehridir. 1993 yılında çıkarılan kanunla Büyükşehir Belediyesi olmuştur. Nüfusu 2019 yılı TÜİK istatistiklerine göre 887.475'tir.",
-      "image": "is.gd/U02sS3"
+      "famous":"Meerschaum",
+      "description": "Eskişehir is a city in northwestern Turkey and the capital of the Eskişehir Province. ",
+      "image": "https://staticb.yolcu360.com/blog/wp-content/uploads/2018/10/19141440/eskisehir-2-960x472.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Osmaniye",
+      "famous":"Peanut",
+      "description": "Osmaniye is a city in the Çukurova region of Turkey, the capital of Osmaniye Province. ",
+      "image": "https://lh5.googleusercontent.com/p/AF1QipPzUroowoQzpd8GyQC-TH_Idi-w9GZXDjNkcVb2=w580-h325-n-k-no"
     }
   ]
 }
