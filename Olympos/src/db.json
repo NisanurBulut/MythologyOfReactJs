@@ -4,15 +4,22 @@
       "id": "1",
       "name": "Eskişehir",
       "famous":"Meerschaum",
-      "description": "Eskişehir is a city in northwestern Turkey and the capital of the Eskişehir Province. ",
+      "description": "Eskişehir is a city in northwestern Turkey and the capital of the Eskişehir Province. Most of modern-day Eskişehir was rebuilt after the Turkish War of Independence (1919–1923), but a number of historic buildings remain, such as the Kurşunlu Mosque. The archaeological site of the ancient Phrygian city of Dorylaeum is close to Eskişehir. The city is noted for its natural hot sulphur springs.",
       "image": "https://staticb.yolcu360.com/blog/wp-content/uploads/2018/10/19141440/eskisehir-2-960x472.jpg"
     },
     {
       "id": "2",
       "name": "Osmaniye",
       "famous":"Peanut",
-      "description": "Osmaniye is a city in the Çukurova region of Turkey, the capital of Osmaniye Province. ",
+      "description": "Osmaniye is a city in the Çukurova region of Turkey, the capital of Osmaniye Province. The cuisine is typical of the region; kabab, şalgam (a drink made of pickled turnips), and baklava. The local specialty is a kind of bread/pretzel called simit and tirşik, toğga... etc. In summer the weather is very hot, and most residents of Osmaniye try to escape either to the nearby Mediterranean coast or up into the Nur mountains. The plateau of Zorkun is a popular mountain retreat in summertime. There are also 2 Roman cities remaining, consisting of roads and antique theater, called Hieropolis and Kastabala. ",
       "image": "https://lh5.googleusercontent.com/p/AF1QipPzUroowoQzpd8GyQC-TH_Idi-w9GZXDjNkcVb2=w580-h325-n-k-no"
+    },
+    {
+      "id": "3",
+      "name": "İzmir",
+      "famous":"Peanut",
+      "description": "The modern name İzmir is the Turkish rendering of the original Greek name Smyrna and Smyrne (Σμύρνη), since the city was founded by Greeks. In ancient Anatolia, the name of a locality called Ti-smurna is mentioned in some of the Level II tablets from the Assyrian colony in Kültepe (first half of the 2nd millennium BC), with the prefix ti- identifying a proper name, although it is not established with certainty that this name refers to modern-day İzmir.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Izmir-new-montage.jpg/420px-Izmir-new-montage.jpg"
     }
   ]
 }
