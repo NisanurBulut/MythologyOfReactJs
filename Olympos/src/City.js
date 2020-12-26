@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const City = ({ id, name, description, image, famous }) => {
+const City = ({ id, name, description, image, famous, notInterested }) => {
   const [readMore, setReadMore] = useState(false);
   return (
     <article className="single-city">
@@ -18,7 +18,8 @@ const City = ({ id, name, description, image, famous }) => {
         >
           {readMore ? 'Show less' : 'Read more'}
         </button>
-        <button className="delete-btn">Not Interesting</button>
+        <button className="delete-btn" onClick={()=>notInterested(id)}>
+          Not Interested</button>
       </footer>
     </article>
   );

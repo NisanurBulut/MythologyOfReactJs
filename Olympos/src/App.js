@@ -3,9 +3,17 @@ import Loading from './Loading';
 import Cities from './Cities';
 
 const url = 'http://localhost:3001/cities';
+
 function App() {
+
   const [loading, setLoading] = useState(true);
   const [cities, setCities] = useState([]);
+
+  const notInterested=(id)=>{
+    const afterCityList=cities.filter((city)=> city.id!==id);
+    setCities(afterCityList);
+  }
+
   const fetchCities = async () => {
     setLoading(true);
     try {
@@ -18,9 +26,11 @@ function App() {
       console.log(ex);
     }
   };
+
   useEffect(() => {
     fetchCities();
   }, []);
+
   if (loading) {
     return (
       <main>
@@ -28,9 +38,17 @@ function App() {
       </main>
     );
   }
+  if(cities.length===0){
+    return (<main>
+      <div className="title">
+        <h2>No city left</h2>
+        <button className="btn" onClick={()=>{fetchCities()}}>Refresh</button>
+      </div>
+    </main>)
+  }
   return (
     <main>
-      <Cities cities={cities}></Cities>
+      <Cities cities={cities} notInterested={notInterested}></Cities>
     </main>
   );
 }

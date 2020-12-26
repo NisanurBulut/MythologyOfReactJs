@@ -1,6 +1,6 @@
 import React from 'react';
 import City from './City';
-const Cities = ({ cities }) => {
+const Cities = ({ cities, notInterested }) => {
   return (
     <section>
       <div className="title">
@@ -9,7 +9,7 @@ const Cities = ({ cities }) => {
       </div>
       {
       cities.map((city) => {
-        return <City key={city.id} {...city}></City>
+        return <City key={city.id} {...city} notInterested={notInterested}></City>
       })}
     </section>
   );
