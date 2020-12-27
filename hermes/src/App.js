@@ -16,18 +16,7 @@ function App() {
     </div>
     <ChessPiece/>
 </section>
-</main>
-  );
-=======
-import Review from './Review';
-function App() {
-  return <h2>reviews project setup</h2>;
->>>>>>> master
-=======
-import Review from './Review';
-function App() {
-  return <h2>reviews project setup</h2>;
->>>>>>> implemented hermes npm packages
+</main>);
 }
 
 export default App;
