@@ -1,28 +1,4 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "name": "hermes",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-icons": "^4.1.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-=======
-=======
->>>>>>> implemented hermes npm packages
-=======
->>>>>>> implemented hermes npm packages
   "name": "reminder",
   "version": "0.1.0",
   "private": true,
@@ -38,33 +14,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> implemented hermes npm packages
-=======
->>>>>>> implemented hermes npm packages
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-=======
     "extends": "react-app"
->>>>>>> master
-=======
-    "extends": "react-app"
->>>>>>> implemented hermes npm packages
-=======
-    "extends": "react-app"
->>>>>>> implemented hermes npm packages
   },
   "browserslist": {
     "production": [
