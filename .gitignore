@@ -1,6 +1,8 @@
 # dependencies
 /hera/node_modules
 /arena/node_modules
+/hermes/node_modules
+/ikarus/node_modules
 /.pnp
 .pnp.js
 
