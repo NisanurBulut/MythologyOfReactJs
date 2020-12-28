@@ -1,22 +1,20 @@
 import React from 'react';
-import Review from './Review';
+import ChessPiece from './ChessPiece';
 import {FaChessBoard} from 'react-icons/fa';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-
-<section className="main">
-  <container>
+<main>
+<section className="container">
     <div className="title">
       <h2>Hermes</h2>
       <div className="underline"></div>
     </div>
-    <Review/>
-  </container>
+    <ChessPiece/>
 </section>
-
+</main>
   );
 }
 
