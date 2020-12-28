@@ -12,7 +12,7 @@ const App = () => {
 
   const APP_ID = '826fdf36';
   const APP_KEY = 'ee1e5c1e15df89e2112c782a65dcc120';
-  // const exampleReq = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
+  const ReqApi = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   const exampleReq="";
   useEffect(() => {
@@ -27,7 +27,7 @@ const App = () => {
     setQuery(search);
   }
   const getRecipes = async () => {
-    var response = await fetch(exampleReq);
+    var response = await fetch(ReqApi);
     const data = await response.json();
     setRecipes(data.hits);
   }
