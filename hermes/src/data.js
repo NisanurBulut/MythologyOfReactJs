@@ -45,3 +45,5 @@ const chessPieces = [
     image: 'https://t.ly/6hjF',
   },
 ];
+
+export default chessPieces;

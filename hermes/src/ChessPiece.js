@@ -4,7 +4,7 @@ import { FaChevronLeft, FaChevronRight, FaChessBoard } from 'react-icons/fa';
 
 const ChessPiece = () => {
   const [index, setIndex] = useState(0);
-  const { id, name, text, job, image } = chessPieces[index];
+  const { name, text, job, image } = chessPieces[index];
 
   const checkNumber = (number) => {
     if (number > chessPieces.length - 1) {
