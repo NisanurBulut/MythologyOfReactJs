@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 const chessPieces = [
   {
     id: 1,
@@ -48,6 +49,8 @@ const chessPieces = [
 ];
 export default chessPieces;
 =======
+=======
+>>>>>>> implemented hermes npm packages
 const reviews = [
   {
     id: 1,
@@ -88,4 +91,7 @@ const reviews = [
 ];
 
 export default reviews;
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> implemented hermes npm packages

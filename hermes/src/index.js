@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import reportWebVitals from './reportWebVitals';
 =======
 >>>>>>> master
+=======
+>>>>>>> implemented hermes npm packages
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +17,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
@@ -21,3 +25,5 @@ ReactDOM.render(
 reportWebVitals();
 =======
 >>>>>>> master
+=======
+>>>>>>> implemented hermes npm packages
