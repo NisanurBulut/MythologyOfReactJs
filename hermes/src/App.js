@@ -1,6 +1,7 @@
 import React from 'react';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import ChessPiece from './ChessPiece';
 import {FaChessBoard} from 'react-icons/fa';
 import logo from './logo.svg';
@@ -17,6 +18,11 @@ function App() {
     <ChessPiece/>
 </section>
 </main>);
+=======
+import Review from './Review';
+function App() {
+  return <h2>reviews project setup</h2>;
+>>>>>>> implemented hermes npm packages
 }
 
 export default App;

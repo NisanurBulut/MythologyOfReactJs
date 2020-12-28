@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "hermes",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +21,8 @@
 =======
 =======
 >>>>>>> implemented hermes npm packages
+=======
+>>>>>>> implemented hermes npm packages
   "name": "reminder",
   "version": "0.1.0",
   "private": true,
@@ -36,13 +39,17 @@
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> implemented hermes npm packages
 =======
 >>>>>>> implemented hermes npm packages
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     "extends": [
@@ -52,6 +59,9 @@
 =======
     "extends": "react-app"
 >>>>>>> master
+=======
+    "extends": "react-app"
+>>>>>>> implemented hermes npm packages
 =======
     "extends": "react-app"
 >>>>>>> implemented hermes npm packages

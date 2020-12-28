@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,6 +14,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 =======
+=======
+>>>>>>> implemented hermes npm packages
 =======
 >>>>>>> implemented hermes npm packages
 /*
@@ -267,7 +270,10 @@ main {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> implemented hermes npm packages
 =======
 >>>>>>> implemented hermes npm packages
 }
