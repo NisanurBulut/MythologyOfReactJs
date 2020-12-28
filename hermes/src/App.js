@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import ChessPiece from './ChessPiece';
 import {FaChessBoard} from 'react-icons/fa';
 import logo from './logo.svg';
@@ -16,6 +17,11 @@ function App() {
 </section>
 </main>
   );
+=======
+import Review from './Review';
+function App() {
+  return <h2>reviews project setup</h2>;
+>>>>>>> master
 }
 
 export default App;
