@@ -36,7 +36,7 @@ LinkPro is a React Project With Asp.Net Core API
 5. <b>Hermes</b> <br>
 Hermes is a react tutorial project promoting chess pieces. Refer to hooks
 
-![App-Ikarus](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hermes.gif)
+![App-Hermes](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hermes.gif)
 <br>
 <hr>
 
