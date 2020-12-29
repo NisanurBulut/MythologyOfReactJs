@@ -39,7 +39,7 @@ Hermes is a react tutorial project promoting chess pieces. Refer to hooks
 ![App-Hermes](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hermes.gif)
 <br>
 <hr>
-5. <b>Limos</b> <br>
+6. <b>Limos</b> <br>
 Limos is a react tutorial project promoting recipe. Refer to hooks
 
 ![App-Hermes](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Limos.gif)
