@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -48,7 +48,7 @@ Variables
   --fixed-width: 920px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -138,7 +138,7 @@ p {
 }
 
 /*
-=============== 
+===============
 Questions
 ===============
 */
@@ -210,4 +210,5 @@ main {
   margin-left: 1rem;
   align-self: center;
   min-width: 2rem;
+  outline: none;
 }
