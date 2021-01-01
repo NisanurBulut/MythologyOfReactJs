@@ -46,8 +46,8 @@ Limos is a react tutorial project promoting recipe. Refer to hooks
 <br>
 <hr>
 6. <b>Demeter</b> <br>
-Limos is a react tutorial project promoting accordion
-<!-- ![App-Demeter](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Demeter.gif) -->
+Demeter is a react tutorial project promoting accordion
+![App-Demeter](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Demeter.gif)
 <br>
 <hr>
 Helpfull Websites :

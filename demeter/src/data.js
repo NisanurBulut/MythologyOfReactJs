@@ -1,33 +1,31 @@
 const questions = [
   {
     id: 1,
-    title: 'Do I have to allow the use of cookies?',
-    info:
-      'Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.',
+    title: 'What is the best opening in chess?',
+    info:'First of all, there’s no one correct answer, and it’s that your first move should be aligned with your playing style:'+
+    'There’s the tactical style and the strategical style, and for these, there are several “openings” you could apply.'+
+    'Up next I’ll leave you a list with the most famous openings in chess:'+
+    'Italian game, English opening, Queen’s pawn.'
   },
   {
     id: 2,
-    title: 'How do I change my My Page password?',
-    info:
-      'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+    title: 'What is a Zwischenzug?',
+    info: 'Zwischenzug is a german word. Zwischen means between and “Zug” means “move”. An “in-between move”.'
   },
   {
     id: 3,
-    title: 'What is BankID?',
-    info:
-      'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
+    title: 'Can a king move to a square that is attacked by a pinned piece?',
+    info: 'Of course not! No! A king can never move to any attacked square.',
   },
   {
     id: 4,
-    title: 'Whose birth number can I use?',
-    info:
-      'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
+    title: 'Can a king castle after having been in check?',
+    info:'This depends! He can castle only if he has not moved before out of the check, then back to its original square. For example, if he has covered the check of a bishop by putting a knight in between. In this case the king has not moved itself and can castle in the future.'
   },
   {
     id: 5,
-    title: 'When do I recieve a password ordered by letter?',
-    info:
-      'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
+    title: 'Can a king castle passing through an attacked square?',
+    info:'No! Keep in mind that a king can not castle through an attacked square or into check. But a rook can pass through an attacked square in the process of castling.'
   },
 ]
 export default questions
