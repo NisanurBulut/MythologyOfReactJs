@@ -51,6 +51,12 @@ Demeter is a react tutorial project promoting accordion
 ![App-Demeter](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Demeter.gif)
 <br>
 <hr>
+6. <b>Kibele</b> <br>
+Kibele is a react tutorial project promoting menu
+
+![App-Kibele](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Demeter.gif)
+<br>
+<hr>
 Helpfull Websites :
 - [https://uidesigndaily.com/](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
 - https://dev.to/
