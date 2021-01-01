@@ -54,7 +54,7 @@ Demeter is a react tutorial project promoting accordion
 6. <b>Kibele</b> <br>
 Kibele is a react tutorial project promoting menu
 
-![App-Kibele](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Demeter.gif)
+![App-Kibele](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Kibele.gif)
 <br>
 <hr>
 Helpfull Websites :
