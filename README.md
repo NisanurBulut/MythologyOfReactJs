@@ -57,6 +57,12 @@ Kibele is a react tutorial project promoting menu
 ![App-Kibele](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Kibele.gif)
 <br>
 <hr>
+7. <b>Athena</b> <br>
+Athena is a react tutorial project promoting tab-menu
+
+![App-Athena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Athena.gif)
+<br>
+<hr>
 Helpfull Websites :
 - [https://uidesigndaily.com/](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
 - https://dev.to/
