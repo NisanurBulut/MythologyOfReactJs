@@ -25,7 +25,7 @@ function App() {
       </section>
     );
   }
-  const {dates, duties, title } = jobs[value];
+  const {person, duties, title } = jobs[value];
   return (
     <section className="section">
           <div className="btn-container">
@@ -45,13 +45,12 @@ function App() {
       </div>
       <div className="jobs-center">
         <div className="btn-container">
-
         </div>
         {/* job info */}
         <article className="job-info">
-          <h4>{title}</h4>
+          <h4>{person}</h4>
 
-          <p className="job-date">{dates}</p>
+
           {
             duties.map((duty,index)=>{
               return (
