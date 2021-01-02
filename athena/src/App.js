@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
-const url = ' http://localhost:3000/jobs';
+const url = ' http://localhost:3001/jobs';
 function App() {
   const [loading, setLoading] = useState(true);
   const [jobs, setJobs]=useState([]);
