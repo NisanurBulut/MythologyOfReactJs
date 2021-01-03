@@ -1,5 +1,5 @@
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -43,7 +43,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -132,7 +132,7 @@ p {
   }
 }
 /*
-=============== 
+===============
 Slider
 ===============
 */
@@ -164,7 +164,7 @@ Slider
   display: flex;
   /* overflow: hidden; */
 }
-.person-img {
+.wine-img {
   border-radius: 50%;
   margin-bottom: 1rem;
   width: 150px;
@@ -174,7 +174,7 @@ Slider
   box-shadow: var(--dark-shadow);
 }
 article h4 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--clr-primary-5);
   margin-bottom: 0.25rem;
 }
