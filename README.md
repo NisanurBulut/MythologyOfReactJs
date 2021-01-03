@@ -74,6 +74,12 @@ Metis is a the goddess of wisdom, prudence and deep thought and is a react tutor
 ![App-Metis](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Metis.gif)
 <br>
 <hr>
+10. <b>Afrodit</b> <br>
+Afrodit is a the goddess of Afrodit and is a react tutorial project promoting color generator
+
+![App-Afrodit](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Afrodit.gif)
+<br>
+<hr>
 Helpfull Websites :
 - [https://uidesigndaily.com/](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
 - https://dev.to/
@@ -83,3 +89,4 @@ Helpfull Websites :
 - https://webgradients.com/
 - https://developer.edamam.com/
 - https://github.com/noeldelgado/values.js
+- [values.js](https://github.com/noeldelgado/values.js)
