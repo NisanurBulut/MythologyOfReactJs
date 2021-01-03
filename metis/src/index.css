@@ -121,7 +121,11 @@ p {
   }
 }
 /*  global classes */
-
+img{
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+}
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-2);

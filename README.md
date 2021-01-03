@@ -63,10 +63,15 @@ Athena is a react tutorial project promoting tab-menu
 ![App-Athena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Athena.gif)
 <br>
 <hr>
-7. <b>Dionysos</b> <br>
+8. <b>Dionysos</b> <br>
 Dionysos is a wine god of Greek Mythology and is a react tutorial project promoting manuel, auto slider
 
 ![App-Dionysos](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Dionysos.gif)
+
+9. <b>Metis</b> <br>
+Metis is a the goddess of wisdom, prudence and deep thought and is a react tutorial project promoting lorem ipsum generator
+
+![App-Metis](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Metis.gif)
 <br>
 <hr>
 Helpfull Websites :

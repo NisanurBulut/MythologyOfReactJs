@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import data from './data';
+
 function App() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState([]);
@@ -17,7 +18,7 @@ function App() {
   };
   return (
     <section className="section-center">
-      <h3>Metis</h3>
+      <h3>Metis <img src="./metis.png"/></h3>
       <form className="lorem-form" onSubmit={handleSubmit}>
         <label htmlFor="amount">Paragraphs:</label>
         <input
