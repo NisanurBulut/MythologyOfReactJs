@@ -3,7 +3,7 @@ const wines = [
     id: 1,
     image: "https://www.edamam.com/web-img/457/457eea40729d786bcec111309e2f2702.jpg",
     name: "Peach Leaf Wine",
-    title: 'David Lebovitz',
+    title: "David Lebovitz",
     quote:"40 x peach leaves, unsprayed"+
     "750 ml fruity red wine"+
     "3 tbsp Cognac or brandy"+
@@ -13,7 +13,7 @@ const wines = [
     id: 2,
     image: "https://www.edamam.com/web-img/203/203da50dcb6d073a7ee5e5b989f19af4.jpg",
     name: "What to Do With Leftover Wine: Mulled Wine Syrup Recipe",
-    title: 'Serious Eats',
+    title: "Serious Eats",
     quote:"1 bottle red wine"+
     "1 cup sugar"+
     "1 stick cinnamon"+
@@ -32,16 +32,16 @@ const wines = [
   {
     id: 4,
     image: "https://www.edamam.com/web-img/c60/c600e22012d65a926c055774a8a12996.jpg",
-    name: 'Oranges in Red Wine',
-    title: 'Epicurious',
+    name: "Oranges in Red Wine",
+    title: "Epicurious",
     quote: "6 large navel oranges, peeled and coarsely chopped, discarding tough membranes"+
     "1 (750-ml) bottle Chianti or other Italian red wine"
   },
   {
     id: 5,
     image: "https://www.edamam.com/web-img/8b4/8b46f592c913cdbfe01ef2a49f03ad50.jpg",
-    name: 'White Wine Granita',
-    title: 'Saveur',
+    name: "White Wine Granita",
+    title: "Saveur",
     quote:  "2 cups full-bodied white wine"+
     "1/2 cup unsweetened apple juice"+
     "1/3 cup water"+
@@ -51,7 +51,7 @@ const wines = [
   {
     id: 6,
     image: "https://www.edamam.com/web-img/fd8/fd885d3f3af6ff28cbb4ec5a0b9be1c3.jpg",
-    name: 'Spiced mulled wine',
+    name: "Spiced mulled wine",
     title:"BBC",
     quote:"½ bottle red wine"+
     "1 cinnamon stick"+
