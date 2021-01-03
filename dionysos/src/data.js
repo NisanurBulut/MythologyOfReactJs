@@ -12,12 +12,9 @@ const wines = [
   {
     id: 2,
     image: 'https://www.edamam.com/web-img/203/203da50dcb6d073a7ee5e5b989f19af4.jpg',
-    name: 'What to Do With Leftover Wine: Mulled Wine Syrup Recipe',
+    name: 'What to Do With Leftover Wine Mulled Wine Syrup Recipe',
     title: 'Serious Eats',
-    quote:'1 bottle red wine'+
-    '1 cup sugar'+
-    '1 stick cinnamon'+
-    '5 cloves'
+    quote:'1 bottle red wine 1 cup sugar 1 stick cinnamon 5 cloves'
     },
   {
     id: 3,

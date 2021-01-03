@@ -165,7 +165,7 @@ Slider
   /* overflow: hidden; */
 }
 .wine-img {
-  border-radius: 50%;
+  border-radius: 10%;
   margin-bottom: 1rem;
   width: 150px;
   height: 150px;
@@ -242,7 +242,7 @@ article {
   /* opacity: 0; */
   transition: var(--transition);
 }
-/* article.activeSlide {
+article.activeSlide {
   opacity: 1;
   transform: translateX(0);
 }
@@ -251,4 +251,4 @@ article.lastSlide {
 }
 article.nextSlide {
   transform: translateX(100%);
-} */
+}
