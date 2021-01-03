@@ -82,3 +82,4 @@ Helpfull Websites :
 - https://unsplash.com/
 - https://webgradients.com/
 - https://developer.edamam.com/
+- https://github.com/noeldelgado/values.js
