@@ -63,6 +63,12 @@ Athena is a react tutorial project promoting tab-menu
 ![App-Athena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Athena.gif)
 <br>
 <hr>
+7. <b>Dionysos</b> <br>
+Dionysos is a wine god of Greek Mythology and is a react tutorial project promoting manuel, auto slider
+
+![App-Dionysos](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Dionysos.gif)
+<br>
+<hr>
 Helpfull Websites :
 - [https://uidesigndaily.com/](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
 - https://dev.to/
