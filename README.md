@@ -70,3 +70,4 @@ Helpfull Websites :
 - https://github.com/typicode/json-server
 - https://unsplash.com/
 - https://webgradients.com/
+- https://developer.edamam.com/
