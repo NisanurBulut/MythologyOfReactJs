@@ -20,14 +20,17 @@ function App() {
   return (
     <>
     <section className="container">
-    <img src="./afrodit.JPG" />
-      <h3>Color Generator</h3>
+      <div className="logo">
+      <img src="./afrodit.JPG" />
+      </div>
+      <div className="search">
       <form onSubmit={handleSubmit}>
         <input type="text" value={color} onChange={(e)=>setColor(e.target.value)}
         placeholder="#f15025"
         className={`${error}?'error':null`}/>
         <button className="btn" type="submit">Generate</button>
       </form>
+      </div>
     </section>
     <section className="colors">
       {list.map((color,index)=>{
