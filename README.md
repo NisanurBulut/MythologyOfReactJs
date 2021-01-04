@@ -81,7 +81,7 @@ Afrodit is a the goddess of beautfy and is a react tutorial project promoting co
 <br>
 <hr>
 10. <b>Apollo</b> <br>
-Afrodit is a the goddess of art and is a react tutorial project promoting tab-menu
+Afrodit is the goddess of art and is a react tutorial project promoting tab-menu
 
 ![App-Apollo](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Apollo.gif)
 <br>
