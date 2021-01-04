@@ -16,6 +16,9 @@ function App() {
       <form action="instrument-form" onSubmit={handleSubmit}>
         {alert.show && <Alert/>}
         <h3>Apollo</h3>
+        <div className="form-control">
+          <input type="text"/>
+        </div>
       </form>
       <div className="instrument-container">
         <List/>
