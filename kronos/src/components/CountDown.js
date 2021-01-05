@@ -1,23 +1,26 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import moment from 'moment';
+import moment, { localeData } from 'moment';
 
 const useStayles = makeStyles((theme) => ({
   counterDown: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-around",
-    color:"white",
-    fontSize:22,
-    border:"1px solid #fff",
-    borderRadius:4,
-    backgroundColor:"rgba(0,0,0,0.5)"
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    color: 'white',
+    fontSize: 22,
+    border: '1px solid #fff',
+    borderRadius: 4,
+    backgroundColor: 'rgba(0,0,0,0.5)',
   },
 }));
 const CountDown = () => {
   const classes = useStayles();
   const [date, setDate] = useState(() => {
-    return moment().add(10, 'hours');
+    const localDate = localStorage.getItem('date');
+    return localDate
+      ? moment(JSON.parse(localDate))
+      : moment().add(10, 'hours');
   });
   const [hours, setHours] = useState('00');
   const [minutes, setMinute] = useState('00');
@@ -32,6 +35,7 @@ const CountDown = () => {
 
   const startCountDown = () => {
     interval = setInterval(() => {
+      localStorage.setItem('date', JSON.stringify(date));
       const now = moment();
       const difference = date - now;
 
@@ -48,23 +52,25 @@ const CountDown = () => {
       }
     }, 1000);
   };
-  return <div className={classes.counterDown}>
+  return (
+    <div className={classes.counterDown}>
       <div className="">
-          <h1>{hours} </h1>
+        <h1>{hours} </h1>
       </div>
       <div className="">
-          <h1>:</h1>
+        <h1>:</h1>
       </div>
       <div className="">
-          <h1>{minutes} </h1>
+        <h1>{minutes} </h1>
       </div>
       <div className="">
-          <h1>:</h1>
+        <h1>:</h1>
       </div>
       <div className="">
-          <h1>{seconds} </h1>
+        <h1>{seconds} </h1>
       </div>
-  </div>;
+    </div>
+  );
 };
 
 export default CountDown;
