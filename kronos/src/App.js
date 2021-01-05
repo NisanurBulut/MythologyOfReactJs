@@ -7,16 +7,15 @@ import './App.css';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    display: "flex",
+     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center",
-    height: '100vh',
+     justifyContent: "center",
+     height: '100vh',
     backgroundImage:`url(${countDownImage})`,
     backgroundPosition:"center",
-    backgroundSize:"cover",
-    backgroundRepeat:false,
-    color:"white"
+      backgroundSize:"cover",
+     backgroundRepeat:false
   },
 }));
 const App = () => {

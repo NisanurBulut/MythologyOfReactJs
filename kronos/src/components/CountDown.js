@@ -3,7 +3,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import moment from 'moment';
 
 const useStayles = makeStyles((theme) => ({
-  counterDown: {},
+  counterDown: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    color:"white",
+    fontSize:22,
+    border:"1px solid #fff",
+    borderRadius:4,
+    backgroundColor:"rgba(0,0,0,0.5)"
+  },
 }));
 const CountDown = () => {
   const classes = useStayles();
@@ -41,13 +50,19 @@ const CountDown = () => {
   };
   return <div className={classes.counterDown}>
       <div className="">
-          <p>{hours}</p>
+          <h1>{hours} </h1>
       </div>
       <div className="">
-          <p>{minutes}</p>
+          <h1>:</h1>
       </div>
       <div className="">
-          <p>{seconds}</p>
+          <h1>{minutes} </h1>
+      </div>
+      <div className="">
+          <h1>:</h1>
+      </div>
+      <div className="">
+          <h1>{seconds} </h1>
       </div>
   </div>;
 };
