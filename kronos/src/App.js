@@ -1,21 +1,21 @@
-import react from 'react';
+import react, {useState} from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import CountDown from './components/CountDown';
-import countDownImage from './images/countDown.jpg';
+import countDownImage from './images/countdown.jpg';
 import './App.css';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    display: flex,
-    flexDirection: row,
-    alignItems: center,
-    justifyContent: center,
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
     height: '100vh',
-    backgroundImage:`url(${countdownImage})`,
-    backgroundPosition:center,
+    backgroundImage:`url(${countDownImage})`,
+    backgroundPosition:"center",
     backgroundRepeat:false,
-    backgroundSize:cover
+    backgroundSize:"cover"
   },
 }));
 const App = () => {
