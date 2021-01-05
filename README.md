@@ -81,9 +81,15 @@ Afrodit is a the goddess of beautfy and is a react tutorial project promoting co
 <br>
 <hr>
 10. <b>Apollo</b> <br>
-Afrodit is the goddess of art and is a react tutorial project promoting tab-menu
+Afrodit is the god of art and is a react tutorial project promoting tab-menu
 
 ![App-Apollo](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Apollo.gif)
+<br>
+<hr>
+11. <b>Kronos</b> <br>
+Kronos is the god of time in Greek mythology. In this tutorial, a countdown tool was developed using react material ui with localstorage.
+
+![App-Kronos](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Kronos.gif)
 <br>
 <hr>
 Helpfull Websites :
