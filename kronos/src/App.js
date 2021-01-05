@@ -14,8 +14,9 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
     backgroundImage:`url(${countDownImage})`,
     backgroundPosition:"center",
+    backgroundSize:"cover",
     backgroundRepeat:false,
-    backgroundSize:"cover"
+    color:"white"
   },
 }));
 const App = () => {
