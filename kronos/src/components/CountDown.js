@@ -35,7 +35,7 @@ const CountDown = () => {
 
   const startCountDown = () => {
     interval = setInterval(() => {
-      localStorage.setItem('date', JSON.stringify(date));
+        localStorage.setItem("date", JSON.stringify(date));
       const now = moment();
       const difference = date - now;
 
