@@ -74,14 +74,14 @@ Metis is a the goddess of wisdom, prudence and deep thought and is a react tutor
 ![App-Metis](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Metis.gif)
 <br>
 <hr>
-10. <b>Afrodit</b> <br>
-Afrodit is a the goddess of beautfy and is a react tutorial project promoting color generator
+10. <b>Aphrodite</b> <br>
+Aphrodite is a the goddess of beautfy and is a react tutorial project promoting color generator
 
-![App-Afrodit](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Afrodit.gif)
+![App-Aphrodite](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Afrodit.gif)
 <br>
 <hr>
 10. <b>Apollo</b> <br>
-Afrodit is the god of art and is a react tutorial project promoting tab-menu
+Apollo is the god of art and is a react tutorial project promoting tab-menu
 
 ![App-Apollo](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Apollo.gif)
 <br>
