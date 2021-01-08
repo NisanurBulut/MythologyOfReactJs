@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Countries.css';
 import HeadingNames from '../../components/headingNames/HeadingNames';
+import CountryDetail  from '../../components/countryDetail/CountryDetail';
 export default class Countries extends Component {
     render() {
         return (
@@ -14,6 +15,14 @@ export default class Countries extends Component {
                     </select>
                 </div>
                <HeadingNames/>
+               <CountryDetail
+               countryCode="IN"
+               totalCases="10"
+               newCases="12.7"
+               totalDeaths="12"
+               newDeaths="12"
+               totalRecovered="12"
+               newRecovered="12" />
             </div>
         )
     }
