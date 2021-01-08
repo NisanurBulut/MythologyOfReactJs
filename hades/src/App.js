@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Global from './containers/global/Global';
 
 function App() {
   return (
-    <div className="App">
-      Hello world
+    <div>
+      <Global/>
     </div>
   );
 }
