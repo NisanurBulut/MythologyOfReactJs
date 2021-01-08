@@ -1,0 +1,28 @@
+.countries-stats{
+    height: auto;
+    width: 100%;
+}
+h2{
+    font-weight: 700 !important;
+    font-family: "Nunito";
+    margin-top: 80px;
+    text-align: center;
+    font-size: 2rem;
+}
+.filtering{
+    width: 60%;
+    height: 60px;
+    margin: auto;
+    margin-top: 40px;
+}
+.filtering input{
+    height: 100%;
+    width:  70%;
+    padding-left: 25px;
+}
+.filtering .sort-by{
+    height: 100%;
+    width:  calc(100%-75%);
+    margin-left: 25px;
+    padding:0 20px;
+}
