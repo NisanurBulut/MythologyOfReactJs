@@ -4,6 +4,7 @@ import ArraySort from 'array-sort';
 import './Countries.css';
 import HeadingNames from '../../components/headingNames/HeadingNames';
 import CountryDetail from '../../components/countryDetail/CountryDetail';
+import Spinner from '../../components/spinner/Spinner';
 
 export default class Countries extends Component {
   state = {
@@ -40,15 +41,14 @@ export default class Countries extends Component {
     } else {
       this.setState({ countryDetails: countryDetails });
     }
-    if(value.length===0)
-    {
-        this.setState({
-            selectedData:this.state.countryDetails
-        })
-    }else{
-        this.setState({
-            selectedData:this.state.searchedCountries
-        })
+    if (value.length === 0) {
+      this.setState({
+        selectedData: this.state.countryDetails,
+      });
+    } else {
+      this.setState({
+        selectedData: this.state.searchedCountries,
+      });
     }
   };
   changeSortValue = (e) => {
@@ -104,6 +104,7 @@ export default class Countries extends Component {
           </select>
         </div>
         <HeadingNames />
+        {this.state.countryDetails.length < 1 ? <Spinner /> : null}
         {countryList}
       </div>
     );
