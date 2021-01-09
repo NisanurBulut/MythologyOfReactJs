@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 .countries-stats{
     height: auto;
     width: 100%;
@@ -17,12 +18,12 @@ h2{
 }
 .filtering input{
     height: 100%;
-    width:  70%;
+    width:  65%;
     padding-left: 25px;
 }
 .filtering .sort-by{
     height: 100%;
-    width:  calc(100%-75%);
+    width:  calc(100% - 75%);
     margin-left: 25px;
     padding:0 20px;
 }

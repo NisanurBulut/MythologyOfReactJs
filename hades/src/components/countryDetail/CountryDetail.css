@@ -1,5 +1,5 @@
-.countryDetail{
-    height: 90px;
+.countryDetails{
+    height: 50px;
     width: 60%;
     border-bottom: 1px solid lightgray;
     margin:auto;
@@ -8,8 +8,6 @@
 }
 .country-icon{
     padding:0 15px;
-    max-width: 16%;
-    min-width: 13%;
     float: left;
 }
 
@@ -18,9 +16,13 @@
     height: 100%;
 }
 .cases-details{
-
-
+  height: 100%;
+  width: 100%;
+  float: left;
+  display: grid;
+  grid-template-columns: 15% 25% 30% calc(100% - 30% - 25% - 15%);
 }
+/*
 .cases-box{
   float: left;
   height: 100%;
@@ -29,19 +31,16 @@
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   padding-left: 15px;
 }
 .cases-box:nth-child(1) {
     width: 25% !important;
   }
-  .cases-box:nth-child(3) {
+  .cases-box:nth-child(2) {
     width: 25% !important;
-  }
+  } */
 
-  .cases-box:nth-child(4) {
-    width: calc(100%-16%-25%-25%) !important;
-  }
 a{
 color:#820F2C !important;
 text-decoration: none;
