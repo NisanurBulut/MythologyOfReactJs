@@ -22,6 +22,35 @@ export default class Countries extends Component {
       selectedData: countryDetails,
     });
   }
+  searchCountry = (e) => {
+    const value = e.target.value;
+    const countryDetails = this.state.countryDetails;
+    let FindSpesificCountry = [];
+    if (value) {
+      countryDetails.map((curr, index) => {
+        const finder = curr.Country.toLowerCase().search(value.toLowerCase());
+        if (finder !== -1) {
+          FindSpesificCountry.push(countryDetails[index]);
+        }
+      });
+      FindSpesificCountry = ArraySort(FindSpesificCountry, 'TotalConfirmed', {
+        reverse: true,
+      });
+      this.setState({ searchedCountries: FindSpesificCountry });
+    } else {
+      this.setState({ countryDetails: countryDetails });
+    }
+    if(value.length===0)
+    {
+        this.setState({
+            selectedData:this.state.countryDetails
+        })
+    }else{
+        this.setState({
+            selectedData:this.state.searchedCountries
+        })
+    }
+  };
   changeSortValue = (e) => {
     const sortValue = e.target.value;
     let sortByReverse = true;
@@ -30,9 +59,13 @@ export default class Countries extends Component {
     } else {
       sortByReverse = false;
     }
-    let sortedCountryDetails = ArraySort(this.state.countryDetails, 'TotalConfirmed', {
-      reverse: sortByReverse,
-    });
+    let sortedCountryDetails = ArraySort(
+      this.state.countryDetails,
+      'TotalConfirmed',
+      {
+        reverse: sortByReverse,
+      }
+    );
     this.setState({
       countryDetails: sortedCountryDetails,
       status: true,
@@ -60,7 +93,11 @@ export default class Countries extends Component {
       <div className="countries-stats">
         <h2 className="countries-stats-heading">Countries Stats</h2>
         <div className="filtering">
-          <input type="text" placeholder="enter country name" />
+          <input
+            type="text"
+            placeholder="enter country name"
+            onChange={this.searchCountry}
+          />
           <select className="sort-by" onChange={this.changeSortValue}>
             <option>Highest</option>
             <option>Lowest</option>
