@@ -92,6 +92,12 @@ Kronos is the god of time in Greek mythology. In this tutorial, a countdown tool
 ![App-Kronos](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Kronos.gif)
 <br>
 <hr>
+11. <b>Hades</b> <br>
+Hades is the Ancient Greek god of the Underworld, the place where human souls go after death. In time, his name became synonymous with his realm. In this tutorial project, the issue of covid is discussed. Searching and sorting operations have been done on the arrays. The axios library is used for API calls.
+
+![App-Hades](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hades.gif)
+<br>
+<hr>
 Helpfull Websites :
 - [https://uidesigndaily.com/](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
 - https://dev.to/
@@ -102,3 +108,4 @@ Helpfull Websites :
 - https://developer.edamam.com/
 - https://github.com/noeldelgado/values.js
 - [values.js](https://github.com/noeldelgado/values.js)
+- [covid-19 api](https://api.covid19api.com/)
