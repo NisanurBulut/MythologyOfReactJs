@@ -39,8 +39,8 @@ export default class Global extends Component {
     });
     return (
       <div className="Global">
-        <h1 className="heading">Covid-19 Hades Tracker</h1>
-        <p className="description">Check Information About Covid-19</p>
+        <h1 className="heading"> Hades </h1>
+        <p className="description">v^√√v^──√v^√v^──√v^√√v^── Covid-19 Tracker ──v^√√v^──√v^√v^──√v^√√v^──</p>
         <div className="world-stats">{Stats}</div>
       </div>
     );
