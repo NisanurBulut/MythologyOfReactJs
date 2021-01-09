@@ -34,7 +34,8 @@ export default class Global extends Component {
     var Stats = Object.keys(this.state.result).map((key, index) => {
       return (
         <WorldStats key={index} about={key}
-        total={<NumberFormat value={this.state.result[key]} thousandSeparator={true} displayType="text"/>} />
+        total={<NumberFormat value={this.state.result[key]} thousandSeparator={true} displayType="text"/>}
+        />
       );
     });
     return (

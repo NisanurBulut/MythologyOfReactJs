@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactCountryFlag from 'react-country-flag';
+import NumberFormat from 'react-number-format';
 import './CountryDetail.css';
 export default function CountryDetail(props) {
   {console.log(props)}
@@ -21,23 +22,34 @@ export default function CountryDetail(props) {
         />
 </div>
         <div className="cases-box cases">
-          <a href="#">{props.totalCases}</a>
+          <a href="#">
+          <NumberFormat value={props.totalCases} thousandSeparator={true} displayType="text"/>
+          </a>
           <p className="yesterday">
-            Last 24 Hours <strong>{props.newCases}</strong>
+            Last 24 Hours <strong>
+            <NumberFormat value={props.newCases} thousandSeparator={true} displayType="text"/>
+              </strong>
           </p>
         </div>
 
         <div className="cases-box deaths">
-          <a href="#">{props.totalDeaths}</a>
+
+          <a href="#">
+          <NumberFormat value={props.totalDeaths} thousandSeparator={true} displayType="text"/>
+          </a>
           <p className="yesterday">
-            Last 24 Hours <strong>{props.newDeaths}</strong>
+            Last 24 Hours <strong> <NumberFormat value={props.newDeaths} thousandSeparator={true} displayType="text"/></strong>
           </p>
         </div>
 
         <div className="cases-box recovered">
-          <a href="#">{props.totalRecovered}</a>
+
+          <a href="#">
+          <NumberFormat value={props.totalRecovered} thousandSeparator={true} displayType="text"/>
+          </a>
           <p className="yesterday">
-            Last 24 Hours <strong>{props.newRecovered}</strong>
+            Last 24 Hours <strong>
+            <NumberFormat value={props.newRecovered} thousandSeparator={true} displayType="text"/></strong>
           </p>
         </div>
 
