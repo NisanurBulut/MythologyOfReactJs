@@ -27,7 +27,7 @@ Kirke, refers to using firebase with axios library. The Kirke project uploads ph
 <br>
 <hr>
 4. <b>Ikarus</b> <br>
-LinkPro is a React Project With Asp.Net Core API
+Ikarus is a ReactJs Project With Asp.Net Core API. LinkPro's mean link to profile.
 
 ![App-Ikarus](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Ikarus.gif)
 <br>
@@ -81,7 +81,7 @@ Aphrodite is a the goddess of beautfy and is a react tutorial project promoting 
 <br>
 <hr>
 10. <b>Apollo</b> <br>
-Apollo is the god of art and is a react tutorial project promoting tab-menu
+Apollo is the god of art and is a react tutorial project promoting click events
 
 ![App-Apollo](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Apollo.gif)
 <br>
