@@ -1,0 +1,14 @@
+.top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Oxygen,sans-serif;
+    justify-content: center;
+    background-color: rgb(46, 82, 82);
+    width: 100%;
+    height: 100%;
+    .title{
+        color:#fff;
+        font-size: 22px;
+    }
+}

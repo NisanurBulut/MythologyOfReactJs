@@ -1,14 +1,16 @@
 import "./sass/app.scss";
+import TopSection from "./components/top/TopSection";
+import BottomSection from "./components/bottom/BottomSection";
 
 function App() {
   return (
     <div className="app-container">
       <div className="main-container">
         <div className="top-section">
-          top
+          <TopSection/>
         </div>
         <div className="bottom-section">
-          Bottom
+          <BottomSection/>
         </div>
       </div>
       </div>
