@@ -29,3 +29,11 @@ html, body, #root{
         }
     }
 }
+
+.btn{
+    border:1px #ddd;
+    margin: 15px 0px;
+    &:focus{
+        outline: none;
+    }
+}

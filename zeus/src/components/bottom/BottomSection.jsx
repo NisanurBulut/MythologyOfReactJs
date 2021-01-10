@@ -8,7 +8,7 @@ export default class BottomSection extends Component {
     }
     render() {
         return (
-            <div>BottomSection
+            <div className="bottom-container">BottomSection
             </div>
         )
     }

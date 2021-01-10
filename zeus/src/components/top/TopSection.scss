@@ -1,38 +1,65 @@
-.top-container{
+.top-container {
     display: flex;
     flex-direction: column;
+    font-family: Oxygen, sans-serif;
     align-items: center;
-    font-family: Oxygen,sans-serif;
-    justify-content: center;
-    background-color: rgb(46, 82, 82);
-    width: 100%;
+    background-color: #445a71;
     height: 100%;
+    width: 100%;
 
-    .title{
-        color:#fff;
-        font-size: 22px;
+    .title {
+      color: #fff;
+      font-size: 16px;
+      margin-top: 6px;
     }
-}
-.weather-container {
+  }
+
+  .weather-container {
     margin-top: 1.2em;
-    color:#fff;
+    color: #fff;
 
     .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 12px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 13px;
     }
-    .inner-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin:10px 0px;
+
+    .inner-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: #fff;
+      margin: 10px 0;
+      align-items: center;
+
+      .current-weather {
+        height: fit-content;
+        font-size: 28px;
+      }
+
+      .image {
+        width: 4em;
+        height: 4em;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
-    .footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 12px;
+
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 13px;
     }
-}
+  }
+
+  .btn-select-place {
+    background-color: #49dcc2;
+    font-size: 10px;
+    font-family: Roboto, sans-serif;
+    border-radius: 2px;
+    color: #222;
+  }
