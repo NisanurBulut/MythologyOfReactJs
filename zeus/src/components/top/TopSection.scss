@@ -7,8 +7,32 @@
     background-color: rgb(46, 82, 82);
     width: 100%;
     height: 100%;
+
     .title{
         color:#fff;
         font-size: 22px;
+    }
+}
+.weather-container {
+    margin-top: 1.2em;
+    color:#fff;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .inner-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin:10px 0px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 12px;
     }
 }
