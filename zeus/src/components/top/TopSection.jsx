@@ -11,7 +11,7 @@ export default class TopSection extends Component {
         return (
             <div className="top-container">
                 <div className="title">Zeus</div>
-                <Weather/>
+                <Weather {...this.props} />
                 <button className="btn btn-select-place">Select Place</button>
             </div>
         )

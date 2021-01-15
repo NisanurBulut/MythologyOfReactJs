@@ -7,16 +7,17 @@ export default class Weather extends Component {
         this.state={}
     }
     render() {
+      const {location,temp_c, isDay, text, iconURL} =this.props;
         return (
             <div className="weather-container">
-            <div className="header">Place</div>
+            <div className="header">{location}</div>
             <div className="inner-container">
               <div className="image">
                 <img src={iconURL} />
               </div>
-              <div className="current-weather">10°</div>
+              <div className="current-weather">{temp_c} °C</div>
             </div>
-            <div className="footer">sunny</div>
+            <div className="footer">{text}</div>
           </div>
         )
     }
