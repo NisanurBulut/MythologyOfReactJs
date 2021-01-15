@@ -39,7 +39,14 @@ class App extends Component {
       });
   }
   componentDidMount() {
+    const { eventEmitter } = this.props;
+
     this.updateWeather();
+
+    eventEmitter.on("updateWeather", data => {
+      console.log(data);
+      this.setState({ cityName: data }, () => this.updateWeather());
+    });
   }
 
   render() {
@@ -56,6 +63,7 @@ class App extends Component {
                 isDay={isDay}
                 text={text}
                 iconURL={iconURL}
+                eventEmitter={this.props.eventEmitter}
               />
             }
           </div>

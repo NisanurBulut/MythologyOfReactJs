@@ -3,12 +3,12 @@
   flex-direction: column;
   font-family: Oxygen, sans-serif;
   align-items: center;
-  background-color: #445a71;
+  background-color: #ccddee;
   height: 100%;
   width: 100%;
 
   .title {
-    color: #fff;
+    color: #445a71;
     font-size: 16px;
     margin-top: 6px;
   }
@@ -16,26 +16,29 @@
 
 .weather-container {
   margin-top: 1.2em;
-  color: #fff;
+  color: #445a71;
+  font-weight: bold;
 
   .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .inner-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #fff;
+    color: #445a71;
+    font-weight: bold;
     margin: 10px 0;
     align-items: center;
 
     .current-weather {
       height: fit-content;
-      font-size: 28px;
+      font-size: 30px;
+      margin-left: 5px;
     }
 
     .image {
@@ -52,14 +55,22 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
 .btn-select-location {
-  background-color: #49dcc2;
-  font-size: 10px;
+  background-color: #445a71;
+  text-align: center;
+  font-size: 15px;
   font-family: Roboto, sans-serif;
-  border-radius: 2px;
-  color: #222;
+  border-radius: 4px;
+  color: #fff;
+}
+input{
+  margin-left: 10px;
+}
+.btn-block {
+  width: 75px;
+  margin-left: 45px;
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import iconURL from '../../images/sun.png'
 export default class Weather extends Component {
     constructor(props)
     {

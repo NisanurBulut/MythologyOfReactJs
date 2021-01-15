@@ -11,7 +11,7 @@ export default class store extends Component {
   }
   render() {
     return React.Children.map(this.props.children, (child) => {
-      return React.cloneElement(child, {
+      return cloneElement(child, {
         ...this.state,
         eventEmitter: this.eventEmitter
       });
