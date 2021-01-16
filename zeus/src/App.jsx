@@ -3,16 +3,19 @@ import TopSection from './components/top/TopSection';
 import BottomSection from './components/bottom/BottomSection';
 import { Component } from 'react';
 import axios from 'axios';
-
+import imagePaths from './imagePaths';
 const WEATHER_KEY = '9ffc61c586af6055741b0b43ef59ea69';
 
 class App extends Component {
   constructor(props) {
+
     super(props);
     this.state = {
-      cityName: 'Osmaniye',
+      cityName: 'adana',
       forCastdayas: 5,
       isLoading: true,
+      imagePaths: imagePaths,
+      bottomImage:''
     };
   }
   updateWeather() {
@@ -24,6 +27,21 @@ class App extends Component {
         return res.data;
       })
       .then((data) => {
+        const dataPath=data.current.weather_descriptions[0].replace(/ /g, '');
+
+
+        let imagePathItem = this.state.imagePaths.find(
+          (item) =>
+            item.name === dataPath
+        );
+        if(!imagePathItem)
+        {
+          imagePathItem=this.state.imagePaths.find((item) => item.name === 'default');
+        }
+
+
+            console.log(imagePathItem);
+
         this.setState({
           isLoading: false,
           cityName: `${data.location.name} ${data.location.region} ${data.location.country}`,
@@ -31,8 +49,9 @@ class App extends Component {
           isDay: data.current.is_day,
           text: data.current.weather_descriptions[0],
           iconURL: data.current.weather_icons[0],
-          bottomImage:`${data.current.weather_descriptions[0].replace(/ /g, '')}.gif`
+          bottomImage: imagePathItem.path || '',
         });
+        console.log(this.state);
       })
       .catch((err) => {
         if (err) console.error('Cannot fetch Weather Data from API, ', err);
@@ -43,20 +62,29 @@ class App extends Component {
 
     this.updateWeather();
 
-    eventEmitter.on("updateWeather", data => {
+    eventEmitter.on('updateWeather', (data) => {
       console.log(data);
       this.setState({ cityName: data }, () => this.updateWeather());
     });
   }
 
   render() {
-    const { isLoading, cityName, location, temp_c, isDay, text, iconURL, bottomImage } = this.state;
+    const {
+      isLoading,
+      cityName,
+      location,
+      temp_c,
+      isDay,
+      text,
+      iconURL,
+      bottomImage,
+    } = this.state;
     return (
       <div className="app-container">
         <div className="main-container">
           <div className="top-section">
-            { isLoading && <h3>Weather is loading</h3>}
-            { !isLoading &&
+            {isLoading && <h3>Weather is loading</h3>}
+            {!isLoading && (
               <TopSection
                 location={cityName}
                 temp_c={temp_c}
@@ -65,11 +93,13 @@ class App extends Component {
                 iconURL={iconURL}
                 eventEmitter={this.props.eventEmitter}
               />
-            }
+            )}
           </div>
           <div className="bottom-section">
-            <BottomSection bottomImage={bottomImage}
-                eventEmitter={this.props.eventEmitter} />
+            <BottomSection
+              bottomImage={bottomImage}
+              eventEmitter={this.props.eventEmitter}
+            />
           </div>
         </div>
       </div>
