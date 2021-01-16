@@ -24,7 +24,6 @@ class App extends Component {
         return res.data;
       })
       .then((data) => {
-        console.log(data.location);
         this.setState({
           isLoading: false,
           cityName: `${data.location.name} ${data.location.region} ${data.location.country}`,
@@ -32,6 +31,7 @@ class App extends Component {
           isDay: data.current.is_day,
           text: data.current.weather_descriptions[0],
           iconURL: data.current.weather_icons[0],
+          bottomImage:`${data.current.weather_descriptions[0].replace(/ /g, '')}.gif`
         });
       })
       .catch((err) => {
@@ -50,7 +50,7 @@ class App extends Component {
   }
 
   render() {
-    const { isLoading, cityName, location, temp_c, isDay, text, iconURL } = this.state;
+    const { isLoading, cityName, location, temp_c, isDay, text, iconURL, bottomImage } = this.state;
     return (
       <div className="app-container">
         <div className="main-container">
@@ -68,7 +68,8 @@ class App extends Component {
             }
           </div>
           <div className="bottom-section">
-            <BottomSection />
+            <BottomSection bottomImage={bottomImage}
+                eventEmitter={this.props.eventEmitter} />
           </div>
         </div>
       </div>

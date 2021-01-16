@@ -19,7 +19,7 @@ export default class TopSection extends Component {
 
   onLocationNameChange = (e) => {
     this.setState({
-      locationName: e.target.value,
+      locationName: e.target.value
     });
   };
 
@@ -36,7 +36,7 @@ export default class TopSection extends Component {
 
     return (
       <div className="top-container">
-        <div className="title">Weather Up</div>
+        <div className="title">Zeus</div>
         <Weather {...this.props} />
         <Manager>
           <Reference>

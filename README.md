@@ -115,3 +115,4 @@ Helpfull Websites :
 - https://github.com/noeldelgado/values.js
 - [values.js](https://github.com/noeldelgado/values.js)
 - [covid-19 api](https://api.covid19api.com/)
+- http://api.weatherstack.com
