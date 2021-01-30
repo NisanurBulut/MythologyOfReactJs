@@ -116,4 +116,5 @@ Helpfull Websites :
 - [values.js](https://github.com/noeldelgado/values.js)
 - [covid-19 api](https://api.covid19api.com/)
 - http://api.weatherstack.com
-- [Gif resize] (https://ezgif.com/resize)
+- [Gif resize](https://ezgif.com/resize)
+- [ReactJs Turkish Library](https://github.com/omergulcicek/react)
