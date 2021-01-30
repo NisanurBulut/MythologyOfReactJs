@@ -11,9 +11,12 @@ class App extends Component {
       { name: 'Yağmur', number: 12 },
     ],
   };
+  switchNameHander=()=>
+  {}
   render() {
     return (
       <div className="App">
+        <button onClick={this.switchNameHander}>Switch Name</button>
         <Person
           name={this.state.persons[0].name}
           number={this.state.persons[0].number}
