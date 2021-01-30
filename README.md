@@ -105,9 +105,8 @@ Zeus is the god of the sky, lightning and the thunder in Ancient Greek religion 
 <br>
 <hr>
 Helpfull Websites :
-- [https://uidesigndaily.com/](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
-- [Devto](https://dev.to/)
-- https://popmotion.io/
+[https://uidesigndaily.com](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042) [Devto](https://dev.to/)
+[popmotion](https://popmotion.io)
 - https://github.com/typicode/json-server
 - https://unsplash.com/
 - https://webgradients.com/
