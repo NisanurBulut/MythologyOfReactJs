@@ -10,9 +10,17 @@ class App extends Component {
       { name: 'Furkan', number: 11 },
       { name: 'Yağmur', number: 12 },
     ],
+    otherState:'some Other State'
   };
   switchNameHander=()=>
-  {}
+  {
+  // DON'T DO THIS  this.state.persons[0].name+=' Bulut';
+  this.setState({persons:[
+    { name: 'Nisanur bulut', number: 10 },
+    { name: 'Furkan delibaş', number: 11 },
+    { name: 'Yağmur kınıcı', number: 12 },
+  ]})
+  }
   render() {
     return (
       <div className="App">
