@@ -104,17 +104,10 @@ Zeus is the god of the sky, lightning and the thunder in Ancient Greek religion 
 ![App-Zeus](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Zeusv2.gif)
 <br>
 <hr>
-Helpfull Websites :
-[uidesigndaily](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042) [Devto](https://dev.to/)
-[popmotion](https://popmotion.io)
-- https://github.com/typicode/json-server
-- https://unsplash.com/
-- https://webgradients.com/
-- https://developer.edamam.com/
-- https://github.com/noeldelgado/values.js
-- [values.js](https://github.com/noeldelgado/values.js)
-- [covid-19 api](https://api.covid19api.com/)
-- http://api.weatherstack.com
-- [Gif resize](https://ezgif.com/resize)
-- [ReactJs Turkish Library](https://github.com/omergulcicek/react)
-- [ReactJs Articles](https://www.ninjakod.com/category/genel/reactjs/)
+
+### Helpfull Websites
+
+[uidesigndaily](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
+[Devto](https://dev.to/) [popmotion](https://popmotion.io) [json-server](https://github.com/typicode/json-server)
+[unsplash](https://unsplash.com/) [webgradients](https://webgradients.com/) [edamam api](https://developer.edamam.com/)
+ [values.js](https://github.com/noeldelgado/values.js)[covid-19 api](https://api.covid19api.com/) [api.weatherstack](http://api.weatherstack.com)[Gif resize](https://ezgif.com/resize) [ReactJs Turkish Library](https://github.com/omergulcicek/react) [ReactJs Articles](https://www.ninjakod.com/category/genel/reactjs/)
