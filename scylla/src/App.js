@@ -27,7 +27,7 @@ class App extends Component {
     });
   };
   nameChangeEventHandler = (event) => {
-    console.log(event.target.value);
+
     this.setState({
       persons: [
         { name: event.target.value, number: 10 },
@@ -38,9 +38,20 @@ class App extends Component {
     });
   };
   render() {
+    const inlineStyle={
+      backgroundColor:'#fff',
+      border:'1px solid black',
+      font:'inherit',
+      padding:'8px',
+      margin:'8px',
+      cursor:'pointer'
+    }
+
     return (
       <div className="App">
-        <button onClick={() => this.switchNameHandler('Nisanur Bulut')}>
+        <button
+        style={inlineStyle}
+        onClick={() => this.switchNameHandler('Nisanur Bulut')}>
           Switch Name
         </button>
         <Person
