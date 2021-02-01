@@ -59,7 +59,14 @@ class App extends Component {
       userName: event.target.value,
     });
   };
-  togglePersonsHandler = (event) => {};
+  togglePersonsHandler = (event) => {
+    const doesShow = this.state.showPersons;
+    this.setState(
+      {
+        showPersons:!doesShow
+      }
+    )
+  };
   render() {
     const inlineStyle = {
       border: '1px solid black',
@@ -80,7 +87,7 @@ class App extends Component {
         </div>
         <button
           style={inlineStyle}
-          onClick={() => this.switchNameHandler('Nisanur Bulut')}
+          onClick={() => this.togglePersonsHandler()}
         >
           Switch Name
         </button>
@@ -89,7 +96,7 @@ class App extends Component {
             <Person
               name={this.state.persons[0].name}
               number={this.state.persons[0].number}
-              changed={this.togglePersonsHandler}
+              click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
             ></Person>
             <Person
               name={this.state.persons[1].name}
