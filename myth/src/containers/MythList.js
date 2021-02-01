@@ -1,6 +1,6 @@
 import React from 'react'
 
-MythList=()=>{
+const MythList=()=>{
     return (
         <div>
 
