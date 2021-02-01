@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const Person =(props) => {
    return(
-   <div>
+   <div onClick={props.click}>
        <h1>I'm {props.name} && I love numbers for example : {props.number}</h1>
        <p>{props.children}</p>
    </div>
