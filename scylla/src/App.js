@@ -18,6 +18,9 @@ class App extends Component {
   };
 
   userNameChangeEventHandler = (event, id) => {
+    this.setState({
+      userName:event.target.value
+    })
     const personIndex = this.state.persons.findIndex((p) => {
       return p.id === id;
     });
@@ -75,8 +78,8 @@ class App extends Component {
                 name={person.name}
                 number={person.number}
                 click={() => this.deletePersonHandler(index)}
-                changed={() =>
-                  this.userNameChangeEventHandler(Event, person.id)
+                changed={(event) =>
+                  this.userNameChangeEventHandler(event, person.id)
                 }
               ></Person>
             );
