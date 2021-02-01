@@ -16,19 +16,7 @@ class App extends Component {
     userName: 'Nisanur', // camelCase notation
     showPersons: false,
   };
-  switchNameHandler = (newName) => {
-    // DON'T DO THIS  this.state.persons[0].name+=' Bulut';
-    // bu fonksıyon çalıştığında personsState'ten otherState kaybolmuş olacak
-    // bunun önenüne geçmek için yeniden tanımlamalıyım
-    this.setState({
-      persons: [
-        { name: newName, number: 10 },
-        { name: 'Furkan delibaş', number: 11 },
-        { name: newName, number: 12 },
-      ],
-      otherState: this.state.otherState,
-    });
-  };
+
   nameChangeEventHandler = (event) => {
     this.setState({
       persons: [
@@ -65,6 +53,13 @@ class App extends Component {
       showPersons: !doesShow,
     });
   };
+  deletePersonHandler = (index) => {
+    const persons= this.state.persons;
+    persons.splice(index,1);
+    this.setState({
+      persons:persons
+    })
+  };
   render() {
     const inlineStyle = {
       border: '1px solid black',
@@ -77,12 +72,12 @@ class App extends Component {
     if (this.state.showPersons) {
       persons = (
         <div>
-          {this.state.persons.map((person) => {
+          {this.state.persons.map((person, index) => {
             return (
               <Person
                 name={person.name}
                 number={person.number}
-                click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
+                click={() => this.deletePersonHandler(index)}
               ></Person>
             );
           })}
