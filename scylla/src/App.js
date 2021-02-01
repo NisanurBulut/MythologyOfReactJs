@@ -57,11 +57,11 @@ class App extends Component {
     // refarans tipli olduğu için bu şekilde silmek yani diziyi okumak doğru değil
     // const persons= this.state.persons.slice();
     /* Best Practise */
-    const persons=[...this.state.persons];
-    persons.splice(index,1);
+    const persons = [...this.state.persons];
+    persons.splice(index, 1);
     this.setState({
-      persons:persons
-    })
+      persons: persons,
+    });
   };
   render() {
     const inlineStyle = {
@@ -78,6 +78,7 @@ class App extends Component {
           {this.state.persons.map((person, index) => {
             return (
               <Person
+                key={index}
                 name={person.name}
                 number={person.number}
                 click={() => this.deletePersonHandler(index)}
