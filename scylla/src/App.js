@@ -89,7 +89,7 @@ class App extends Component {
           style={inlineStyle}
           onClick={() => this.togglePersonsHandler()}
         >
-          Switch Name
+          Toggle Persons
         </button>
         {this.state.showPersons ? (
           <div>
