@@ -14,6 +14,7 @@ class App extends Component {
     ],
     otherState: 'Some Other State',
     userName: 'Nisanur', // camelCase notation
+    showPersons: false,
   };
   switchNameHandler = (newName) => {
     // DON'T DO THIS  this.state.persons[0].name+=' Bulut';
@@ -58,6 +59,7 @@ class App extends Component {
       userName: event.target.value,
     });
   };
+  togglePersonsHandler = (event) => {};
   render() {
     const inlineStyle = {
       border: '1px solid black',
@@ -69,32 +71,39 @@ class App extends Component {
 
     return (
       <div className="App">
-       <div style={inlineStyle}>
-       <UserInput changed={this.userNameChangeEventHandler} currentName={this.state.userName} />
-        <UserOutput userName={this.state.userName} />
-       </div>
+        <div style={inlineStyle}>
+          <UserInput
+            changed={this.userNameChangeEventHandler}
+            currentName={this.state.userName}
+          />
+          <UserOutput userName={this.state.userName} />
+        </div>
         <button
           style={inlineStyle}
           onClick={() => this.switchNameHandler('Nisanur Bulut')}
         >
           Switch Name
         </button>
-        <Person
-          name={this.state.persons[0].name}
-          number={this.state.persons[0].number}
-          changed={this.nameChangeEventHandler}
-        ></Person>
-        <Person
-          name={this.state.persons[1].name}
-          number={this.state.persons[1].number}
-        >
-          <h2>Im doing practise on React</h2>
-        </Person>
-        <Person
-          name={this.state.persons[2].name}
-          number={this.state.persons[2].number}
-          click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
-        ></Person>
+        {this.state.showPersons ? (
+          <div>
+            <Person
+              name={this.state.persons[0].name}
+              number={this.state.persons[0].number}
+              changed={this.togglePersonsHandler}
+            ></Person>
+            <Person
+              name={this.state.persons[1].name}
+              number={this.state.persons[1].number}
+            >
+              <h2>Im doing practise on React</h2>
+            </Person>
+            <Person
+              name={this.state.persons[2].name}
+              number={this.state.persons[2].number}
+              click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
+            ></Person>
+          </div>
+        ) : null}
       </div>
     );
   }
