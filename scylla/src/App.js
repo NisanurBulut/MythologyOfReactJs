@@ -14,12 +14,15 @@ const [personsState, setPersons] = useState({
 });
 const switchNameHander = () => {
   // DON'T DO THIS  this.state.persons[0].name+=' Bulut';
+  // bu fonksıyon çalıştığında personsState'ten otherState kaybolmuş olacak
+  // bunun önenüne geçmek için yeniden tanımlamalıyım
  setPersons({
     persons: [
       { name: 'Nisanur bulut', number: 10 },
       { name: 'Furkan delibaş', number: 11 },
       { name: 'Yağmur kınıcı', number: 12 },
     ],
+    otherState:personsState.otherState
   });
 };
 const App = (props) => {
