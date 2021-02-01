@@ -3,7 +3,8 @@ import './App.css';
 import React, { useState } from 'react';
 
 // her zaman iki eleman döner
-const stateArray = useState({
+// modern reactjs showing destructiong
+const [personsState, setPersons] = useState({
   persons: [
     { name: 'Nisanur', number: 10 },
     { name: 'Furkan', number: 11 },
@@ -11,9 +12,9 @@ const stateArray = useState({
   ],
   otherState: 'some Other State',
 });
-switchNameHander = () => {
+const switchNameHander = () => {
   // DON'T DO THIS  this.state.persons[0].name+=' Bulut';
-  this.setState({
+ setPersons({
     persons: [
       { name: 'Nisanur bulut', number: 10 },
       { name: 'Furkan delibaş', number: 11 },
@@ -26,18 +27,18 @@ const App = (props) => {
     <div className="App">
       <button onClick={this.switchNameHander}>Switch Name</button>
       <Person
-        name={this.state.persons[0].name}
-        number={this.state.persons[0].number}
+        name={personsState.persons[0].name}
+        number={personsState.persons[0].number}
       />
       <Person
-        name={this.state.persons[1].name}
-        number={this.state.persons[1].number}
+        name={personsState.persons[1].name}
+        number={personsState.persons[1].number}
       >
         <h2>Im doing practise on React</h2>
       </Person>
       <Person
-        name={this.state.persons[2].name}
-        number={this.state.persons[2].number}
+        name={personsState.persons[2].name}
+        number={personsState.persons[2].number}
       />
     </div>
   );
