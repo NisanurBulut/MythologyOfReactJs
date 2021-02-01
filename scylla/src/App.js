@@ -70,8 +70,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <UserInput changed={this.userNameChangeEventHandler} currentName={this.state.userName} />
+       <div style={inlineStyle}>
+       <UserInput changed={this.userNameChangeEventHandler} currentName={this.state.userName} />
         <UserOutput userName={this.state.userName} />
+       </div>
         <button
           style={inlineStyle}
           onClick={() => this.switchNameHandler('Nisanur Bulut')}
