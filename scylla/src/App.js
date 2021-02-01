@@ -8,44 +8,37 @@ class App extends Component {
   // modern reactjs showing destructiong
   state = {
     persons: [
-      { name: 'Nisanur', number: 10 },
-      { name: 'Furkan', number: 11 },
-      { name: 'Yağmur', number: 12 },
+      { id: 1, name: 'Nisanur', number: 10 },
+      { id: 2, name: 'Furkan', number: 11 },
+      { id: 3, name: 'Yağmur', number: 12 },
     ],
     otherState: 'Some Other State',
     userName: 'Nisanur', // camelCase notation
     showPersons: false,
   };
 
-  nameChangeEventHandler = (event) => {
-    this.setState({
-      persons: [
-        { name: event.target.value, number: 10 },
-        { name: event.target.value, number: 11 },
-        { name: event.target.value, number: 12 },
-      ],
-      otherState: this.state.otherState,
+  userNameChangeEventHandler = (event, id) => {
+    const personIndex = this.state.persons.findIndex((p) => {
+      return p.id === id;
     });
-  };
-  userNameChangeEventHandler = (event) => {
+    // YANLIŞ YONTEM : referans tanıma sebeple olduğu için:
+    // const person=this.state.persons[personIndex];
+
+    // Doğru ama modern olmyan yöntem
+    // const person = Object.assign({},this.state.persons[personIndex]);
+
+    // Doğru ve modern olan spread operator yontem
+    const person = { ...this.state.persons[personIndex] };
+    person.name = event.target.value;
+
+    const personList = [...this.state.persons];
+    personList[personIndex] = person;
+
     this.setState({
-      persons: [
-        {
-          name: this.state.persons[0].name,
-          number: this.state.persons[0].number,
-        },
-        {
-          name: this.state.persons[1].name,
-          number: this.state.persons[1].number,
-        },
-        {
-          name: this.state.persons[2].name,
-          number: this.state.persons[2].number,
-        },
-      ],
-      otherState: this.state.otherState,
-      userName: event.target.value,
+      persons: personList,
     });
+
+    /** bu değişim uzun görünüyor ancak gübenli olan seklı budur. */
   };
   togglePersonsHandler = (event) => {
     const doesShow = this.state.showPersons;
@@ -78,10 +71,13 @@ class App extends Component {
           {this.state.persons.map((person, index) => {
             return (
               <Person
-                key={index}
+                key={person.id}
                 name={person.name}
                 number={person.number}
                 click={() => this.deletePersonHandler(index)}
+                changed={() =>
+                  this.userNameChangeEventHandler(Event, person.id)
+                }
               ></Person>
             );
           })}
