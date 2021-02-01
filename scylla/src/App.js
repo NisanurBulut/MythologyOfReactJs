@@ -54,7 +54,10 @@ class App extends Component {
     });
   };
   deletePersonHandler = (index) => {
-    const persons= this.state.persons;
+    // refarans tipli olduğu için bu şekilde silmek yani diziyi okumak doğru değil
+    // const persons= this.state.persons.slice();
+    /* Best Practise */
+    const persons=[...this.state.persons];
     persons.splice(index,1);
     this.setState({
       persons:persons
