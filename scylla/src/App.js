@@ -75,15 +75,19 @@ class App extends Component {
     };
     let persons = null;
     if (this.state.showPersons) {
-      persons = this.state.persons.map((person) => {
-        return (
-          <Person
-            name={person.name}
-            number={person.number}
-            click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
-          ></Person>
-        );
-      });
+      persons = (
+        <div>
+          {this.state.persons.map((person) => {
+            return (
+              <Person
+                name={person.name}
+                number={person.number}
+                click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
+              ></Person>
+            );
+          })}
+        </div>
+      );
     }
     return (
       <div className="App">
