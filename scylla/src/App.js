@@ -75,7 +75,30 @@ class App extends Component {
       margin: '8px',
       cursor: 'pointer',
     };
-
+    let persons =null;
+    if(this.state.showPersons)
+    {
+      persons=(
+        <div>
+        <Person
+          name={this.state.persons[0].name}
+          number={this.state.persons[0].number}
+          click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
+        ></Person>
+        <Person
+          name={this.state.persons[1].name}
+          number={this.state.persons[1].number}
+        >
+          <h2>Im doing practise on React</h2>
+        </Person>
+        <Person
+          name={this.state.persons[2].name}
+          number={this.state.persons[2].number}
+          click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
+        ></Person>
+      </div>
+      );
+    }
     return (
       <div className="App">
         <div style={inlineStyle}>
@@ -91,26 +114,7 @@ class App extends Component {
         >
           Toggle Persons
         </button>
-        {this.state.showPersons ? (
-          <div>
-            <Person
-              name={this.state.persons[0].name}
-              number={this.state.persons[0].number}
-              click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
-            ></Person>
-            <Person
-              name={this.state.persons[1].name}
-              number={this.state.persons[1].number}
-            >
-              <h2>Im doing practise on React</h2>
-            </Person>
-            <Person
-              name={this.state.persons[2].name}
-              number={this.state.persons[2].number}
-              click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
-            ></Person>
-          </div>
-        ) : null}
+        {persons}
       </div>
     );
   }
