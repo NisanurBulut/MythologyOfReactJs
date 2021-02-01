@@ -61,11 +61,9 @@ class App extends Component {
   };
   togglePersonsHandler = (event) => {
     const doesShow = this.state.showPersons;
-    this.setState(
-      {
-        showPersons:!doesShow
-      }
-    )
+    this.setState({
+      showPersons: !doesShow,
+    });
   };
   render() {
     const inlineStyle = {
@@ -75,29 +73,17 @@ class App extends Component {
       margin: '8px',
       cursor: 'pointer',
     };
-    let persons =null;
-    if(this.state.showPersons)
-    {
-      persons=(
-        <div>
-        <Person
-          name={this.state.persons[0].name}
-          number={this.state.persons[0].number}
-          click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
-        ></Person>
-        <Person
-          name={this.state.persons[1].name}
-          number={this.state.persons[1].number}
-        >
-          <h2>Im doing practise on React</h2>
-        </Person>
-        <Person
-          name={this.state.persons[2].name}
-          number={this.state.persons[2].number}
-          click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
-        ></Person>
-      </div>
-      );
+    let persons = null;
+    if (this.state.showPersons) {
+      persons = this.state.persons.map((person) => {
+        return (
+          <Person
+            name={person.name}
+            number={person.number}
+            click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
+          ></Person>
+        );
+      });
     }
     return (
       <div className="App">
@@ -108,10 +94,7 @@ class App extends Component {
           />
           <UserOutput userName={this.state.userName} />
         </div>
-        <button
-          style={inlineStyle}
-          onClick={() => this.togglePersonsHandler()}
-        >
+        <button style={inlineStyle} onClick={() => this.togglePersonsHandler()}>
           Toggle Persons
         </button>
         {persons}
