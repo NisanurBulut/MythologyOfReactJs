@@ -3,6 +3,8 @@ import './App.css';
 import React, { Component } from 'react';
 import UserInput from './completeGuide/UserInput/UserInput';
 import UserOutput from './completeGuide/UserOutput/UserOutput';
+import Validation from './completeGuide/Validation/Validation';
+import Char from './completeGuide/Char/Char';
 class App extends Component {
   // her zaman iki eleman döner
   // modern reactjs showing destructiong
@@ -12,6 +14,7 @@ class App extends Component {
       { id: 2, name: 'Furkan', number: 11 },
       { id: 3, name: 'Yağmur', number: 12 },
     ],
+    userInput: '',
     otherState: 'Some Other State',
     userName: 'Nisanur', // camelCase notation
     showPersons: false,
@@ -19,8 +22,8 @@ class App extends Component {
 
   userNameChangeEventHandler = (event, id) => {
     this.setState({
-      userName:event.target.value
-    })
+      userName: event.target.value,
+    });
     const personIndex = this.state.persons.findIndex((p) => {
       return p.id === id;
     });
@@ -59,7 +62,29 @@ class App extends Component {
       persons: persons,
     });
   };
+  inputChangeHandler = (event) => {
+    this.setState({ userInput: event.target.value });
+  };
+  deleteCharHandler = (index) => {
+    const charList = this.state.userInput.split('');
+    charList.splice(index,1);
+    const updatedText = charList.join('');
+    this.setState(
+      {
+        userInput:updatedText
+      }
+    )
+  };
   render() {
+    const charList = this.state.userInput.split('').map((ch, index) => {
+      return (
+        <Char
+          key={index}
+          character={ch}
+          clicked={()=>this.deleteCharHandler(index)}
+        />
+      );
+    });
     const inlineStyle = {
       border: '1px solid black',
       font: 'inherit',
@@ -89,6 +114,16 @@ class App extends Component {
     }
     return (
       <div className="App">
+        <div style={inlineStyle}>
+          <input
+            type="text"
+            onChange={(event) => this.inputChangeHandler(event)}
+            value={this.state.userInput}
+          />
+          <p>{this.state.userInput}</p>
+          <Validation inputLength={this.state.userInput.length} />
+          {charList}
+        </div>
         <div style={inlineStyle}>
           <UserInput
             changed={this.userNameChangeEventHandler}
