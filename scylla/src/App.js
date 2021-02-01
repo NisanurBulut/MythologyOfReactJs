@@ -1,17 +1,19 @@
 import Person from './completeGuide/Person/Person';
 import './App.css';
 import React, { Component } from 'react';
-
+import UserInput from './completeGuide/UserInput/UserInput';
+import UserOutput from './completeGuide/UserOutput/UserOutput';
 class App extends Component {
   // her zaman iki eleman döner
   // modern reactjs showing destructiong
-   state = {
+  state = {
     persons: [
       { name: 'Nisanur', number: 10 },
       { name: 'Furkan', number: 11 },
       { name: 'Yağmur', number: 12 },
     ],
     otherState: 'Some Other State',
+    userName: 'Nisanur', // camelCase notation
   };
   switchNameHandler = (newName) => {
     // DON'T DO THIS  this.state.persons[0].name+=' Bulut';
@@ -27,7 +29,6 @@ class App extends Component {
     });
   };
   nameChangeEventHandler = (event) => {
-
     this.setState({
       persons: [
         { name: event.target.value, number: 10 },
@@ -37,21 +38,44 @@ class App extends Component {
       otherState: this.state.otherState,
     });
   };
+  userNameChangeEventHandler = (event) => {
+    this.setState({
+      persons: [
+        {
+          name: this.state.persons[0].name,
+          number: this.state.persons[0].number,
+        },
+        {
+          name: this.state.persons[1].name,
+          number: this.state.persons[1].number,
+        },
+        {
+          name: this.state.persons[2].name,
+          number: this.state.persons[2].number,
+        },
+      ],
+      otherState: this.state.otherState,
+      userName: event.target.value,
+    });
+  };
   render() {
-    const inlineStyle={
-      backgroundColor:'#fff',
-      border:'1px solid black',
-      font:'inherit',
-      padding:'8px',
-      margin:'8px',
-      cursor:'pointer'
-    }
+    const inlineStyle = {
+      backgroundColor: '#fff',
+      border: '1px solid black',
+      font: 'inherit',
+      padding: '8px',
+      margin: '8px',
+      cursor: 'pointer',
+    };
 
     return (
       <div className="App">
+        <UserInput changed={this.userNameChangeEventHandler} currentName={this.state.userName} />
+        <UserOutput userName={this.state.userName} />
         <button
-        style={inlineStyle}
-        onClick={() => this.switchNameHandler('Nisanur Bulut')}>
+          style={inlineStyle}
+          onClick={() => this.switchNameHandler('Nisanur Bulut')}
+        >
           Switch Name
         </button>
         <Person
