@@ -67,13 +67,11 @@ class App extends Component {
   };
   deleteCharHandler = (index) => {
     const charList = this.state.userInput.split('');
-    charList.splice(index,1);
+    charList.splice(index, 1);
     const updatedText = charList.join('');
-    this.setState(
-      {
-        userInput:updatedText
-      }
-    )
+    this.setState({
+      userInput: updatedText,
+    });
   };
   render() {
     const charList = this.state.userInput.split('').map((ch, index) => {
@@ -81,16 +79,19 @@ class App extends Component {
         <Char
           key={index}
           character={ch}
-          clicked={()=>this.deleteCharHandler(index)}
+          clicked={() => this.deleteCharHandler(index)}
         />
       );
     });
-    const inlineStyle = {
+    const btnStyle = {
+      backgroundColor: 'green',
+      color: 'white',
       border: '1px solid black',
       font: 'inherit',
       padding: '8px',
       margin: '8px',
       cursor: 'pointer',
+      outline: 'none',
     };
     let persons = null;
     if (this.state.showPersons) {
@@ -111,10 +112,11 @@ class App extends Component {
           })}
         </div>
       );
+      btnStyle.backgroundColor = 'red';
     }
     return (
       <div className="App">
-        <div style={inlineStyle}>
+        <div>
           <input
             type="text"
             onChange={(event) => this.inputChangeHandler(event)}
@@ -124,14 +126,14 @@ class App extends Component {
           <Validation inputLength={this.state.userInput.length} />
           {charList}
         </div>
-        <div style={inlineStyle}>
+        <div>
           <UserInput
             changed={this.userNameChangeEventHandler}
             currentName={this.state.userName}
           />
           <UserOutput userName={this.state.userName} />
         </div>
-        <button style={inlineStyle} onClick={() => this.togglePersonsHandler()}>
+        <button style={btnStyle} onClick={() => this.togglePersonsHandler()}>
           Toggle Persons
         </button>
         {persons}
