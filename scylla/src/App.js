@@ -5,15 +5,15 @@ import React, { Component } from 'react';
 class App extends Component {
   // her zaman iki eleman döner
   // modern reactjs showing destructiong
-  personsState = {
+   state = {
     persons: [
       { name: 'Nisanur', number: 10 },
       { name: 'Furkan', number: 11 },
       { name: 'Yağmur', number: 12 },
     ],
-    otherState: 'some Other State',
+    otherState: 'Some Other State',
   };
-  switchNameHander = (newName) => {
+  switchNameHandler = (newName) => {
     // DON'T DO THIS  this.state.persons[0].name+=' Bulut';
     // bu fonksıyon çalıştığında personsState'ten otherState kaybolmuş olacak
     // bunun önenüne geçmek için yeniden tanımlamalıyım
@@ -23,31 +23,41 @@ class App extends Component {
         { name: 'Furkan delibaş', number: 11 },
         { name: newName, number: 12 },
       ],
-      otherState: this.personsState.otherState,
+      otherState: this.state.otherState,
+    });
+  };
+  nameChangeEventHandler = (event) => {
+    console.log(event.target.value);
+    this.setState({
+      persons: [
+        { name: event.target.value, number: 10 },
+        { name: event.target.value, number: 11 },
+        { name: event.target.value, number: 12 },
+      ],
+      otherState: this.state.otherState,
     });
   };
   render() {
     return (
       <div className="App">
-        <button
-          onClick={() => this.switchNameHander(this, 'Nisanur Bulut')}
-        >
+        <button onClick={() => this.switchNameHandler('Nisanur Bulut')}>
           Switch Name
         </button>
         <Person
-          name={this.personsState.persons[0].name}
-          number={this.personsState.persons[0].number}
+          name={this.state.persons[0].name}
+          number={this.state.persons[0].number}
+          changed={this.nameChangeEventHandler}
         ></Person>
         <Person
-          name={this.personsState.persons[1].name}
-          number={this.personsState.persons[1].number}
+          name={this.state.persons[1].name}
+          number={this.state.persons[1].number}
         >
           <h2>Im doing practise on React</h2>
         </Person>
         <Person
-          name={this.personsState.persons[2].name}
-          number={this.personsState.persons[2].number}
-          click={this.switchNameHander.bind(this, 'Yağmur Kınıcı')}
+          name={this.state.persons[2].name}
+          number={this.state.persons[2].number}
+          click={this.switchNameHandler.bind(this, 'Yağmur Kınıcı')}
         ></Person>
       </div>
     );
