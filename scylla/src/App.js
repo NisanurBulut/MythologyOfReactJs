@@ -114,8 +114,10 @@ class App extends Component {
       );
       btnStyle.backgroundColor = 'red';
     }
+    let classes = ['red','bold'].join(' ');
     return (
       <div className="App">
+        <h1 className={classes}>Hi ! Im React App</h1>
         <div>
           <input
             type="text"

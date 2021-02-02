@@ -8,3 +8,7 @@
 <li>State’de bir değişiklik yapmak istediğimizde render() metodu çalışır ve component render edilir. </li>
 </ul>
 <b>*</b> Bir component oluşturulduğunda state başlatılmalıdır ve state’ler sadece ve sadece ‘<b>setState()</b>‘ fonksiyonu ile güncellebilir.</p>
+
+* Understanding the Base Features & Syntax
+* Working with Lists and Conditionals
+* Styling React Components & Elements
