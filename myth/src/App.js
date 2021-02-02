@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <nav className="header">
-        <NavLink to={"/"}></NavLink>
+        <NavLink to={"/"}><b>Search</b></NavLink>
       </nav>
       <Switch>
         <Route path={'/'} exact component={MythList} />

@@ -105,9 +105,15 @@ Zeus is the god of the sky, lightning and the thunder in Ancient Greek religion 
 <br>
 <hr>
 
+11. <b>Myth</b> <br>
+Myth is an application that introduces mythological creatures. The use of Redux pattern with Reactjs is demonstrated. Axios library was used with the help of json-server and data reading was done. React-Pagination is used.
+
+![App-Myth](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Myth.gif)
+<br>
+<hr>
 ### Helpfull Websites
 
 [uidesigndaily](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
 [Devto](https://dev.to/) [popmotion](https://popmotion.io) [json-server](https://github.com/typicode/json-server)
 [unsplash](https://unsplash.com/) [webgradients](https://webgradients.com/) [edamam api](https://developer.edamam.com/)
- [values.js](https://github.com/noeldelgado/values.js) [covid-19 api](https://api.covid19api.com/) [api.weatherstack](http://api.weatherstack.com) [Gif resize](https://ezgif.com/resize) [ReactJs Turkish Library](https://github.com/omergulcicek/react) [ReactJs Articles](https://www.ninjakod.com/category/genel/reactjs/)
+ [values.js](https://github.com/noeldelgado/values.js) [covid-19 api](https://api.covid19api.com/) [api.weatherstack](http://api.weatherstack.com) [Gif resize](https://ezgif.com/resize) [ReactJs Turkish Library](https://github.com/omergulcicek/react) [ReactJs Articles](https://www.ninjakod.com/category/genel/reactjs/) [ReactJs-Redux Application](https://youtu.be/GbAENvrGbDo)
