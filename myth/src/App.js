@@ -5,7 +5,7 @@ import MythList from './containers/MythList';
 function App() {
   return (
     <div className="App">
-      <nav>
+      <nav className="header">
         <NavLink to={"/"}>Search</NavLink>
       </nav>
       <Switch>

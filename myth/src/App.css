@@ -5,16 +5,37 @@ p {
   margin: 0;
   padding: 0;
 }
-nav {
+.header {
   display: flex;
-  width: 100vh;
-  justify-content: end;
+  width: 100%;
+  justify-content: flex-end;
   height: 60px;
   background-color: rgba(165, 42, 42, 0.76);
   align-items: center;
-  color:#fff !important;
+  color: #fff !important;
 }
-a{
-  color:#fff !important;
+.header a {
+  margin-right: 50px;
+  color: #fff !important;
+  text-decoration: none;
+}
+.list-wrapper {
+  width: 90%;
+  margin: auto;
+}
 
+.list-wrapper .myth-item{
+  margin : 10px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(165, 42, 42, 0.76);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.list-wrapper a {
+  text-decoration: none;
+  color:brown;
+  font-weight: bold;
 }
