@@ -2,7 +2,7 @@ const DefaultState = {
   loading: false,
   data: [],
   errorMessage: '',
-  count:0
+  count:20
 };
 
 const MythListReducer = (state = DefaultState, action) => {
@@ -19,7 +19,7 @@ const MythListReducer = (state = DefaultState, action) => {
         loading: false,
         data: action.payload,
         errorMessage: "",
-        count:action.payload.count
+        count:20
       };
     case "MYTH_LIST_LOADING_FAIL":
       return {
