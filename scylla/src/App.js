@@ -1,6 +1,7 @@
 import Person from './completeGuide/Person/Person';
 import './App.css';
 import React, { Component } from 'react';
+import Radium from 'radium';
 import UserInput from './completeGuide/UserInput/UserInput';
 import UserOutput from './completeGuide/UserOutput/UserOutput';
 import Validation from './completeGuide/Validation/Validation';
@@ -92,6 +93,10 @@ class App extends Component {
       margin: '8px',
       cursor: 'pointer',
       outline: 'none',
+      ':hover':{
+        backgroundColor:'lightgreen',
+        color:'black'
+      }
     };
     let persons = null;
     if (this.state.showPersons) {
@@ -113,6 +118,10 @@ class App extends Component {
         </div>
       );
       btnStyle.backgroundColor = 'red';
+      btnStyle[':hover']={
+        backgroundColor:'lightred',
+        color:'black'
+      }
     }
     let classes = ['red','bold'].join(' ');
     return (
@@ -144,4 +153,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Radium(App);
