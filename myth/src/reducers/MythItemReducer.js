@@ -26,6 +26,8 @@ const MythItemReducer = (state = DefaultState, action) => {
         errorMessage: action.payload,
       };
     default:
-      break;
+     return state;
   }
 };
+
+export default MythItemReducer;

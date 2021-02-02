@@ -24,7 +24,7 @@ const MythList = () => {
             return (
                 <div key={item.name} className="myth-item">
                     <p>{item.name}</p>
-                    <Link to={`/mytlist/${item.name}`}>View</Link>
+                    <Link to={`/myth/${item.name}`}>View</Link>
                 </div>
             )
           })
