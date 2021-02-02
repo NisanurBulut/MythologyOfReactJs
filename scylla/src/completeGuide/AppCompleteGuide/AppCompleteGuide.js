@@ -1,14 +1,14 @@
-import Person from '../Person/Person'
+import Person from '../Person/Person';
 import './AppCompleteGuide.css';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import UserInput from '../UserInput/UserInput';
 import UserOutput from '../UserOutput/UserOutput';
 import Validation from '../Validation/Validation';
-import Char from '../Char/Char'
+import Char from '../Char/Char';
 
 const StyledButton = styled.button`
-      background-color: green;
+      background-color: ${(props) => (props.alt ? 'red' : 'green')};
       color: white;
       border: 1px solid black;
       font: inherit;
@@ -18,8 +18,8 @@ const StyledButton = styled.button`
       outline: 'none;
 
       &:hover {
-        background-color: lightgreen,
-        color: black,
+        background-color: ${(props) => (props.alt ? 'salmon' : 'lightgreen')};
+        color: black;
       }
       `;
 
@@ -121,34 +121,36 @@ class AppCompleteGuide extends Component {
           })}
         </div>
       );
-
     }
     let classes = ['red', 'bold'].join(' ');
     return (
-        <div className="App">
-          <h1 className={classes}>Hi ! Im React App</h1>
-          <div>
-            <input
-              type="text"
-              onChange={(event) => this.inputChangeHandler(event)}
-              value={this.state.userInput}
-            />
-            <p>{this.state.userInput}</p>
-            <Validation inputLength={this.state.userInput.length} />
-            {charList}
-          </div>
-          <div>
-            <UserInput
-              changed={this.userNameChangeEventHandler}
-              currentName={this.state.userName}
-            />
-            <UserOutput userName={this.state.userName} />
-          </div>
-          <StyledButton onClick={() => this.togglePersonsHandler()}>
-            Toggle Persons
-          </StyledButton>
-          {persons}
+      <div className="App">
+        <h1 className={classes}>Hi ! Im React App</h1>
+        <div>
+          <input
+            type="text"
+            onChange={(event) => this.inputChangeHandler(event)}
+            value={this.state.userInput}
+          />
+          <p>{this.state.userInput}</p>
+          <Validation inputLength={this.state.userInput.length} />
+          {charList}
         </div>
+        <div>
+          <UserInput
+            changed={this.userNameChangeEventHandler}
+            currentName={this.state.userName}
+          />
+          <UserOutput userName={this.state.userName} />
+        </div>
+        <StyledButton
+          alt={this.state.showPersons}
+          onClick={() => this.togglePersonsHandler()}
+        >
+          Toggle Persons
+        </StyledButton>
+        {persons}
+      </div>
     );
   }
 }
