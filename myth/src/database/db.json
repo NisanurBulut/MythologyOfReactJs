@@ -3,7 +3,12 @@
         {
             "name":"Satir",
             "description":"Satirler, Yunan mitolojisinde yer alan yarı keçi yarı insan kır ve orman koruyucularıdır. Gövdelerinin  belden  üstü  insan,  belden  aşağısı  ise teke  biçimindedir.  Satirler  çoğunlukla ellerindeki flüt ile birlikte tasvir edilir.",
-            "imagePath":"http://apelasyon.com/img/userfiles/images/satir.jpg"
+            "imagePath":"https://i.pinimg.com/564x/97/30/da/9730daf78bb62a4ce1a08a815542b270.jpg"
+        },
+        {
+            "name":"Sentor",
+            "description":"Sentorlar  Yunan  mitolojisinde  kısmen  insan ve  kısmen  at  görünümlü  yaratıklardır. Yarı insan ve yarı bedenli düşsel varlıktır. Genellikle kaba ve kötü yaratıklar olarak bilinirler. Sentorun sureti görenlere çok farklı ve ürkütücü gelmektedir. Yunan mitolojisinde sentorlar savaşçı, savaş yetenekleri gelişmiş, güçlü yaratıklar olarak tasvir edilmiştir. ",
+            "imagePath":"https://i.pinimg.com/564x/d9/ae/32/d9ae32106c8626e1461f51694dddc990.jpg"
         },
         {
             "name":"Nemf (Nymphe)",
@@ -49,11 +54,6 @@
             "name":"Simurg-Phoenix",
             "description":"Simurg: Simurg veya  bir diğer  ismiyle  Zümrüdü Anka efsanevi  bir kuştur, tektir, erkektir. Pers  mitolojisi  kaynaklı  olsa  da  zamanla  diğer  Doğu  mitoloji  ve  efsanelerinde  de  yer edinmiştir.  Ayrıca  çoğu  zaman  sadece  “Anka”  olarak anılmıştır.  Halk  etimolojisinde ilişkilendirilen ilk öğe Farsça sī otuzdur. Bu kuşun küllerinden yeniden doğduğu söylenir,  yeniden doğuşun sembolüdür. Mistik kuş Simurg Fars sanatında kuş şeklinde, kanatlı dev bir yaratık olarak resmedilmiştir. Bir  antik  İran  tanımında  Simurgun  ölümsüz  olduğu, Bilgi  Ağacında(Yaşam  ağacı, Gaokerenada) bir yuvası olduğundan bahsedilmiştir. Tüm bu zaman boyunca, Simurg o kadar çok  öğrenmiştir  ki  tüm  zamanların  bilgisine  sahip  olmuştur.  Simurg un  yere  bereket bahşedeceğine ve dünya ile göğün arasındaki birliği sağlayacağına inanılır. Simurg ilahiliğin bir  sembolü  haline  gelmiştir.  Temelde  Tanrı’nın  yeryüzündeki  cisimlenmiş  yüzüdür. İyiliksever bir doğası olduğu ve kanatlarının bir dokunuşunun her türlü hastalık veya yarayı tedavi edeceğine inanılır. ",
             "imagePath":"https://i.pinimg.com/564x/ea/63/58/ea63580405272867edb5bb330b0bef23.jpg"
-        },
-        {
-            "name":"Sentor",
-            "description":"Sentorlar  Yunan  mitolojisinde  kısmen  insan ve  kısmen  at  görünümlü  yaratıklardır. Yarı insan ve yarı bedenli düşsel varlıktır. Genellikle kaba ve kötü yaratıklar olarak bilinirler. Sentorun sureti görenlere çok farklı ve ürkütücü gelmektedir. Yunan mitolojisinde sentorlar savaşçı, savaş yetenekleri gelişmiş, güçlü yaratıklar olarak tasvir edilmiştir. ",
-            "imagePath":"https://i.pinimg.com/564x/d9/ae/32/d9ae32106c8626e1461f51694dddc990.jpg"
         },
         {
             "name":"Griffon",
