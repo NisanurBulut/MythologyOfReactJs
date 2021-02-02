@@ -30,7 +30,7 @@ export const GetMyth = (myth) => async (dispathch) => {
       type: 'MYTH_ITEM_LOADING',
     });
     const res = await axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${myth}`)
+      .get(`http://localhost:3000/mythItems?name=${myth}`)
       .then((respo) => {
         return respo;
       });

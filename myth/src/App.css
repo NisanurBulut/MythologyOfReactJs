@@ -48,13 +48,15 @@ html, body {
 }
 
 .myth-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  width: 75%;
+  margin: auto;
 }
 
 .myth-wrapper .item {
+  margin: 10px 0px;
   width: 30%;
+  display: flex;
+  justify-content: center;
 }
 
 .search-wrapper {
