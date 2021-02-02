@@ -72,13 +72,18 @@ html, body {
 }
 .search-wrapper {
   display: flex;
-  width: 100% !important;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+}
+.search-wrapper input{
   outline: none;
 }
-
+.search-wrapper button{
+  outline: none;
+  background-color: #4bca89;
+  color:#fff;
+}
 .pagination {
   width: 30%;
   display: flex;
