@@ -25,3 +25,25 @@ export const GetMythList = (page) => async (dispathch) => {
     });
   }
 };
+export const GetMyth = (myth) => async (dispathch) => {
+  try {
+    dispathch({
+      type: 'MYTH_ITEM_LOADING',
+    });
+    const res = await axios
+      .get(`https://pokeapi.co/api/v2/pokemon/${myth}`)
+      .then((respo) => {
+        return respo;
+      });
+    dispathch({
+      type: 'MYTH_ITEM_LOADING_SUCCESS',
+      payload: res.data,
+      mythName: myth,
+    });
+  } catch (ex) {
+    dispathch({
+      type: 'MYTH_ITEM_LOADING_FAIL',
+      payload: e.Message,
+    });
+  }
+};
