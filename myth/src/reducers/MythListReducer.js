@@ -5,7 +5,7 @@ const DefaultState = {
   count:0
 };
 
-const MythlistReducer = (state = DefaultState, action) => {
+const MythListReducer = (state = DefaultState, action) => {
   switch (action.type) {
     case  "MYTH_LIST_LOADING":
       return {
@@ -32,4 +32,4 @@ const MythlistReducer = (state = DefaultState, action) => {
       return state;
   }
 };
-export default MythlistReducer;
+export default MythListReducer;

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import _ from 'lodash';
 import { GetMythList } from '../actions/MythActions';
 import { Link } from 'react-router-dom';
+
 const MythList = () => {
   const dispatch = useDispatch();
   const mythList = useSelector((state) => state.MythList);

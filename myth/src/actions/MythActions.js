@@ -43,7 +43,7 @@ export const GetMyth = (myth) => async (dispathch) => {
   } catch (ex) {
     dispathch({
       type: 'MYTH_ITEM_LOADING_FAIL',
-      payload: e.Message,
+      payload: ex.Message,
     });
   }
 };
