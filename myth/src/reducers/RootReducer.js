@@ -1,3 +1,6 @@
 import { combineReducers } from 'redux';
-const RootReducer = combineReducers({});
+import MythListReducer from './MythListReducer';
+const RootReducer = combineReducers({
+    MythListRed:MythListReducer
+});
 export default RootReducer;
