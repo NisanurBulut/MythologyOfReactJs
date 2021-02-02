@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import './Person.css';
 
-const personDivStyle=styled.div`
+const PersonDivStyle=styled.div`
     width: 60%;
     margin: auto;
     border: 1px solid #eee;
@@ -15,11 +15,11 @@ const personDivStyle=styled.div`
   } `;
 const Person =(props) => {
    return(
-   <personDivStyle>
+   <PersonDivStyle>
        <h1 onClick={props.click}>I'm {props.name} && I love numbers for example : {props.number}</h1>
        <p>{props.children}</p>
        <input type="text" onChange={props.changed} value={props.name} />
-   </personDivStyle>
+   </PersonDivStyle>
    );
 }
 export default Person;

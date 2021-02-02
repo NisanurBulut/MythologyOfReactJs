@@ -1,11 +1,28 @@
 import Person from '../Person/Person'
 import './AppCompleteGuide.css';
 import React, { Component } from 'react';
-import Radium, { StyleRoot } from 'radium';
+import styled from 'styled-components';
 import UserInput from '../UserInput/UserInput';
 import UserOutput from '../UserOutput/UserOutput';
 import Validation from '../Validation/Validation';
 import Char from '../Char/Char'
+
+const StyledButton = styled.button`
+      background-color: green;
+      color: white;
+      border: 1px solid black;
+      font: inherit;
+      padding: 8px;
+      margin: 8px;
+      cursor: pointer;
+      outline: 'none;
+
+      &:hover {
+        background-color: lightgreen,
+        color: black,
+      }
+      `;
+
 class AppCompleteGuide extends Component {
   // her zaman iki eleman döner
   // modern reactjs showing destructiong
@@ -84,20 +101,7 @@ class AppCompleteGuide extends Component {
         />
       );
     });
-    const btnStyle = {
-      backgroundColor: 'green',
-      color: 'white',
-      border: '1px solid black',
-      font: 'inherit',
-      padding: '8px',
-      margin: '8px',
-      cursor: 'pointer',
-      outline: 'none',
-      ':hover': {
-        backgroundColor: 'lightgreen',
-        color: 'black',
-      },
-    };
+
     let persons = null;
     if (this.state.showPersons) {
       persons = (
@@ -117,15 +121,10 @@ class AppCompleteGuide extends Component {
           })}
         </div>
       );
-      btnStyle.backgroundColor = 'red';
-      btnStyle[':hover'] = {
-        backgroundColor: 'lightred',
-        color: 'black',
-      };
+
     }
     let classes = ['red', 'bold'].join(' ');
     return (
-      <StyleRoot>
         <div className="App">
           <h1 className={classes}>Hi ! Im React App</h1>
           <div>
@@ -145,14 +144,13 @@ class AppCompleteGuide extends Component {
             />
             <UserOutput userName={this.state.userName} />
           </div>
-          <button style={btnStyle} onClick={() => this.togglePersonsHandler()}>
+          <StyledButton onClick={() => this.togglePersonsHandler()}>
             Toggle Persons
-          </button>
+          </StyledButton>
           {persons}
         </div>
-      </StyleRoot>
     );
   }
 }
 
-export default Radium(AppCompleteGuide);
+export default AppCompleteGuide;
