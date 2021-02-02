@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import MythListReducer from './MythListReducer';
 const RootReducer = combineReducers({
-    MythListRed:MythListReducer
+    MythList:MythListReducer
 });
 export default RootReducer;

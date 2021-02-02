@@ -2,24 +2,27 @@ const DefaultState = {
   loading: false,
   data: [],
   errorMessage: '',
+  count:0
 };
 
 const MythlistReducer = (state = DefaultState, action) => {
   switch (action.type) {
-    case 'MYTH_LIST_LOADING':
+    case  "MYTH_LIST_LOADING":
       return {
         ...state,
         loading: true,
-        errorMessage: '',
+        errorMessage: "",
       };
-    case 'MYTH_LIST_LOADING_SUCCESS':
+    case "MYTH_LIST_LOADING_SUCCESS":
+      console.log(action.payload);
       return {
         ...state,
         loading: false,
-        data: action.payload,
-        errorMessage: '',
+        data: action.payload.results,
+        errorMessage: "",
+        count:action.payload.count
       };
-    case 'MYTH_LIST_LOADING_FAIL':
+    case "MYTH_LIST_LOADING_FAIL":
       return {
         ...state,
         loading: false,
