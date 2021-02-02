@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import _ from 'lodash';
 import { GetMythList } from '../actions/MythActions';
 import { Link } from 'react-router-dom';
 
-const MythList = () => {
+const MythList = (props) => {
+  const [search, setSearch]=useState("");
   const dispatch = useDispatch();
   const mythList = useSelector((state) => state.MythList);
 
@@ -40,7 +41,13 @@ const MythList = () => {
     }
     return <p>unable to data</p>;
   };
-  return <div>{showData()}</div>;
+  return <div>
+    <div className="search-wrapper">
+      <p>Search</p>
+      <input type="text" onChange={(e)=>setSearch(e.target.value)}/>
+      <button onClick={()=>props.history.push(`/myth/${search}`)}>Search</button>
+    </div>
+    {showData()}</div>;
 };
 
 export default MythList;
