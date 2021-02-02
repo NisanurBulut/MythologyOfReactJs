@@ -39,3 +39,30 @@ p {
   color:brown;
   font-weight: bold;
 }
+
+.myth-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.myth-wrapper .item {
+  width: 30%;
+}
+
+.search-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination {
+  width: 500px;
+  display: flex;
+  margin: auto;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
