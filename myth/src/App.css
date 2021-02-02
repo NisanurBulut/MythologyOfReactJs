@@ -4,9 +4,10 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #eacda3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #A1FFCE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .App{
 
@@ -48,17 +49,27 @@ html, body {
 }
 
 .myth-wrapper {
-  width: 75%;
   margin: auto;
+  width: 75%;
+  font-style: oblique !important;
 }
-
+.myth-wrapper img {
+ width: 350px;
+ height: 300px;
+ border-radius: 5px;
+}
 .myth-wrapper .item {
-  margin: 10px 0px;
-  width: 30%;
+  margin: 20px 0px;
   display: flex;
   justify-content: center;
+   color:#b62d1e;
 }
-
+.myth-wrapper .mythItemHeader{
+  text-align: center;
+  font-family: fantasy;
+  color:#b62d1e;
+  padding-top:20px;
+}
 .search-wrapper {
   display: flex;
   width: 100% !important;

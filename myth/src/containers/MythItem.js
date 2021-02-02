@@ -18,7 +18,9 @@ const MythItem = (props) => {
       console.log(mythItemData);
       return(
         <div className={"myth-wrapper"}>
+          <div className="mythItemHeader">
            <h1>{mythItemName}</h1>
+          </div>
           <div className={"item"}>
             <img src={mythItemData.imagePath} alt=""/>
           </div>
