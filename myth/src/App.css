@@ -1,9 +1,15 @@
 * {
   box-sizing: border-box;
 }
-p {
+html, body {
   margin: 0;
   padding: 0;
+  background: #eacda3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.App{
+
 }
 .header {
   display: flex;
@@ -20,8 +26,9 @@ p {
   text-decoration: none;
 }
 .list-wrapper {
-  width: 90%;
+  width: 75%;
   margin: auto;
+  font-weight: bold;
 }
 
 .list-wrapper .myth-item{
@@ -29,7 +36,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid rgba(165, 42, 42, 0.76);
+  border: 2px solid rgba(165, 42, 42, 0.76);
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -52,19 +59,20 @@ p {
 
 .search-wrapper {
   display: flex;
-  width: 100%;
+  width: 100% !important;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+  outline: none;
 }
 
 .pagination {
-  width: 500px;
+  width: 30%;
   display: flex;
   margin: auto;
   list-style: none;
   justify-content: space-between;
   padding: 0;
   cursor: pointer;
-  outline: none;
+  outline: none !important;
 }
