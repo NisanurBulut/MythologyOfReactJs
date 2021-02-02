@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import _ from 'lodash';
 import { GetMythList } from '../actions/MythActions';
 import { Link } from 'react-router-dom';
+import ReactPaginate from "react-paginate";
 
 const MythList = (props) => {
   const [search, setSearch]=useState("");
@@ -43,11 +44,22 @@ const MythList = (props) => {
   };
   return <div>
     <div className="search-wrapper">
-      <p>Search</p>
       <input type="text" onChange={(e)=>setSearch(e.target.value)}/>
       <button onClick={()=>props.history.push(`/myth/${search}`)}>Search</button>
     </div>
-    {showData()}</div>;
+    {showData()}
+    {
+      !_.isEmpty(mythList.data) && (
+        <ReactPaginate
+          pageCount={Math.ceil(mythList.count / 15)}
+          pageRangeDisplayed={2}
+          marginPagesDisplayed={1}
+          onPageChange={(data) => fetchData(data.selected + 1)}
+          containerClassName={"pagination"}
+        ></ReactPaginate>
+      )
+    }
+    </div>;
 };
 
 export default MythList;
