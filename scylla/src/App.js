@@ -1,7 +1,7 @@
 import Person from './completeGuide/Person/Person';
 import './App.css';
 import React, { Component } from 'react';
-import Radium from 'radium';
+import Radium, { StyleRoot } from 'radium';
 import UserInput from './completeGuide/UserInput/UserInput';
 import UserOutput from './completeGuide/UserOutput/UserOutput';
 import Validation from './completeGuide/Validation/Validation';
@@ -93,10 +93,10 @@ class App extends Component {
       margin: '8px',
       cursor: 'pointer',
       outline: 'none',
-      ':hover':{
-        backgroundColor:'lightgreen',
-        color:'black'
-      }
+      ':hover': {
+        backgroundColor: 'lightgreen',
+        color: 'black',
+      },
     };
     let persons = null;
     if (this.state.showPersons) {
@@ -118,37 +118,39 @@ class App extends Component {
         </div>
       );
       btnStyle.backgroundColor = 'red';
-      btnStyle[':hover']={
-        backgroundColor:'lightred',
-        color:'black'
-      }
+      btnStyle[':hover'] = {
+        backgroundColor: 'lightred',
+        color: 'black',
+      };
     }
-    let classes = ['red','bold'].join(' ');
+    let classes = ['red', 'bold'].join(' ');
     return (
-      <div className="App">
-        <h1 className={classes}>Hi ! Im React App</h1>
-        <div>
-          <input
-            type="text"
-            onChange={(event) => this.inputChangeHandler(event)}
-            value={this.state.userInput}
-          />
-          <p>{this.state.userInput}</p>
-          <Validation inputLength={this.state.userInput.length} />
-          {charList}
+      <StyleRoot>
+        <div className="App">
+          <h1 className={classes}>Hi ! Im React App</h1>
+          <div>
+            <input
+              type="text"
+              onChange={(event) => this.inputChangeHandler(event)}
+              value={this.state.userInput}
+            />
+            <p>{this.state.userInput}</p>
+            <Validation inputLength={this.state.userInput.length} />
+            {charList}
+          </div>
+          <div>
+            <UserInput
+              changed={this.userNameChangeEventHandler}
+              currentName={this.state.userName}
+            />
+            <UserOutput userName={this.state.userName} />
+          </div>
+          <button style={btnStyle} onClick={() => this.togglePersonsHandler()}>
+            Toggle Persons
+          </button>
+          {persons}
         </div>
-        <div>
-          <UserInput
-            changed={this.userNameChangeEventHandler}
-            currentName={this.state.userName}
-          />
-          <UserOutput userName={this.state.userName} />
-        </div>
-        <button style={btnStyle} onClick={() => this.togglePersonsHandler()}>
-          Toggle Persons
-        </button>
-        {persons}
-      </div>
+      </StyleRoot>
     );
   }
 }
