@@ -14,11 +14,10 @@ const MythListReducer = (state = DefaultState, action) => {
         errorMessage: "",
       };
     case "MYTH_LIST_LOADING_SUCCESS":
-      console.log(action.payload);
       return {
         ...state,
         loading: false,
-        data: action.payload.results,
+        data: action.payload,
         errorMessage: "",
         count:action.payload.count
       };

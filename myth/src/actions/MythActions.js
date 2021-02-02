@@ -6,17 +6,19 @@ export const GetMythList = (page) => async (dispathch) => {
     });
 
     const perPage = 15;
+    debugger;
     const offset = page * perPage - perPage; // 1=0 2=30 => (2*15)-15
-
+    const indexOfLastTodo = page * perPage;
+    const indexOfFirstTodo = indexOfLastTodo - perPage;
     const res = await axios
-      .get(`https://pokeapi.co/api/v2/pokemon?limit=5&offset=${offset}`)
+      .get('http://localhost:3000/mythItems')
       .then((respo) => {
         return respo;
       });
-
+      console.log(res);
     dispathch({
       type: 'MYTH_LIST_LOADING_SUCCESS',
-      payload: res.data,
+      payload: res.data.slice(indexOfFirstTodo, indexOfLastTodo),
     });
   } catch (e) {
     dispathch({

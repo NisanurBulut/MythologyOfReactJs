@@ -19,10 +19,12 @@ const MythList = (props) => {
   };
 
   const showData = () => {
+    console.log(mythList)
     if (!_.isEmpty(mythList.data)) {
       return (
         <div className="list-wrapper">
           { mythList.data.map((item) => {
+            console.log(item);
             return (
                 <div key={item.name} className="myth-item">
                     <p>{item.name}</p>
@@ -49,9 +51,10 @@ const MythList = (props) => {
     </div>
     {showData()}
     {
+
       !_.isEmpty(mythList.data) && (
         <ReactPaginate
-          pageCount={Math.ceil(mythList.count / 15)}
+          pageCount={Math.ceil(mythList.data.length / 15)}
           pageRangeDisplayed={2}
           marginPagesDisplayed={1}
           onPageChange={(data) => fetchData(data.selected + 1)}
