@@ -108,31 +108,31 @@
         "propertiesandsymbols": "mızrak,kalkan,domuz"
       },
       {
-        "name": "",
+        "name": "Calypso",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
-        "power":"",
-        "propertiesandsymbols": ""
+        "description": "Calypso, Odysseus'a aşık olan ve onu yedi yıl adasında tutan tanrıça denizidir. Genellikle bir yunus veya yengeç ile tasvir edilmiştir. Titan Atlas'ın kızı Calypso ünlü güzellikteki bir tanrıçadır. Poseidon ile birlikte denizleri kontrol etti ve öfkesinin dalgalar kadar öngörülebilir olmadığı iyi biliniyordu. Homeros'un epik şiiri The Odyssey'de , Odysseus tüm adamlarını kaybetmesinden kısa bir süre sonra Ogygia adasında yere indi. Onu güzel ada mağara evlerine götürdü ve derhal ona aşık oldu. Müziği ve şarkısı ile tanınmıştı ve onu adada yedi yıldır büyülemek için kullandı.",
+        "parents": "Atlas ve Pleione",
+        "myth": "Odyssey",
+        "power":"Deniz",
+        "propertiesandsymbols": "Yunus ve Yengeç"
       },
       {
-        "name": "",
+        "name": "Midas",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
-        "power":"",
-        "propertiesandsymbols": ""
+        "description": "Phrygia Kralı Midas, dokunduğu her şeyi altın haline getirebilme yeteneği ile tanınır. Ne yazık ki, bu hediye onun için çok hızlı bir lanet haline geldi.Kral Midas, altını seven ve zenginliğin yalnızca kralların elinde olması gerektiğine inanan zengin bir kraldı.",
+        "parents": "Gordias ve Cybele",
+        "myth": "Kral Midas ve Altın Dokunuş",
+        "power":"Dokunduğu her şeyi altın haline getirebilme yeteneği",
+        "propertiesandsymbols": "Altın, Eşek kulakları"
       },
       {
-        "name": "",
+        "name": "Loki",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
-        "power":"",
-        "propertiesandsymbols": ""
+        "description": "Loki, aldatmacanın, aldatmacanın ve şekil değiştirmenin tanrısıdır. Görünümü genellikle ürpertici ve örümcek benzeri bir görünümdedir ve genellikle bir balık ağacı veya bir düğüm ile tasvir edilmiştir.Loki, dev bir Fárbauti oğlu ve tanımlanmamış ilahi bir kadın olan Laufey'in oğluydu. Sigyn'la evlendi, fakat Angrböda adında bir devasa çocuğa sahip olan ve üç dehşet yaratan yavruları üreten birinin de bulunduğu çok sayıda iş vardı: Hel, yeraltı dünyasının tanrıçası; Dev deniz yılanı Jörmungand; Ve Fenrir, korkunç kurt. Loki, çevrelerindeki kişileri aldatmak ve belaya neden olmak için sürekli hile kullanan bir şekil değiştireniydi.",
+        "parents": "Fárbauti ve Laufey",
+        "myth": "Baldur'un Ölümü,Sleipnir'in Yaratılışı,Loki Sif'in saçını kesiyor",
+        "power":"hile,aldatma,şekil değiştirme",
+        "propertiesandsymbols": "balık ağı,ağ,Örümcek benzeri gövde"
       },
       {
         "name": "",
