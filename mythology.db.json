@@ -135,103 +135,103 @@
         "propertiesandsymbols": "balık ağı,ağ,Örümcek benzeri gövde"
       },
       {
-        "name": "",
+        "name": "Scylla",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
+        "description": "Scylla, girdap Charybdis'in karşısında bir boğazda yaşayan altı kafalı canavar. Scylla birçok kafasını bir gemiye bükerek onu geçip geçmeye çalıştıkça üzerindeki adamları yiyor.",
+        "parents": "Phorcys ve Hecate",
+        "myth": "Odyssey,Jason ve Medea",
         "power":"",
-        "propertiesandsymbols": ""
+        "propertiesandsymbols": "Bazen on iki bacak ile tasvir edilen altı başlı serpantin bir canavar"
       },
       {
-        "name": "",
+        "name": "Poseidon",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
-        "power":"",
-        "propertiesandsymbols": ""
+        "description": "Poseidon, denizin, depremlerin ve atların tanrısıdır. Genellikle üçlü çatal ve atlarıyla temsil edilir.Poseidon, Rhea ve Cronos'un çocuklarından biriydi ve kardeşleri ile amcaları babasını devirmesine yardımcı oldu. Savaş bittikten sonra, Zeus ve Hades, her bir tanrı'nın hangi alemin hakim olacağını görmek için zar attılar. Zeus gökyüzü seçti ve Poseidon deniz seçti.",
+        "parents": "Cronos ve Rhea",
+        "myth": "Cronos'u devirmek,Athena ile Atina için yarış,Odyssey'deki ana engel",
+        "power":"Deniz,Depremler,Atlar",
+        "propertiesandsymbols": "üç dişli mızrak,At"
       },
       {
-        "name": "",
+        "name": "Perseus",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
+        "description": "Perseus, büyükbabası King Acrisius'un torununun öldürmesini öngören bir kehanet öğrenip annesi Danae'yi pirinç bir kulede kilitledikten sonra doğdu. Danae geceleri Zeus tarafından ziyaret edildi ve yakında hamile kaldı. Kralın Acrisius, Perseus'un doğumundan sonra, Danae'yi, okyanusta onu ayakta tutarak tanrıların korunduğunu test etmeye karar verdi. Güvenilir bir şekilde döndüyse, korunmuştu. Bunun yerine, o ve Perseus bir denizci tarafından bulundu ve Kral Polydectes'e getirildi.Perseus, Danae ve Zeus'un oğludur ve Medusa'yı öldürerek ve annesini Kral Polydectes'den kurtararak adını bilinir hale getirir.",
+        "parents": "Zeus ve Danae",
+        "myth": "Pirinç kulede doğum,Medusa'nın kafası,Andromeda'yı kurtarmak",
         "power":"",
-        "propertiesandsymbols": ""
+        "propertiesandsymbols": "Medusa'nın kafası,kanatlı sandaletler,ay kılıcı"
       },
       {
-        "name": "",
+        "name": "Selene",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
-        "power":"",
-        "propertiesandsymbols": ""
+        "description": "Selene ayın fiziksel düzenlemesidir ve onu iki beyaz atıyla ve arabasıyla gece göğünde sürer.Selene, Hyperion ve Theia'nın kızı ve Helios (güneş) ve Eos (şafak) kız kardeşiydi. O ayın fiziksel şekli olarak düşünülmüştü ve her gece iki saf beyaz atın çektiği gümüş arabasıyla gökyüzüne götürüyordu.Endymion adında dünyevi bir prense aşıktı. Zeus ona bir ültimatom verdi: ölüme ya da yaşlanmaya karşı güvenli sonsuz bir uykuyu ölebilir ya da kayabilir. Endymion en sonuncuyu seçti, bu yüzden her gece Selene, uyku sevgilisiyle birlikte olmak için ayı arabasıyla gizlice sokacaktı.",
+        "parents": "Hyperion ve Theia",
+        "myth": "Ay'ın gökyüzünün geçişi,Endymion",
+        "power":"Ay",
+        "propertiesandsymbols": "Ayın ayı, beyaz atlar gümüş arabayı çekerek"
       },
       {
-        "name": "",
+        "name": "Uranüs",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
+        "description": "Uranüs gökyüzünün tanrısıdır ve her yaratılışın annesi olan Gaea'nın kocası ve oğludur. Ueanus, Gaea ve Kaos'un oğluydu ve Gaea'nın kocasıydı. Birlikte, Cronos da dahil olmak üzere birçok çocuğu oldu. Bununla birlikte, Uranüs Cyclopes ve Hecatonchires'ın bakışları tarafından çok dehşete düşürüldü ve onları Gaea'nın rahminde, ardından da Tartarus'a hapsetti. Gaea, oğlu Cronos'u diğer çocuklarını özgürleştirebilmek için Uranüs'ü devirmeye ikna etti. Cronos, ölmekte olan nefesini kullanan Uranüs'ü kastetti ve öldürdü; Cronos'un yükselip kendisini de deviren bir çocuğu olacağına dair kehanette bulundu.Cronos, bu kehanet hakkında o kadar paranoyaktı ki, Rhea'nın kınalı bir battaniyede bir kaya çıkardığı en küçüğü Zeus hariç tüm çocuklarını yuttu. Olympus'a dönüp babasını devirene kadar Zeus'u bir aileyle birlikte yeryüzünde sakladı.",
+        "parents": "Gaea ve Kaos",
+        "myth": "Gaea'ya evlenme,Cronos tarafından devir,Afrodit'in doğuşu",
         "power":"",
-        "propertiesandsymbols": ""
+        "propertiesandsymbols": "Gökyüzü tanrısı"
       },
       {
-        "name": "",
+        "name": "Thor",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
-        "power":"",
-        "propertiesandsymbols": ""
+        "description": "Thor, Odin ve Fjorgyn oğluydı ve muhtemelen Marvel çizgi roman ve filmlerde görünmesi nedeniyle Norveç tanrılarının en tanınmıştı. Karısı doğurganlığın tanrıçası Sif'ti. Kırmızı sakallı tanrı, kozmos boyunca keçi arabasına bindi, devlerini Mjölnir çekiçiyle savaşırken ve cesaretini ve cesaretini ispatlamak için araştırmalara devam ediyordu.",
+        "parents": "Odin ve Fjorgyn",
+        "myth": "Thor'un çekiç hırsızlığı,Loki'nin Bağlanması,Büyük Serpent Jörmungand",
+        "power":"gökyüzü,gök gürültüsü,şifa,kutsama",
+        "propertiesandsymbols": "Mjölnir, çekiçini,Keçi tarafından yönlendirilen araba,Kask, demir eldiven ve kemer"
       },
       {
-        "name": "",
+        "name": "Medea",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
+        "description": "Medea, Jason'a ve Argonotlara Golden Fleece bulmada yardımcı olmaya gönderildi. Daha sonra Kral Egeus'la evlenir ve Theseus'u onu öldürmek için görevlere gönderir.Görevinde ona yardım etmek için Hera, Medea'yı Colchis'e geldiğinde Jason'la buluşması için gönderdi. Jason ve Medea, postunu elde etmek için üç görev tamamladılar: toprağı ateş nefesli öküzlerle sürdüler, ejderha dişlerini ekti ve emeklerinden çıkan bir toprak adamı ordusunu mağlup etti. Sonunda, keçiyi koruyan ejderhayı uyutmak için Medea tarafından sağlanan bir iksir kullandı ve keçeyi yakaladılar ve Colchis'ten kaçtılar.",
+        "parents": "Kral Aeetes ve Colchis'in Idyası",
+        "myth": "Altın Altıktakı,Jason'ın İhaneti,Theseus ve Medea",
         "power":"",
-        "propertiesandsymbols": ""
+        "propertiesandsymbols": "Zehirli Şişe,Altın polar"
       },
       {
-        "name": "",
+        "name": "Odin",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
-        "power":"",
-        "propertiesandsymbols": ""
+        "description": "Odin, Valhalla'nın tanrısı ve gökyüzü kalesi Asgard'tır. Savaş, ölüm, bilgelik ve bilgiyi yönetir. Tek gözlü kanatlı bir dümen veya floppy şapka içinde, Gungnir adlı bir mızrak taşıyan Sleipnir'e ve iki kuzgun eşliğinde tasvir edildi.Odin, tanrıların kralıdır ve Valhalla'ya başkanlık eder. Savaşçıların Odin ve Valkyries tarafından cesaretle savaşmaları yeterlidir. Odin, Frost-Giants'ın kralı Ymir ile kavga ettikten sonra dünyayı yarattı. Kral'ı, iki küçük kardeşi Vili ve Vé ile birlikte yendikten sonra Odin, dünyayı oluşturmak için bedeninin parçalarını kullandı. Birlikte onlar dünyanın ilk iki insanı için hayat verdi Ask ve Embla. Odin daha sonra evlilik ve annelik tanrıçası Frig ile evlendi.",
+        "parents": "Bor ve Bestla",
+        "myth": "Mimir'in Bilgeliği İyi,Yggdrasil'de asılı durma,Ymir ile Savaş",
+        "power":"Valhalla,Asgard,Savaş,Ölüm,bilgelik,Bilgi",
+        "propertiesandsymbols": "tek göz,Kanatlı dümen veya disket gezgin şapka,Sleipnir,mızrak,Iki kuzgun"
       },
       {
-        "name": "",
+        "name": "Hestia",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
-        "power":"",
-        "propertiesandsymbols": ""
+        "description": "Hestia, evcilleştirmenin ve ailenin tanrıçasıdır. O genellikle ocak ile temsil edilmektedir.Hestia, Cronos ve Rhea'nın en büyük kızıydı. Olimpik kaleye eğilimli olan görevine kararlı ve adanmıştı. Dünya'dan bir teklif yapıldığında, Hestia bunu ilk elde eden kişi oldu.",
+        "parents": "Cronos ve Rhea",
+        "myth": "Cronos'un doğuşu ve devrilmesi,Olympus'ta Dionysus için koltuğunu bırakmak,Sonsuz iffet",
+        "power":"evcilleştirme,Aile,Olympus'un Royal Kalitesi",
+        "propertiesandsymbols": "Sonsuzluk,Kutsal ateş"
       },
       {
-        "name": "",
+        "name": "Persephone",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
-        "power":"",
-        "propertiesandsymbols": ""
+        "description": "Persephone, ilkbaharın ve yaz tanrıçası ve Yeraltı Kraliçesi'dir. Sıklıkla nar tohumları ve geyiklerle resmedilir.Persephone, Zeus ve Demeter'in kızıydı. O, çok güzel ve eğlenceliydı ve çiçekleri toplayan ve doğanın tadını çıkarmaya yönelik tarlalardaydılar. Bir gün, büyük bir savaş arabası yeryüzünden dışarı atlayıp Hades taşırken su kenarında nergis çiçekleri topluyordu. Hades, Persephone'u alıp arabasına atmak için yeterince uzun süre durdu. Yeryüzü tekrar açıldı ve araba, Yeraltı dünyasında kayboldu.",
+        "parents": "Zeus ve Demeter",
+        "myth": "Hades tarafından kaçırma,Demeter'in İntikamı,Sirenler",
+        "power":"İlkbahar ve yaz,Yeraltı",
+        "propertiesandsymbols": "Nar veya nar tohumları,Çiçekler,Geyik"
       },
       {
-        "name": "",
+        "name": "Nergis",
         "image": "",
-        "description": "",
-        "parents": "",
-        "myth": "",
+        "description": "Nergis dünyanın en yakışıklısıdır, ancak aşık olabilecek bir kadın bulamıyor çünkü ona bakan her kadın bayılıyor.Nergis, bir nehir-tanrı ve bir perisi oğluydu ve dünyanın en yakışıklı adamı olduğu düşünülüyordu. Onu ilk gördüğünde kadınların bayılıyor olmasına bakmak çok güzeldi; Ardından, sohbetlerinde genellikle düşünce trenlerini kaybettiler, bu yüzden Narkoz çoğu kadını aptalca ve sıkıcı görüyordu. Sık sık, kendisini, kendisini olduğu gibi iyi görünen veya ilginç bir kimse olarak bulamayacağını düşünüyordu.",
+        "parents": "Kephisos ve Liriope",
+        "myth": "Narcissus ve Eko",
         "power":"",
-        "propertiesandsymbols": ""
+        "propertiesandsymbols": "Ayna veya Yansıtıcı Havuz,Narcissus Çiçeği"
       }
   ]
 }
