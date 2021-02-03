@@ -63,12 +63,57 @@
         "propertiesandsymbols": "ceylân,ankh,devekuşu tüyleri veya sazların başlığı"
       },
       {
+        "name": "Apollo",
+        "image": "",
+        "description": "Apollo, güneşin ve müziğin tanrısıdır ve altın bir lir ve altın bir yay ve ok taşır. unanlılar Apollo'ya sağlıklı davranmak için dua ediyorlardı ve bir veba ya da başka bir hastalık vurulduğunda onu korkuyorlardı.",
+        "parents": "Zeus ve Leto",
+        "myth": "Delos'ta doğum, Python'u öldürmek,Lyre'nin icadı",
+        "power":"Güneş,Müzik,şiir",
+        "propertiesandsymbols": "Güneş,Altın lir,Altın yay ve ok"
+      },
+      {
+        "name": "Echo",
+        "image": "",
+        "description": "Echo, şan ve hikaye anlatımı için ünlü bir sese sahip güzel bir ahşap perinin. Sonunda Hera tarafından cezalandırılır ve yalnızca diğerlerinin söylediklerini tekrarlayabilir.",
+        "parents": "Uranus",
+        "myth": "Tava,Hera ve Zeus,Narcissus ve Eko",
+        "Power":"",
+        "propertiesandsymbols": "kanatlar,Hemlock Ağaçları"
+      },
+      {
+        "name": "Hecate",
+        "image": "",
+        "description": "Hecate, sıklıkla iki meşale ve bir anahtar taşıyan ve gece ve nekrofiklik hakkındaki bilgilerini temsil ettiği düşünülen, ay ve büyü tanrıçasıdır. Hecate, Perses ve Asteria'nın kızıydı, ancak efsanesinin bazı versiyonları ona Zeus'un kızı olarak da geçmektedir.",
+        "parents": "Perses ve Asteriler",
+        "myth": "Persephone için ara,Jason ve Medea",
+        "power":"Ay tanrıçası, büyü ve büyücülük",
+        "propertiesandsymbols": "İki meşale ve bir anahtar"
+      },
+      {
+        "name": "Aşil",
+        "image": "",
+        "description": "Aşil, Homeros'un İlyada şiirindeki epik kahramandır. En iyi Yunanlıların Trojanlara karşı şampiyonu olarak bilinir ve Paris, zırhındaki tek savunmasız topuk olan topukta vurduğu sırada öldürüldü.",
+        "parents": "Peleus ve Thetis",
+        "myth": "Styx Nehri'ne dalmak,İlyada,Ölüm Paris tarafından",
+        "power":"Yalnızca toğuğundan zarar görür",
+        "propertiesandsymbols": "Aşillerin Kalkanı,Altın Zırh,Topuktaki ok"
+      },
+      {
+        "name": "Ares",
+        "image": "",
+        "description": "Ares, savaş tanrısı ve şiddetli çatışmalarda sıklıkla kullanılan mızrak ve kalkanla temsil edilir.Muhtemelen Afrodit'in sevgilisi olarak bilinir. Hep birlikte, Hephaestus'un sırtında haince bir ilişki sürdürdüler ve sekiz çocuğu bir araya geldi. Bu birliğin en tanınmış çocuğu, cinsel arzunun tanrısı Eros'dur. Bununla birlikte Ares, Amazonlar'ın babasıydı.",
+        "parents": "Zeus ve Hera",
+        "myth": "Afrodit'le olan ilişki,Amazonlar,Aloadai Devleri",
+        "power":"Savaş",
+        "propertiesandsymbols": "mızrak,kalkan,domuz"
+      },
+      {
         "name": "",
         "image": "",
-        "description": "Apollo, güneşin ve müziğin tanrısıdır ve altın bir lir ve altın bir yay ve ok taşır.",
-        "parents": "Khnum ve Satis",
+        "description": "",
+        "parents": "",
         "myth": "",
-        "Power":"",
+        "power":"",
         "propertiesandsymbols": ""
       },
       {
@@ -77,7 +122,115 @@
         "description": "",
         "parents": "",
         "myth": "",
-        "Power":"",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
+        "propertiesandsymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "myth": "",
+        "power":"",
         "propertiesandsymbols": ""
       }
   ]
