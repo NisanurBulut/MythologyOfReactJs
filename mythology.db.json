@@ -27,19 +27,39 @@
       "PropertiesAndSymbols": "Iki aslan"
     },
     {
-      "name": "",
+      "name": "Ammut",
       "image": "",
-      "description": "",
-      "parents": "",
-      "Myth": "",
-      "PropertiesAndSymbols": ""
+      "description": "Ammut kısmen timsah, aslan veya leopar olan bir yaratık ve suaygırı. Ma'at'ın adaletsizlik derecelerine layık bulunmayanların ruhlarını ve kalplerini yedirdiği için Ölülerin Yıkıcısı olarak bilinir.",
+      "parents": "-",
+      "Myth": "Ma'at'ın Ölçekleri, Anubis, Osiris'in koruyucusu",
+      "Power":"yeraltı dünyası",
+      "PropertiesAndSymbols": "Ma'at'ın Ölçekleri"
     },
     {
+        "name": "Antigone",
+        "image": "",
+        "description": "Antigone, amcası Creon onu gömmeyi reddettiğinde ve onu denemek için ölüme mahkûm ettiğinde kardeşinin şerefine şehadet eden Oidopus'un kızıdır.",
+        "parents": "Kral Oidipus ve Kraliçe Jocasta",
+        "Myth": "Oidipus Rex, Antigone",
+        "Power":"",
+        "PropertiesAndSymbols": ""
+      },
+      {
+        "name": "Anubis",
+        "image": "",
+        "description": "Anubis ölüm tanrısı, mumyalama ve mezarların koruyucusudur. Çakal kafa, pembe siyah cilt, şaşkınlık ve bazen Imiut fetişi ile tasvir edilmiştir.",
+        "parents": "Osiris ve Nephthys",
+        "Myth": "Terazilerin Koruyucusu,Şımarmanın Yaratılması,Isis tarafından benimsenme",
+        "Power":"Mumya çıkarma, ölüm ve mezarlar",
+        "PropertiesAndSymbols": "Çakal kafa, harman döveni, Imiut fetiş"
+      },
+      {
         "name": "",
         "image": "",
         "description": "",
         "parents": "",
         "Myth": "",
+        "Power":"",
         "PropertiesAndSymbols": ""
       },
       {
@@ -48,6 +68,16 @@
         "description": "",
         "parents": "",
         "Myth": "",
+        "Power":"",
+        "PropertiesAndSymbols": ""
+      },
+      {
+        "name": "",
+        "image": "",
+        "description": "",
+        "parents": "",
+        "Myth": "",
+        "Power":"",
         "PropertiesAndSymbols": ""
       }
   ]
