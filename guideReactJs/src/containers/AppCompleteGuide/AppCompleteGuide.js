@@ -1,4 +1,4 @@
-import Person from '../../components/Persons/Person/Person';
+import Persons  from '../../components/Persons/Persons';
 import classes from './AppCompleteGuide.css';
 import React, { Component } from 'react';
 import UserInput from '../../components/UserInput/UserInput';
@@ -90,19 +90,10 @@ class AppCompleteGuide extends Component {
     if (this.state.showPersons) {
       persons = (
         <div>
-          {this.state.persons.map((person, index) => {
-            return (
-              <Person
-                key={person.id}
-                name={person.name}
-                number={person.number}
-                click={() => this.deletePersonHandler(index)}
-                changed={(event) =>
-                  this.userNameChangeEventHandler(event, person.id)
-                }
-              ></Person>
-            );
-          })}
+          <Persons
+          persons={this.state.persons}
+          deleteClicked={this.deletePersonHandler}
+          userNameChanged={this.userNameChangeEventHandler} />
         </div>
       );
       btnClass.push(classes.Red);
