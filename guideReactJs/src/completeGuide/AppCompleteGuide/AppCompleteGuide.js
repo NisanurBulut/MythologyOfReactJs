@@ -7,7 +7,6 @@ import UserOutput from '../UserOutput/UserOutput';
 import Validation from '../Validation/Validation';
 import Char from '../Char/Char';
 
-
 class AppCompleteGuide extends Component {
   // her zaman iki eleman döner
   // modern reactjs showing destructiong
@@ -88,6 +87,7 @@ class AppCompleteGuide extends Component {
     });
 
     let persons = null;
+    let btnClass = [classes.StyledButton];
     if (this.state.showPersons) {
       persons = (
         <div>
@@ -106,12 +106,13 @@ class AppCompleteGuide extends Component {
           })}
         </div>
       );
+      btnClass.push(classes.Red);
     }
     let assignedClasses = [];
-    if(this.state.persons.length<=2){
+    if (this.state.persons.length <= 2) {
       assignedClasses.push(classes.red);
     }
-    if(this.state.persons.length<=1){
+    if (this.state.persons.length <= 1) {
       assignedClasses.push(classes.bold);
     }
     return (
@@ -135,7 +136,7 @@ class AppCompleteGuide extends Component {
           <UserOutput userName={this.state.userName} />
         </div>
         <button
-         className={classes.StyledButton}
+          className={btnClass.join(' ')}
           onClick={() => this.togglePersonsHandler()}
         >
           Toggle Persons
