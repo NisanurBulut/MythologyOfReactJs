@@ -1,5 +1,5 @@
 import Person from '../Person/Person';
-import './AppCompleteGuide.css';
+import classes from './AppCompleteGuide.css';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import UserInput from '../UserInput/UserInput';
@@ -7,21 +7,6 @@ import UserOutput from '../UserOutput/UserOutput';
 import Validation from '../Validation/Validation';
 import Char from '../Char/Char';
 
-const StyledButton = styled.button`
-      background-color: ${(props) => (props.alt ? 'red' : 'green')};
-      color: white;
-      border: 1px solid black;
-      font: inherit;
-      padding: 8px;
-      margin: 8px;
-      cursor: pointer;
-      outline: 'none;
-
-      &:hover {
-        background-color: ${(props) => (props.alt ? 'salmon' : 'lightgreen')};
-        color: black;
-      }
-      `;
 
 class AppCompleteGuide extends Component {
   // her zaman iki eleman döner
@@ -122,10 +107,16 @@ class AppCompleteGuide extends Component {
         </div>
       );
     }
-    let classes = ['red', 'bold'].join(' ');
+    let assignedClasses = [];
+    if(this.state.persons.length<=2){
+      assignedClasses.push(classes.red);
+    }
+    if(this.state.persons.length<=1){
+      assignedClasses.push(classes.bold);
+    }
     return (
       <div className="App">
-        <h1 className={classes}>Hi ! Im React App</h1>
+        <h1 className={assignedClasses.join(' ')}>Hi ! Im React App</h1>
         <div>
           <input
             type="text"
@@ -143,12 +134,12 @@ class AppCompleteGuide extends Component {
           />
           <UserOutput userName={this.state.userName} />
         </div>
-        <StyledButton
-          alt={this.state.showPersons}
+        <button
+         className={classes.StyledButton}
           onClick={() => this.togglePersonsHandler()}
         >
           Toggle Persons
-        </StyledButton>
+        </button>
         {persons}
       </div>
     );

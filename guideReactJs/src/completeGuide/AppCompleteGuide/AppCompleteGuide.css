@@ -1,6 +1,21 @@
 .red {
-    color:red;
-    }
-    .bold{
-      font-weight: bold;
-    }
+  color: red;
+}
+.bold {
+  font-weight: bold;
+}
+
+.StyledButton{
+      background-color: green;
+      color: white;
+      border: 1px solid black;
+      font: inherit;
+      padding: 8px;
+      margin: 8px;
+      cursor: pointer;
+      outline: none;
+}
+.StyledButton:hover {
+        background-color: lightgreen;
+        color: black;
+      }

@@ -1,10 +1,10 @@
 import AppCompleteGuide from './completeGuide/AppCompleteGuide/AppCompleteGuide';
-import './App.css';
+import classes from './App.css';
 import React, { Component } from 'react';
 class App extends Component {
   render() {
     return (
-        <div className="App">
+        <div className={classes.App}>
           <AppCompleteGuide/>
         </div>
     );
