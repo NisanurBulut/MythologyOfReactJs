@@ -1,5 +1,5 @@
-import AppCompleteGuide from './completeGuide/AppCompleteGuide/AppCompleteGuide';
-import classes from './App.css';
+import AppCompleteGuide from './AppCompleteGuide/AppCompleteGuide';
+import classes from '../containers/App.css';
 import React, { Component } from 'react';
 class App extends Component {
   render() {

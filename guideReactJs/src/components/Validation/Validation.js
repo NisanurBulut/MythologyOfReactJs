@@ -10,14 +10,5 @@ const validation = (props) => {
       <p>{validationMessage}</p>
     </div>
   );
-  //   return (
-  //     <div>
-  //       {props.inputLength >= 5 ? (
-  //         <p>Text is too long</p>
-  //       ) : (
-  //         <p>Text is too short !</p>
-  //       )}
-  //     </div>
-  //   );
 };
 export default validation;

@@ -1,11 +1,10 @@
-import Person from '../Person/Person';
+import Person from '../../components/Persons/Person/Person';
 import classes from './AppCompleteGuide.css';
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import UserInput from '../UserInput/UserInput';
-import UserOutput from '../UserOutput/UserOutput';
-import Validation from '../Validation/Validation';
-import Char from '../Char/Char';
+import UserInput from '../../components/UserInput/UserInput';
+import UserOutput from '../../components/UserOutput/UserOutput';
+import Validation from '../../components/Validation/Validation';
+import Char from '../../components/Char/Char';
 
 class AppCompleteGuide extends Component {
   // her zaman iki eleman döner
