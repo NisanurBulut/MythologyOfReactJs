@@ -232,6 +232,15 @@
         "myth": "Narcissus ve Eko",
         "power":"",
         "propertiesandsymbols": "Ayna veya Yansıtıcı Havuz,Narcissus Çiçeği"
+      },
+      {
+        "name": "Odise",
+        "image": "",
+        "description": "Odysseus, Homeros'un şiiri The Odyssey'de kurnaz epik kahraman olup maceralarını Trojan Savaşı'ndan eve dönmeye çalışırken ayrıntılarıyla anlatıyor. Odysseus en çok Truva Atı'nın arkasındaki beyni olarak bilinir.",
+        "parents": "Laertes ve Anticlea",
+        "myth": "Troya Savaşı,Polyphemus'un,Mülk Sahiplerinin Ölümü",
+        "power":"",
+        "propertiesandsymbols": "Odysseus'un yay"
       }
   ]
 }
