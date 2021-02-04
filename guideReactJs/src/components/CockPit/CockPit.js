@@ -4,12 +4,19 @@ const Cockpit = (props) => {
 
   useEffect(()=>{
     console.log("[CockPit.js] useEffect");
-    alert(1);
+   const timer = setTimeout(()=>{
+     console.log("timer");
+     return ()=>{
+      clearTimeout(timer);
+     }
+   },1000)
     // http request yapılabilir
   },[props.persons]);
   useEffect(()=>{
     // cleaning
-    console.log("cleaning");
+    return ()=>{
+      console.log("cleaning");
+    }
   });
     let assignedClasses = [];
     let btnClass = '';
