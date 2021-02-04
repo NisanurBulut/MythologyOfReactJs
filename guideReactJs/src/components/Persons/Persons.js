@@ -2,8 +2,15 @@ import React, { Component } from 'react';
 import Person from './Person/Person';
 import styled from './Persons.css';
 class Persons extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
+  }
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextProps.persons !== this.props.persons) {
+      return true;
+    } else {
+      return true;
+    }
   }
   render() {
     return this.props.persons.map((person, index) => {
