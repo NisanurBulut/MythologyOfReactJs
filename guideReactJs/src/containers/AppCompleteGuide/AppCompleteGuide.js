@@ -1,4 +1,4 @@
-import Persons  from '../../components/Persons/Persons';
+import Persons from '../../components/Persons/Persons';
 import React, { Component } from 'react';
 import UserInput from '../../components/UserInput/UserInput';
 import UserOutput from '../../components/UserOutput/UserOutput';
@@ -9,12 +9,13 @@ import Cockpit from '../../components/CockPit/CockPit';
 class AppCompleteGuide extends Component {
   // constructor yazmak best practise
   // çünkü initialize değerlerini doğru şekilde aldığından emin olursun
-  constructor(props){
+  constructor(props) {
     super(props);
   }
-  componentDidMount(){
-    console.log("[AppCompleteGuide.js]");
+  componentDidMount() {
+    console.log('[AppCompleteGuide.js]');
   }
+
   // her zaman iki eleman döner
   // modern reactjs showing destructiong
   state = {
@@ -96,10 +97,13 @@ class AppCompleteGuide extends Component {
     let persons = null;
 
     if (this.state.showPersons) {
-      persons =  <Persons
+      persons = (
+        <Persons
           persons={this.state.persons}
           deleteClicked={this.deletePersonHandler}
-          userNameChanged={this.userNameChangeEventHandler} />;
+          userNameChanged={this.userNameChangeEventHandler}
+        />
+      );
     }
 
     return (
@@ -122,10 +126,11 @@ class AppCompleteGuide extends Component {
           <UserOutput userName={this.state.userName} />
         </div>
         <Cockpit
-        title={this.props.appTitle}
-        showPersons={this.state.showPersons}
-        persons={this.state.persons}
-        clicked={this.togglePersonsHandler} />
+          title={this.props.appTitle}
+          showPersons={this.state.showPersons}
+          persons={this.state.persons}
+          clicked={this.togglePersonsHandler}
+        />
         {persons}
       </div>
     );
