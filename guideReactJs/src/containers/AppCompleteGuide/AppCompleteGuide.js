@@ -7,6 +7,14 @@ import Char from '../../components/Char/Char';
 import Cockpit from '../../components/CockPit/CockPit';
 
 class AppCompleteGuide extends Component {
+  // constructor yazmak best practise
+  // çünkü initialize değerlerini doğru şekilde aldığından emin olursun
+  constructor(props){
+    super(props);
+  }
+  componentDidMount(){
+    console.log("[AppCompleteGuide.js]");
+  }
   // her zaman iki eleman döner
   // modern reactjs showing destructiong
   state = {
