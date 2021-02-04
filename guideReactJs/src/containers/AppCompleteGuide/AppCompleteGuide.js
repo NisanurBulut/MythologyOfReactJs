@@ -1,5 +1,4 @@
 import Persons  from '../../components/Persons/Persons';
-import classes from './AppCompleteGuide.css';
 import React, { Component } from 'react';
 import UserInput from '../../components/UserInput/UserInput';
 import UserOutput from '../../components/UserOutput/UserOutput';
@@ -115,6 +114,7 @@ class AppCompleteGuide extends Component {
           <UserOutput userName={this.state.userName} />
         </div>
         <Cockpit
+        title={this.props.appTitle}
         showPersons={this.state.showPersons}
         persons={this.state.persons}
         clicked={this.togglePersonsHandler} />

@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
         <div className={classes.App}>
-          <AppCompleteGuide/>
+          <AppCompleteGuide appTitle="Guide App For ReactJs"/>
         </div>
     );
   }
