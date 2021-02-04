@@ -7,7 +7,10 @@ const Cockpit = (props) => {
     alert(1);
     // http request yapılabilir
   },[props.persons]);
-
+  useEffect(()=>{
+    // cleaning
+    console.log("cleaning");
+  });
     let assignedClasses = [];
     let btnClass = '';
     if(props.showPersons){
