@@ -1,7 +1,7 @@
 import AppCompleteGuide from './AppCompleteGuide/AppCompleteGuide';
 import classes from '../containers/App.css';
-import React, { Component } from 'react';
-class App extends Component {
+import React, { PureComponent } from 'react';
+class App extends PureComponent {
   render() {
     return (
         <div className={classes.App}>
