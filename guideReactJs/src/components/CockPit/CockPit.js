@@ -4,8 +4,10 @@ const Cockpit = (props) => {
 
   useEffect(()=>{
     console.log("[CockPit.js] useEffect");
+    alert(1);
     // http request yapılabilir
-  });
+  },[props.persons]);
+
     let assignedClasses = [];
     let btnClass = '';
     if(props.showPersons){
