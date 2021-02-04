@@ -5,6 +5,7 @@ import UserInput from '../../components/UserInput/UserInput';
 import UserOutput from '../../components/UserOutput/UserOutput';
 import Validation from '../../components/Validation/Validation';
 import Char from '../../components/Char/Char';
+import Cockpit from '../../components/CockPit/CockPit';
 
 class AppCompleteGuide extends Component {
   // her zaman iki eleman döner
@@ -86,28 +87,16 @@ class AppCompleteGuide extends Component {
     });
 
     let persons = null;
-    let btnClass = [classes.StyledButton];
+
     if (this.state.showPersons) {
-      persons = (
-        <div>
-          <Persons
+      persons =  <Persons
           persons={this.state.persons}
           deleteClicked={this.deletePersonHandler}
-          userNameChanged={this.userNameChangeEventHandler} />
-        </div>
-      );
-      btnClass.push(classes.Red);
+          userNameChanged={this.userNameChangeEventHandler} />;
     }
-    let assignedClasses = [];
-    if (this.state.persons.length <= 2) {
-      assignedClasses.push(classes.red);
-    }
-    if (this.state.persons.length <= 1) {
-      assignedClasses.push(classes.bold);
-    }
+
     return (
-      <div className="App">
-        <h1 className={assignedClasses.join(' ')}>Hi ! Im React App</h1>
+      <div>
         <div>
           <input
             type="text"
@@ -125,12 +114,10 @@ class AppCompleteGuide extends Component {
           />
           <UserOutput userName={this.state.userName} />
         </div>
-        <button
-          className={btnClass.join(' ')}
-          onClick={() => this.togglePersonsHandler()}
-        >
-          Toggle Persons
-        </button>
+        <Cockpit
+        showPersons={this.state.showPersons}
+        persons={this.state.persons}
+        clicked={this.togglePersonsHandler} />
         {persons}
       </div>
     );

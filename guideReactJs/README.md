@@ -12,3 +12,4 @@
 * Understanding the Base Features & Syntax
 * Working with Lists and Conditionals
 * Styling React Components & Elements (Eğer v2 de çalışılıyorsa proje ject edildiğinde css dosyaları file.module.css şeklinde kaydedilirse webpack.config.js dosyasında değişim yapmadan çalışılmaya devam edilebilir.)
+* Diving Deeper into Components & React Internals
