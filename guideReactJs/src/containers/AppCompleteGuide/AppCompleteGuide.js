@@ -1,12 +1,12 @@
 import Persons from '../../components/Persons/Persons';
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import UserInput from '../../components/UserInput/UserInput';
 import UserOutput from '../../components/UserOutput/UserOutput';
 import Validation from '../../components/Validation/Validation';
 import Char from '../../components/Char/Char';
 import Cockpit from '../../components/CockPit/CockPit';
 
-class AppCompleteGuide extends Component {
+class AppCompleteGuide extends PureComponent {
   // constructor yazmak best practise
   // çünkü initialize değerlerini doğru şekilde aldığından emin olursun
   constructor(props) {
