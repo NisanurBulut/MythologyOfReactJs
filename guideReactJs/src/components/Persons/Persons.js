@@ -28,4 +28,4 @@ class Persons extends Component {
     });
   }
 }
-export default Persons;
+export default React.memo(Persons);
