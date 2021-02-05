@@ -5,7 +5,11 @@
 
 ### Props
 
-<p>Props, en basit anlatımla bir componentten başka bir componente veri akışını sağlamak için kullandığımız anahtar kelimedir. Props'lar readonly'dir. Eğer bir functional component üzerinden erişiyorsak {props} class component üzerinden erişiyorsak {this.props} şeklinde olmalıdır.</p>
+<p>Props, en basit anlatımla bir componentten başka bir componente veri akışını sağlamak için kullandığımız anahtar kelimedir. Props'lar readonly'dir. Eğer bir functional component üzerinden erişiyorsak {props} class component üzerinden erişiyorsak {this.props} şeklinde olmalıdır.
+
+- Props'lar sabit veriler oldukları için yalnızca sayfanın ilk yüklenişinde render edilirler.
+
+</p>
 
 ### State
 
@@ -19,7 +23,7 @@
 
 ### StateFull and Stateless Components
 
-<p>
+<p> Bir component statefull tanımlandığında React bu component'i diff algoritmasına dahile der.
 They are known also as: Container vs Presentational Components, smart vs Dumb Components
 StateFull component, veri değişimini kontrol eden-takip eden component'tir.
 Stateless component, prop'lar ile iletilen ya da render edilen veriyi gösterir.
@@ -61,6 +65,14 @@ The naming can be confusing but lifecycle .hooks have absolutely nothing to do w
 - When a component is created then first of all the constructor executes. Constructor içerisinde değişkenler initialize edilebilir. Ancak kesinlike sideEffect'e sebep olacak çağrılar yapılmamalıdır. SideEffect'e neden olan şeylerden birisi http istekleridir. Constructor'dan spnra getDerivedStateFrom method çalışır. bu method props değişkenini kontrol eder. Angular'daki ngOnchanges gibidir burada da sideEffect olusturacak seylerden kaçınmalısın. 3. aşamada render çalışır. Buradada http istek ya da timeout gibi sideEffect oluşturacak hareketler yapmamalısın.4. aşamada component didmount çalışır.
 <b>ComponentDidMount:</b> is a very important lifecycle hook which you will use a lot when you are working with class based components because you create side effect. That is typical hook you would use for making http request to get new data from the web. What you shpuldnt do in here is update state. So dont call set state in here unless it's in. Let's say the then block of a promise after you sent an http request but dont call setsyate in here scynhronously. Çünkü render eder ve bu da performansu etkiler.
 </p>
+
+### UseEffect
+<p>Fonksiyonel bileşenlerde kullanırız. You can add it anywhere in your functional component body and useEffect as sa default takes a function.
+- UseEffect doğru şekilde kullanılmalıdır çünkü devamlı ayağa kalkar. It combines componentDidMount and componentDidUpdate
+Peki bu devamlı değişimi nasıl kontrol edebiliriz ? etkileneceği değeri set edebiliriz eğer boş parametre ([]) geçersek render'da sadece bir kez çalışır.</p>
+
+### Memo
+<p>Memo daha önce shouldComponentUpdate methodu ile yapabildiğimiz sürekli render işlemini engellemeyi daha kolay bir hale getirir. İstenmeyen re-render işlemlerinin önüne geçmek için kullanılır. shouldComponentdidUpdate eski sürümde kullanılır ve modern bir yaklaşım değildir. shouldcomponentUpdate çok güçlü bir özelliktir ancak yalnızca class based wbileşenlerde kullanılır. Yalnız unutma ki bunlar extra kontrollerdir ve performansı doğruan etkiler. Diyelim ki 50 tane propsun var 50si için if yazıp kontrol mu edeceksin bunun onune gecmek içinde pureComponent kalıtımını kullanabilirim</p>
 
 - Understanding the Base Features & Syntax
 - Working with Lists and Conditionals
