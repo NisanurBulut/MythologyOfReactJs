@@ -1,12 +1,14 @@
 import AppCompleteGuide from './AppCompleteGuide/AppCompleteGuide';
 import classes from '../containers/App.css';
 import React, { PureComponent } from 'react';
+import WithClass from '../../hoc/WithClass';
+
 class App extends PureComponent {
   render() {
     return (
-        <div className={classes.App}>
+        <WithClass classes={classes.App}>
           <AppCompleteGuide appTitle="Guide App For ReactJs"/>
-        </div>
+        </WithClass>
     );
   }
 }
