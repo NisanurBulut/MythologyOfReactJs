@@ -7,13 +7,13 @@ class Person extends Component {
     }
     render (){
         return(
-            <Auxiliary>
+            <React.Fragment>
                 <h1 onClick={this.props.click}>I'm {this.props.name}
             && I love numbers for example : {this.props.number}</h1>
             <p>{this.props.children}</p>
             <input type="text"
             onChange={this.props.changed} value={this.props.name} />
-            </Auxiliary>
+            </React.Fragment>
         // <div className={StyledPerson.Person}>
         //     <h1 onClick={this.props.click}>I'm {this.props.name}
         //     && I love numbers for example : {this.props.number}</h1>
