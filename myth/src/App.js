@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
-import MythList from './containers/MythList';
+import MythList from './containers/MythList/MythList';
 import MythItem from './containers/MythItem';
 function App() {
   return (

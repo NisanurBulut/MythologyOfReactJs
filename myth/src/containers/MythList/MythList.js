@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
 import _ from 'lodash';
-import { GetMythList } from '../actions/MythActions';
+import { GetMythList } from '../../actions/MythActions';
 import { Link } from 'react-router-dom';
 import ReactPaginate from "react-paginate";
 
@@ -19,19 +21,17 @@ const MythList = (props) => {
   };
 
   const showData = () => {
-    console.log(mythList)
     if (!_.isEmpty(mythList.data)) {
       return (
         <div className="list-wrapper">
-          { mythList.data.map((item) => {
-            return (
-                <div key={item.name} className="myth-item">
-                    <p>{item.name}</p>
-                    <Link to={`/myth/${item.name}`}>View</Link>
-                </div>
-            )
-          })
-          }
+          <GridList cellHeight={160} className="gridList" cols={4}>
+        {mythList.data.map((item) => (
+          <GridListTile key={item.name} cols={1} className="myth-item">
+            <p>{item.name}</p>
+            <Link to={`/myth/${item.name}`}>View</Link>
+          </GridListTile>
+        ))}
+      </GridList>
         </div>
       );
     }
@@ -53,7 +53,7 @@ const MythList = (props) => {
 
       !_.isEmpty(mythList.data) && (
         <ReactPaginate
-          pageCount={Math.ceil(mythList.count / 5)}
+          pageCount={Math.ceil(mythList.count / 10)}
           pageRangeDisplayed={2}
           marginPagesDisplayed={1}
           onPageChange={(data) => fetchData(data.selected + 1)}
