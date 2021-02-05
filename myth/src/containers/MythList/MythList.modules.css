@@ -1,0 +1,23 @@
+.gridList {
+    width: 500;
+    height: 500;
+  }
+  .listWrapper {
+    width: 75%;
+    margin: auto;
+    font-weight: bold;
+    display: 'flex';
+    flex-wrap: 'wrap';
+    justify-content: 'space-around';
+    overflow: 'hidden';
+  }
+
+  .mythItem{
+    margin : 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(165, 42, 42, 0.76);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }

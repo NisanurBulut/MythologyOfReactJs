@@ -6,7 +6,7 @@ import _ from 'lodash';
 import { GetMythList } from '../../actions/MythActions';
 import { Link } from 'react-router-dom';
 import ReactPaginate from "react-paginate";
-
+import styledMythList from '../MythList/MythList.modules.css';
 const MythList = (props) => {
   const [search, setSearch]=useState("");
   const dispatch = useDispatch();
@@ -23,10 +23,10 @@ const MythList = (props) => {
   const showData = () => {
     if (!_.isEmpty(mythList.data)) {
       return (
-        <div className="list-wrapper">
-          <GridList cellHeight={160} className="gridList" cols={4}>
+        <div className={styledMythList.listWrapper}>
+          <GridList cellHeight={160} className={styledMythList.gridList} cols={4}>
         {mythList.data.map((item) => (
-          <GridListTile key={item.name} cols={1} className="myth-item">
+          <GridListTile key={item.name} cols={1} className={styledMythList.mythItem}>
             <p>{item.name}</p>
             <Link to={`/myth/${item.name}`}>View</Link>
           </GridListTile>
