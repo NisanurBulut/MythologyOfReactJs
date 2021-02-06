@@ -1,3 +1,6 @@
+.root{
+  max-width: 400pxpx,
+}
 .gridList {
     width: 500;
     height: 500;
@@ -18,14 +21,20 @@
   }
 
   .mythItem{
-    margin : 10px;
+    /* margin : 10px;
+    border: 2px solid rgba(165, 42, 42, 0.76); */
     display: flex;
     justify-content: space-between;
-    border: 2px solid rgba(165, 42, 42, 0.76);
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
   }
+  .mythItem img {
+    width: 250px;
+    height: 200px;
+  }
+
+
   .pagination {
     width: 30%;
     display: flex;

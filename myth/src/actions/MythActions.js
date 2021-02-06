@@ -5,7 +5,7 @@ export const GetMythList = (page) => async (dispathch) => {
       type: 'MYTH_LIST_LOADING',
     });
 
-    const perPage = 10;
+    const perPage = 8;
     const indexOfLastTodo = page * perPage;
     const indexOfFirstTodo = indexOfLastTodo - perPage;
     const res = await axios
