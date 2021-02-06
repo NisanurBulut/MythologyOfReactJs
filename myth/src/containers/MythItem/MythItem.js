@@ -1,52 +1,31 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { GetMyth } from '../../actions/MythActions';
-import styledMythItem from '../MythItem/MythItem.css';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardMedia from '@material-ui/core/CardMedia';
+import styledMythItem from '../MytItemDetail/MythItemDetail.css';
 import _ from 'lodash';
 
 const MythItem = (props) => {
-  const mythItemName = props.match.params.myth;
-  const dispathch = useDispatch();
-  const mythItemState = useSelector((state) => state.MythItem);
-
-  React.useEffect(() => {
-    dispathch(GetMyth(mythItemName));
-  }, []);
-
   const showData = () => {
-    if (! _.isEmpty(mythItemState.data[mythItemName])) {
-      const mythItemData=mythItemState.data[mythItemName][0];
-      console.log(mythItemData);
-      return(
-        <div className={styledMythItem.mythWrapper}>
-          <div className={styledMythItem.mythItemHeader}>
-           <h1>{mythItemName}</h1>
-          </div>
-          <div className={"item"}>
-            <img src={mythItemData.imagePath} alt=""/>
-          </div>
-          <div className="item">
-           <p>{mythItemData.description}</p>
-          </div>
-        </div>
-      )
-    }
-
-    if (mythItemState.loading) {
-      return <p>Loading...</p>
-    }
-
-    if (mythItemState.errorMessage !== "") {
-      return <p>{mythItemState.errorMessage}</p>
-    }
-
-    return <p>error getting myth item</p>
+    return (
+      <Card className={styledMythItem.root}>
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            alt={props.name}
+            height="150"
+            image={props.imagePath}
+            title={props.name}
+          />
+        </CardActionArea>
+        <CardActions className={styledMythItem.footer}>
+        {props.name}
+        </CardActions>
+      </Card>
+    );
   };
 
-  return (
-    <div>
-      {showData()}
-    </div>
-  );
+  return <div>{showData()}</div>;
 };
 export default MythItem;

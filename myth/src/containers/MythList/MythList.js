@@ -8,14 +8,14 @@ import { Link } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import styledMythList from '../MythList/MythList.modules.css';
 
-import { makeStyles } from '@material-ui/core/styles';
+
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import MythItem from '../MythItem/MythItem';
+
 
 const MythList = (props) => {
   const [search, setSearch] = useState('');
@@ -36,7 +36,7 @@ const MythList = (props) => {
       return (
         <div className={styledMythList.listWrapper}>
           <GridList
-            cellHeight={200}
+            cellHeight={250}
             className={styledMythList.gridList}
             cols={4}
           >
@@ -47,24 +47,7 @@ const MythList = (props) => {
                 className={styledMythList.mythItem}
               >
                 <Link to={`/myth/${item.name}`}>
-                <Card className={styledMythList.root}>
-
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      alt={item.name}
-                      height="160"
-                      image={item.imagePath}
-                      title={item.name}
-                    />
-                    <CardContent>
-
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                   <p>{item.name}</p>
-                  </CardActions>
-                </Card>
+                  <MythItem name={item.name} imagePath={item.imagePath} />
                 </Link>
               </GridListTile>
             ))}
@@ -92,7 +75,7 @@ const MythList = (props) => {
       {!_.isEmpty(mythList.data) && (
         <ReactPaginate
           pageCount={Math.ceil(mythList.count / 8)}
-          pageRangeDisplayed={2}
+          pageRangeDisplayed={1}
           marginPagesDisplayed={1}
           onPageChange={(data) => fetchData(data.selected + 1)}
           containerClassName={styledMythList.pagination}

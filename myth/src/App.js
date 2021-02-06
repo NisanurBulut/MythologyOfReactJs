@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import styledApp from './App.css';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 import MythList from './containers/MythList/MythList';
-import MythItem from './containers/MythItem/MythItem';
+import MythItemDetail from './containers/MytItemDetail/MythItemDetail';
 function App() {
   return (
     <div className="App">
@@ -11,7 +11,7 @@ function App() {
       </nav>
       <Switch>
         <Route path={'/'} exact component={MythList} />
-        <Route path={'/myth/:myth'} exact component={MythItem} />
+        <Route path={'/myth/:myth'} exact component={MythItemDetail} />
         <Redirect path={"/"}></Redirect>
       </Switch>
     </div>
