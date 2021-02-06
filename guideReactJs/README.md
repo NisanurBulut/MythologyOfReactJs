@@ -74,8 +74,30 @@ Peki bu devamlı değişimi nasıl kontrol edebiliriz ? etkileneceği değeri se
 ### Memo
 <p>Memo daha önce shouldComponentUpdate methodu ile yapabildiğimiz sürekli render işlemini engellemeyi daha kolay bir hale getirir. İstenmeyen re-render işlemlerinin önüne geçmek için kullanılır. shouldComponentdidUpdate eski sürümde kullanılır ve modern bir yaklaşım değildir. shouldcomponentUpdate çok güçlü bir özelliktir ancak yalnızca class based wbileşenlerde kullanılır. Yalnız unutma ki bunlar extra kontrollerdir ve performansı doğruan etkiler. Diyelim ki 50 tane propsun var 50si için if yazıp kontrol mu edeceksin bunun onune gecmek içinde pureComponent kalıtımını kullanabilirim</p>
 
+### Context API (Ağaca veri yaymak)
+<p>Context, prop'ları her seviyede manuel olarak geçmek zorunda kalmadan bileşen ağacı üzerinden veri iletmenin bir yolunu sunar.
+
+- Normal bir React uygulamasında veri proplar aracılığıyla yukarıdan aşağıya taşınır.
+- Context; mevcut kullanıcıyı doğrulama, tema veya dil seçimi gibi Reactbileşen ağacında global olarak düşünülebilecek verileri paylaşmak için kullanılır. Context kullanarak ara öğelerden prop'ları geçirmekten kaçınırız.
+- Herbir bileşenin içinden açıkça geçmeden bileşen ağacının derinliklerine bir value geçmemizi sağlar.
+- Context bileşeninin tekrar kullanılırlığını olumsuz yönde etkiler. Dolayısıyla ölçülü kullanılmalıdır.
+- React context nesnesine abone bir bileşen oluşturduğunda context'in mevcut değerini ağaçtaki en yakın Provider'dan okur.
+- Her Context nesnesi, tüketici bileşenlerin context güncellemelerine abone olmasını sağlayan bir React Provider bileşeni ile birlikte gelir.
+- Provider bileşeni, bu Provider’ın soyundan gelen tüketici bileşenlerine geçirilecek olan bir value prop’unu kabul eder.
+- Birçok tüketici bir Provider’a bağlanabilir.
+- Provider’lar ağaçtaki daha derin değerleri değiştirmek için iç içe geçirilebilirler.
+- Bir Provider’ın soyundan gelen tüm tüketiciler, Provider’ın value prop’u her değiştiğinde yeniden oluşturulur.
+- Provider’ın soyundan gelen tüketicilere (.contextType ve useContext de dahil olmak üzere) yayılması,shouldComponentUpdate metoduna tabi değildir, dolayısıyla herhangi bir bileşen güncellemeyi önlediğinde bile tüketici güncellenir.
+ ![App-ContextApi](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_ContextApiApp.gif)
+</p>
+
 - Understanding the Base Features & Syntax
 - Working with Lists and Conditionals
 - Styling React Components & Elements (Eğer v2 de çalışılıyorsa proje ject edildiğinde css dosyaları file.module.css şeklinde kaydedilirse webpack.config.js dosyasında değişim yapmadan çalışılmaya devam edilebilir.)
 - Diving Deeper into Components & React Internals
 </p>
+
+### Helpfull Websites
+[tr.reactjs.org](https://tr.reactjs.org/docs/getting-started.html)
+[styled-components](https://styled-components.com/)
+[The Net Ninja React Context & Hooks Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI)

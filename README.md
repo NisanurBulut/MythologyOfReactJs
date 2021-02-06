@@ -111,10 +111,11 @@ Myth is an application that introduces mythological creatures. The use of Redux 
 ![App-Myth](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Mythv2.gif)
 <br>
 <hr>
+
 ### Helpfull Websites
 
 [uidesigndaily](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
 [Devto](https://dev.to/) [popmotion](https://popmotion.io) [json-server](https://github.com/typicode/json-server)
 [unsplash](https://unsplash.com/) [webgradients](https://webgradients.com/) [edamam api](https://developer.edamam.com/)
  [values.js](https://github.com/noeldelgado/values.js) [covid-19 api](https://api.covid19api.com/) [api.weatherstack](http://api.weatherstack.com) [Gif resize](https://ezgif.com/resize) [ReactJs Turkish Library](https://github.com/omergulcicek/react) [ReactJs Articles](https://www.ninjakod.com/category/genel/reactjs/) [ReactJs-Redux Application](https://youtu.be/GbAENvrGbDo) [styled-components](https://styled-components.com/)
- [RickAndMortyApi](https://rickandmortyapi.com/documentation)
+ [RickAndMortyApi](https://rickandmortyapi.com/documentation) [The Net Ninja React Context & Hooks Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI) [tr.reactjs.org](https://tr.reactjs.org/docs/getting-started.html)
