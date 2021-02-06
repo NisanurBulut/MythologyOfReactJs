@@ -22,6 +22,7 @@ const MythItemDetail = (props) => {
         <div className={styledMythItem.mythWrapper}>
           <div className={styledMythItem.mythItemHeader}>
            <h1>{mythItemName}</h1>
+           <hr/>
           </div>
           <div className={styledMythItem.item}>
             <img src={mythItemData.imagePath} alt={mythItemData.name}/>
@@ -38,7 +39,6 @@ const MythItemDetail = (props) => {
           color="#00BFFF"
           height={100}
           width={100}
-          timeout={3000000} //3 secs
         />)
     }
 

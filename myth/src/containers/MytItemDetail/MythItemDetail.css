@@ -9,7 +9,10 @@
   color: #b62d1e;
   padding-top: 20px;
 }
-
+ hr {
+  border: 1px solid #b62d1e;;
+  width: 500px;
+}
 .mythWrapper .item {
   margin: 50px 0px;
   display: flex;
@@ -24,7 +27,7 @@
 .mythWrapper p {
   width: 600px;
   height: 300px;
-  margin:0px 5px 5px 35px;
+  margin:25px 5px 5px 35px;
   font-weight: 600;
   border-radius: 5px;
   text-align: center;

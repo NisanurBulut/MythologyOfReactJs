@@ -33,7 +33,7 @@ export const GetMyth = (myth) => async (dispathch) => {
       type: 'MYTH_ITEM_LOADING',
     });
     const res = await axios
-      .get(`http://localhost:3000/mythItems?name=${myth}`, {delay:3000})
+      .get(`http://localhost:3000/mythItems?name=${myth}`, {delay:8000})
       .then((respo) => {
         return respo;
       });
