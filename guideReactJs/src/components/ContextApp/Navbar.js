@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import classes from '../../containers/AppContextApi/AppContextApi';
+import classes from '../../containers/AppContextApi/AppContextApi.css';
 class Navbar extends Component {
     render() {
         return (
-            <nav>
+            <nav className={classes.nav}>
                 <h1>Context App</h1>
                 <ul>
                     <li>Home</li>

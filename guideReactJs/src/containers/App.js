@@ -6,7 +6,7 @@ import AppContextApi from '../containers/AppContextApi/AppContextApi';
 class App extends PureComponent {
   render() {
     return (
-     <div>
+     <div className={classes.App}>
        <AppContextApi></AppContextApi>
      </div>
         // <WithClass classes={classes.App}>
