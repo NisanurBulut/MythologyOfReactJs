@@ -1,0 +1,23 @@
+nav{
+    padding: 5px;
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .bookList {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .bookList ul{
+    padding: 0;
+    list-style-type: none;
+  }
+  .bookList li {
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+  }

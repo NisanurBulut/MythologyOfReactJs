@@ -1,3 +1,17 @@
 .App {
   text-align: center;
 }
+.tabs .tab {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+.tabs .content {
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+}
