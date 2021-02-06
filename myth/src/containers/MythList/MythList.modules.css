@@ -47,10 +47,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0;
+    padding:40px 0px 10px 0px;
   }
   .searchWrapper input{
     outline: none;
+    border:none;
+    border-radius: 5px;
+    height: 30px;
+    width: 600px !important;
   }
   .searchWrapper button{
     outline: none;

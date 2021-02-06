@@ -64,9 +64,9 @@ const MythList = (props) => {
       {showData()}
       {!_.isEmpty(mythList.data) && (
         <ReactPaginate
-          pageCount={Math.ceil(mythList.count / 8)}
+          pageCount={(Math.ceil(mythList.count / 8))}
           pageRangeDisplayed={1}
-          marginPagesDisplayed={1}
+          marginPagesDisplayed={2}
           onPageChange={(data) => fetchData(data.selected + 1)}
           containerClassName={styledMythList.pagination}
         ></ReactPaginate>
