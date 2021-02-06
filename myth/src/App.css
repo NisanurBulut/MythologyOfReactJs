@@ -4,17 +4,16 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #A1FFCE;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+ background-color: #E7FB99;
 }
 .header {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   height: 60px;
-  background-color: rgba(165, 42, 42, 0.76);
+  background-color: #21AD96;
+  /* background-color: rgba(165, 42, 42, 0.76); */
+
   align-items: center;
   color: #fff !important;
 }
