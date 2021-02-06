@@ -21,3 +21,27 @@
     border-radius: 10px;
     cursor: pointer;
   }
+  .pagination {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    cursor: pointer;
+    outline: none !important;
+  }
+  .searchWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .searchWrapper input{
+    outline: none;
+  }
+  .searchWrapper button{
+    outline: none;
+    background-color: #4bca89;
+    color:#fff;
+  }

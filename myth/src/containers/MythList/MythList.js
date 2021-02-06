@@ -24,11 +24,10 @@ const MythList = (props) => {
     if (!_.isEmpty(mythList.data)) {
       return (
         <div className={styledMythList.listWrapper}>
-          <GridList cellHeight={160} className={styledMythList.gridList} cols={4}>
+          <GridList cellHeight={160} className={styledMythList.gridList} cols={5}>
         {mythList.data.map((item) => (
           <GridListTile key={item.name} cols={1} className={styledMythList.mythItem}>
-            <p>{item.name}</p>
-            <Link to={`/myth/${item.name}`}>View</Link>
+            <Link to={`/myth/${item.name}`}><p>{item.name}</p></Link>
           </GridListTile>
         ))}
       </GridList>
@@ -44,7 +43,7 @@ const MythList = (props) => {
     return <p>unable to data</p>;
   };
   return <div>
-    <div className="search-wrapper">
+    <div className={styledMythList.searchWrapper}>
       <input type="text" onChange={(e)=>setSearch(e.target.value)}/>
       <button onClick={()=>props.history.push(`/myth/${search}`)}>Search</button>
     </div>
@@ -57,7 +56,7 @@ const MythList = (props) => {
           pageRangeDisplayed={2}
           marginPagesDisplayed={1}
           onPageChange={(data) => fetchData(data.selected + 1)}
-          containerClassName={"pagination"}
+          containerClassName={styledMythList.pagination}
         ></ReactPaginate>
       )
     }
