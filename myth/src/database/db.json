@@ -1,6 +1,16 @@
 {
     "mythItems":[
         {
+            "name":"Unicorn",
+            "description":"Mitolojik  tek  boynuzlu  attır.  Kafasının  ortasından  düz  bir  boynuz  çıkar.  Saf  ve masum  olduğuna,  kanı  içildiğinde  kişiyi  ölümsüz  kıldığına,  bu  nedenle  öldürmenin  lanet getireceğine inanılan efsanevi bir hayvandır. Latince ismi olan Unicorn; bir-tek anlamına gelen uni ve boynuz anlamına gelen cornus sözcüklerinden türemiştir. ",
+            "imagePath":"https://i.pinimg.com/564x/79/08/25/790825bf5f0e46ab44b1615be99516cf.jpg"
+        },
+        {
+            "name":"Pegasus",
+            "description":"Pegasus, Yunan mitolojisi'nde kanatlı at. Deniz tanrısı; Poseidon ile yılan saçlı Gorgon Medusa'nın oğlu ve dev Chrysaor'un kardeşi olduğuna inanılır. Ayrıca Zeus'un oğlu Herkül'ün kardeşi olarak da bilinir.",
+            "imagePath":"https://i.pinimg.com/564x/5f/12/ec/5f12ec010f1bc497cb7679d81560f57a.jpg"
+        },
+        {
             "name":"Satir",
             "description":"Satirler, Yunan mitolojisinde yer alan yarı keçi yarı insan kır ve orman koruyucularıdır. Gövdelerinin  belden  üstü  insan,  belden  aşağısı  ise teke  biçimindedir.  Satirler  çoğunlukla ellerindeki flüt ile birlikte tasvir edilir.",
             "imagePath":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUhETGfJXUvnZSo4HXfJwMwx2wX4BjXC61A&usqp=CAU"
@@ -8,7 +18,7 @@
         {
             "name":"Sentor",
             "description":"Sentorlar  Yunan  mitolojisinde  kısmen  insan ve  kısmen  at  görünümlü  yaratıklardır. Yarı insan ve yarı bedenli düşsel varlıktır. Genellikle kaba ve kötü yaratıklar olarak bilinirler. Sentorun sureti görenlere çok farklı ve ürkütücü gelmektedir. Yunan mitolojisinde sentorlar savaşçı, savaş yetenekleri gelişmiş, güçlü yaratıklar olarak tasvir edilmiştir. ",
-            "imagePath":"https://i.pinimg.com/564x/d9/ae/32/d9ae32106c8626e1461f51694dddc990.jpg"
+            "imagePath":"https://i.pinimg.com/564x/33/ee/4b/33ee4bd25bfcd14b4e274242d80e3eb6.jpg"
         },
         {
             "name":"Nymphe",
@@ -74,11 +84,7 @@
             "name":"Hidra",
             "description":"Yunan mitolojisinde anlatılan üç başlı bir yaratığın adıdır. Hydra nın nefesi bir insanı öldürecek kadar zehirlidir. Babası Typhon olan Hidra nın Lerna gölündeki yuvası, ölümden sonraki dünya ile insanların dünyası arasındaki kapının tam ağzında yer almakta olup, Hidra ise bu kapının bekçiliği görevini üstlenmektedir. Hidra nın öldürülmesinin çok zor olmasının sebebi kesilen her bir başın yerine iki tanesinin çıkmasıdır. ",
             "imagePath":"https://i.pinimg.com/564x/42/b3/73/42b3735345b59741de0bd61e51c24068.jpg"
-        },
-        {
-            "name":"Unicorn",
-            "description":"Mitolojik  tek  boynuzlu  attır.  Kafasının  ortasından  düz  bir  boynuz  çıkar.  Saf  ve masum  olduğuna,  kanı  içildiğinde  kişiyi  ölümsüz  kıldığına,  bu  nedenle  öldürmenin  lanet getireceğine inanılan efsanevi bir hayvandır. Latince ismi olan Unicorn; bir-tek anlamına gelen uni ve boynuz anlamına gelen cornus sözcüklerinden türemiştir. ",
-            "imagePath":"https://i.pinimg.com/564x/79/08/25/790825bf5f0e46ab44b1615be99516cf.jpg"
         }
+
     ]
 }

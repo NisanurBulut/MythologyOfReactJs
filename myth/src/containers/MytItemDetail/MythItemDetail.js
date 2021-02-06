@@ -16,17 +16,15 @@ const MythItemDetail = (props) => {
   const showData = () => {
     if (! _.isEmpty(mythItemState.data[mythItemName])) {
       const mythItemData=mythItemState.data[mythItemName][0];
-      console.log(mythItemData);
+
       return(
         <div className={styledMythItem.mythWrapper}>
           <div className={styledMythItem.mythItemHeader}>
            <h1>{mythItemName}</h1>
           </div>
-          <div className={"item"}>
-            <img src={mythItemData.imagePath} alt=""/>
-          </div>
-          <div className="item">
-           <p>{mythItemData.description}</p>
+          <div className={styledMythItem.item}>
+            <img src={mythItemData.imagePath} alt={mythItemData.name}/>
+            <p>{mythItemData.description}</p>
           </div>
         </div>
       )

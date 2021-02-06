@@ -7,13 +7,6 @@ import { GetMythList } from '../../actions/MythActions';
 import { Link } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import styledMythList from '../MythList/MythList.modules.css';
-
-
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import MythItem from '../MythItem/MythItem';
 
 
