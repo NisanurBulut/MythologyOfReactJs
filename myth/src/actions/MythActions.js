@@ -1,5 +1,6 @@
 import axios from 'axios';
-export const GetMythList = (page) => async (dispathch) => {
+export const GetMythList = (page, searchData) => async (dispathch) => {
+  console.log(searchData);
   try {
     dispathch({
       type: 'MYTH_LIST_LOADING',
@@ -13,9 +14,10 @@ export const GetMythList = (page) => async (dispathch) => {
       .then((respo) => {
         return respo;
       });
+      const returnData=res.data.filter(a=>a.name.toLowerCase().includes(searchData));
     dispathch({
       type: 'MYTH_LIST_LOADING_SUCCESS',
-      payload: res.data.slice(indexOfFirstTodo, indexOfLastTodo),
+      payload: returnData.slice(indexOfFirstTodo, indexOfLastTodo),
     });
   } catch (e) {
     dispathch({
