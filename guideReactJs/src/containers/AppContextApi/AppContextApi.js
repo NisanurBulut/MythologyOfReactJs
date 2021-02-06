@@ -8,8 +8,10 @@ class AppContextApi extends PureComponent {
   render() {
     return (
       <ThemeContextProvider>
-        <Navbar></Navbar>
+       <div className={classes.main}>
+       <Navbar></Navbar>
         <BookList></BookList>
+       </div>
       </ThemeContextProvider>
     );
   }
