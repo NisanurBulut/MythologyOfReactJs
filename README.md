@@ -108,7 +108,7 @@ Zeus is the god of the sky, lightning and the thunder in Ancient Greek religion 
 11. <b>Myth</b> <br>
 Myth is an application that introduces mythological creatures. The use of Redux pattern with Reactjs is demonstrated. Axios library was used with the help of json-server and data reading was done. React-Pagination is used.
 
-![App-Myth](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Myth.gif)
+![App-Myth](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Mythv2.gif)
 <br>
 <hr>
 ### Helpfull Websites

@@ -1,19 +1,29 @@
 {
     "mythItems":[
         {
+            "name":"Unicorn",
+            "description":"Mitolojik  tek  boynuzlu  attır.  Kafasının  ortasından  düz  bir  boynuz  çıkar.  Saf  ve masum  olduğuna,  kanı  içildiğinde  kişiyi  ölümsüz  kıldığına,  bu  nedenle  öldürmenin  lanet getireceğine inanılan efsanevi bir hayvandır. Latince ismi olan Unicorn; bir-tek anlamına gelen uni ve boynuz anlamına gelen cornus sözcüklerinden türemiştir. ",
+            "imagePath":"https://i.pinimg.com/564x/79/08/25/790825bf5f0e46ab44b1615be99516cf.jpg"
+        },
+        {
+            "name":"Pegasus",
+            "description":"Pegasus, Yunan mitolojisi'nde kanatlı at. Deniz tanrısı; Poseidon ile yılan saçlı Gorgon Medusa'nın oğlu ve dev Chrysaor'un kardeşi olduğuna inanılır. Ayrıca Zeus'un oğlu Herkül'ün kardeşi olarak da bilinir.",
+            "imagePath":"https://i.pinimg.com/564x/5f/12/ec/5f12ec010f1bc497cb7679d81560f57a.jpg"
+        },
+        {
             "name":"Satir",
             "description":"Satirler, Yunan mitolojisinde yer alan yarı keçi yarı insan kır ve orman koruyucularıdır. Gövdelerinin  belden  üstü  insan,  belden  aşağısı  ise teke  biçimindedir.  Satirler  çoğunlukla ellerindeki flüt ile birlikte tasvir edilir.",
-            "imagePath":"https://bit.ly/2NTO6KB"
+            "imagePath":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmUhETGfJXUvnZSo4HXfJwMwx2wX4BjXC61A&usqp=CAU"
         },
         {
             "name":"Sentor",
             "description":"Sentorlar  Yunan  mitolojisinde  kısmen  insan ve  kısmen  at  görünümlü  yaratıklardır. Yarı insan ve yarı bedenli düşsel varlıktır. Genellikle kaba ve kötü yaratıklar olarak bilinirler. Sentorun sureti görenlere çok farklı ve ürkütücü gelmektedir. Yunan mitolojisinde sentorlar savaşçı, savaş yetenekleri gelişmiş, güçlü yaratıklar olarak tasvir edilmiştir. ",
-            "imagePath":"https://i.pinimg.com/564x/d9/ae/32/d9ae32106c8626e1461f51694dddc990.jpg"
+            "imagePath":"https://i.pinimg.com/564x/33/ee/4b/33ee4bd25bfcd14b4e274242d80e3eb6.jpg"
         },
         {
-            "name":"Nemf (Nymphe)",
+            "name":"Nymphe",
             "description":"Su  perileridir. Yunan  Mitolojisinde yeri  ve denizi  dolduran  dişi, tanrısal varlıklardır. Ölümsüz değillerdir ama çok uzun yıllar yaşarlar ve hep genç ve güzel kalırlar. Mitlerde genellikle perilerin güzelliğine vurgu yapılır.",
-            "imagePath":"https://lh3.googleusercontent.com/proxy/BRFrYSrYIbEPXyBChLIyBKGB8uRME-UfTWj2coiIDDY5Fbu-LcLH22ECsS_NSOqLcOt7IK0iDO0ut727Pb8Z0bZObzNTwP0uqnA7r_zCi92KulxHwX9EQT3Kp2jqrUH1b_rA"
+            "imagePath":"https://data.puzzle.de/grafika.133/waldnymphe-1000-teile--puzzle-1.50275-1.fs.jpg"
         },
         {
             "name":"Peri",
@@ -48,7 +58,7 @@
         {
             "name":"Goblin",
             "description":"Goblinler,  kötü  ruhlu,  huysuz,  zararlı,  çirkin  vücutlu  bir  cin  türüdür.  Boyu  bir cüceninki ile bir insanınki arasında değişik uzunluklarda olabilir. Yer aldıkları hikâyeye ve kültüre göre, goblinlere değişik yetenekler ve şekiller atfedilir. İngilizcede goblin herhangi bir başbelası küçük yaratığı ifade etmek için kullanılan genel bir terimdir. Bazı geleneklere göre, goblin ismi Gob veya Ghob dan gelir. Gob (Ghob), cinlerin kralıdır. ",
-            "imagePath":"https://i.pinimg.com/564x/75/cf/f4/75cff4c94d328c56477f1b3accfa7449.jpg"
+            "imagePath":"https://i.pinimg.com/564x/cc/c3/51/ccc351f26823394c24c0d626506294e5.jpg"
         },
         {
             "name":"Simurg-Phoenix",
@@ -68,17 +78,13 @@
         {
             "name":"Minotor",
             "description":"Yunan  mitolojisinde  yarı  insan-yarı  boğa  yaratık.  Özgün  sözcük  Minotor dur  ve Yunanca Minos’un Boğası anlamına gelir. Klasik bir Yunan Efsanesi olan Minotor, öykü kısmı daha iyi anlaşılsın diye üç bölüme ayrılabilir. Girit’te hüküm süren güçlü kral Minos, gücünü  kanıtlamak  için  denizler  tanrısı  Poseidon’dan  ona  kurban  etmek  üzere  bir  boğa vermesini  ister.  Posedion  boğayı  Minos’a  verir.  Fakat  hayvan,  Minos’un  hoşuna  gider  ve Minos, boğayı kurban etmez. Bunun yerine başka bir boğayı kurban eder. Poseidon bunu fark ettiğinde  çok  sinirlenir  ve  Minos’un  karısını  boğaya  âşık  eder.  Minos’un  karısı  Pasiphae, boğayla çiftleşir ve boğa başlı, kuyruklu ama insan bedenli Minotor doğar. Minotor herkese zarar veren bir yaratıktır ve bunun üzerine Labyrinthos adlı, içinden kimsenin çıkamayacağı yapıya kapatılır. ",
-            "imagePath":"https://i.pinimg.com/564x/03/14/53/0314535e7ca00f6904728a5613509927.jpg"
+            "imagePath":"https://i.pinimg.com/564x/1e/ab/d8/1eabd8a4634ae30cbf55351c178b3851.jpg"
         },
         {
             "name":"Hidra",
             "description":"Yunan mitolojisinde anlatılan üç başlı bir yaratığın adıdır. Hydra nın nefesi bir insanı öldürecek kadar zehirlidir. Babası Typhon olan Hidra nın Lerna gölündeki yuvası, ölümden sonraki dünya ile insanların dünyası arasındaki kapının tam ağzında yer almakta olup, Hidra ise bu kapının bekçiliği görevini üstlenmektedir. Hidra nın öldürülmesinin çok zor olmasının sebebi kesilen her bir başın yerine iki tanesinin çıkmasıdır. ",
             "imagePath":"https://i.pinimg.com/564x/42/b3/73/42b3735345b59741de0bd61e51c24068.jpg"
-        },
-        {
-            "name":"Unicorn",
-            "description":"Mitolojik  tek  boynuzlu  attır.  Kafasının  ortasından  düz  bir  boynuz  çıkar.  Saf  ve masum  olduğuna,  kanı  içildiğinde  kişiyi  ölümsüz  kıldığına,  bu  nedenle  öldürmenin  lanet getireceğine inanılan efsanevi bir hayvandır. Latince ismi olan Unicorn; bir-tek anlamına gelen uni ve boynuz anlamına gelen cornus sözcüklerinden türemiştir. ",
-            "imagePath":"https://i.pinimg.com/564x/79/08/25/790825bf5f0e46ab44b1615be99516cf.jpg"
         }
+
     ]
 }

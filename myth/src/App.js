@@ -1,17 +1,17 @@
 import logo from './logo.svg';
-import './App.css';
+import styledApp from './App.css';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
-import MythList from './containers/MythList';
-import MythItem from './containers/MythItem';
+import MythList from './containers/MythList/MythList';
+import MythItemDetail from './containers/MytItemDetail/MythItemDetail';
 function App() {
   return (
     <div className="App">
-      <nav className="header">
+      <nav className={styledApp.header}>
         <NavLink to={"/"}><b>Search</b></NavLink>
       </nav>
       <Switch>
         <Route path={'/'} exact component={MythList} />
-        <Route path={'/myth/:myth'} exact component={MythItem} />
+        <Route path={'/myth/:myth'} exact component={MythItemDetail} />
         <Redirect path={"/"}></Redirect>
       </Switch>
     </div>
