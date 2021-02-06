@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GetMyth } from '../../actions/MythActions';
 import styledMythItem from '../MytItemDetail/MythItemDetail.css';
+import styledApp from '../../App.css';
 import _ from 'lodash';
 import Loader from "react-loader-spinner";
 
@@ -43,10 +44,10 @@ const MythItemDetail = (props) => {
     }
 
     if (mythItemState.errorMessage !== "") {
-      return <p>{mythItemState.errorMessage}</p>
+      return <p className={styledApp.errorMessage}>{mythItemState.errorMessage}</p>
     }
 
-    return <p>error getting myth item</p>
+    return <p className={styledApp.errorMessage}>error getting myth item</p>
   };
 
   return (

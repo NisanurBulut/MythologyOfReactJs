@@ -12,9 +12,10 @@
     overflow: 'hidden';
     margin-bottom: 30px;
   }
+
   .loading{
-    display: 'flex';
-    justify-content: center;
+    padding-top: 200px 100px;
+    text-align: center;
   }
   .listWrapper a {
     text-decoration: none;

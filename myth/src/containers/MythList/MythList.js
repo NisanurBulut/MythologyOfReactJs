@@ -7,6 +7,7 @@ import { GetMythList } from '../../actions/MythActions';
 import { Link } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import styledMythList from '../MythList/MythList.modules.css';
+import appStyled from '../../App.css';
 import MythItem from '../MythItem/MythItem';
 import Loader from "react-loader-spinner";
 
@@ -58,9 +59,9 @@ const MythList = (props) => {
       />)
     }
     if (mythList.errorMessage !== '') {
-      return <div>{mythList.errorMessage}</div>;
+      return <div className={appStyled.errorMessage}>{mythList.errorMessage}</div>;
     }
-    return <p>unable to data</p>;
+    return <p className={appStyled.errorMessage}>unable to data</p>;
   };
 
   return (

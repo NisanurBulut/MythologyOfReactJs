@@ -6,6 +6,13 @@ html, body {
   padding: 0;
  background-color: #E7FB99;
 }
+.errorMessage{
+  padding-top: 100px;
+  text-align: center;
+  color: #b62d1e;
+  font-weight: bold;
+  font-size: xxx-large;
+}
 .header {
   display: flex;
   width: 100%;
