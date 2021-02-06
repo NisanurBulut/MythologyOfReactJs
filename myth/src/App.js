@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import styledApp from './App.css';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 import MythList from './containers/MythList/MythList';
-import MythItem from './containers/MythItem';
+import MythItem from './containers/MythItem/MythItem';
 function App() {
   return (
     <div className="App">

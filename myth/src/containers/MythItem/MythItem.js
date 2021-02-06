@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { GetMyth } from '../actions/MythActions';
+import { GetMyth } from '../../actions/MythActions';
+
 import _ from 'lodash';
 
 const MythItem = (props) => {
