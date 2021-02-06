@@ -11,6 +11,11 @@
     justify-content: 'space-around';
     overflow: 'hidden';
   }
+  .listWrapper a {
+    text-decoration: none;
+    color:brown;
+    font-weight: bold;
+  }
 
   .mythItem{
     margin : 10px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GetMyth } from '../../actions/MythActions';
-
+import styledMythItem from '../MythItem/MythItem.css';
 import _ from 'lodash';
 
 const MythItem = (props) => {
@@ -18,8 +18,8 @@ const MythItem = (props) => {
       const mythItemData=mythItemState.data[mythItemName][0];
       console.log(mythItemData);
       return(
-        <div className={"myth-wrapper"}>
-          <div className="mythItemHeader">
+        <div className={styledMythItem.mythWrapper}>
+          <div className={styledMythItem.mythItemHeader}>
            <h1>{mythItemName}</h1>
           </div>
           <div className={"item"}>
