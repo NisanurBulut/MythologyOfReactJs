@@ -10,7 +10,7 @@ export const GetMythList = (page, searchData) => async (dispathch) => {
     const indexOfLastTodo = page * perPage;
     const indexOfFirstTodo = indexOfLastTodo - perPage;
     const res = await axios
-      .get('http://localhost:3000/mythItems')
+      .get('http://localhost:3000/mythItems', {delay:3000})
       .then((respo) => {
         return respo;
       });
@@ -33,7 +33,7 @@ export const GetMyth = (myth) => async (dispathch) => {
       type: 'MYTH_ITEM_LOADING',
     });
     const res = await axios
-      .get(`http://localhost:3000/mythItems?name=${myth}`)
+      .get(`http://localhost:3000/mythItems?name=${myth}`, {delay:3000})
       .then((respo) => {
         return respo;
       });

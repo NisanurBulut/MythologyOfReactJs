@@ -12,6 +12,10 @@
     overflow: 'hidden';
     margin-bottom: 30px;
   }
+  .loading{
+    display: 'flex';
+    justify-content: center;
+  }
   .listWrapper a {
     text-decoration: none;
     color:brown;

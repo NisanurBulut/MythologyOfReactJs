@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { GetMyth } from '../../actions/MythActions';
 import styledMythItem from '../MytItemDetail/MythItemDetail.css';
 import _ from 'lodash';
+import Loader from "react-loader-spinner";
 
 const MythItemDetail = (props) => {
   const mythItemName = props.match.params.myth;
@@ -31,7 +32,14 @@ const MythItemDetail = (props) => {
     }
 
     if (mythItemState.loading) {
-      return <p>Loading...</p>
+      return (  <Loader
+        className={styledMythItem.listWrapper}
+          type="Puff"
+          color="#00BFFF"
+          height={100}
+          width={100}
+          timeout={3000000} //3 secs
+        />)
     }
 
     if (mythItemState.errorMessage !== "") {

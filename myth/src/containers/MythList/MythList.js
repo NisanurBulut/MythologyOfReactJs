@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import styledMythList from '../MythList/MythList.modules.css';
 import MythItem from '../MythItem/MythItem';
-
+import Loader from "react-loader-spinner";
 
 const MythList = (props) => {
   const [search, setSearch] = useState('');
@@ -48,7 +48,14 @@ const MythList = (props) => {
       );
     }
     if (mythList.loading) {
-      return <p>....Loading</p>;
+      return (  <Loader
+      className={styledMythList.listWrapper}
+        type="Puff"
+        color="#00BFFF"
+        height={100}
+        width={100}
+        timeout={3000} //3 secs
+      />)
     }
     if (mythList.errorMessage !== '') {
       return <div>{mythList.errorMessage}</div>;
