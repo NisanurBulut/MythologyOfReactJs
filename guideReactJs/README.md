@@ -89,6 +89,7 @@ Peki bu devamlı değişimi nasıl kontrol edebiliriz ? etkileneceği değeri se
 - Bir Provider’ın soyundan gelen tüm tüketiciler, Provider’ın value prop’u her değiştiğinde yeniden oluşturulur.
 - Provider’ın soyundan gelen tüketicilere (.contextType ve useContext de dahil olmak üzere) yayılması,shouldComponentUpdate metoduna tabi değildir, dolayısıyla herhangi bir bileşen güncellemeyi önlediğinde bile tüketici güncellenir.
  ![App-ContextApi](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_ContextApiApp.gif)
+ - Context data update edilecekse, contextapi içerisinde update,click,change... eventler yazılır bu eventler üzerinden state değişimi yapılır ve consume edilirkende alt bileşenler yine bu event'lara erişerek context data'yı güncellerler.
 </p>
 
 - Understanding the Base Features & Syntax
