@@ -7,12 +7,12 @@ import AppHooks from './AppHooks/AppHooks';
 class App extends PureComponent {
   render() {
     return (
-      <div className={classes.App}>
-      <AppHooks></AppHooks>
-    </div>
-    //  <div className={classes.App}>
-    //    <AppContextApi></AppContextApi>
-    //  </div>
+    //   <div className={classes.App}>
+    //   <AppHooks></AppHooks>
+    // </div>
+     <div className={classes.App}>
+       <AppContextApi></AppContextApi>
+     </div>
         // <WithClass classes={classes.App}>
         //   <AppCompleteGuide appTitle="Guide App For ReactJs"/>
         // </WithClass>
