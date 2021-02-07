@@ -79,9 +79,10 @@ function Example() {
   - useState ise this.state‘in sınıfta sağladığı özellikleri kullanmanın yeni bir yoludur. Normalde değişkenler fonksiyon bitiminde “kaybolur”; fakat state değişkenleri React tarafından korunur.
 
 ### UseEffect
-<p>Fonksiyonel bileşenlerde kullanırız. You can add it anywhere in your functional component body and useEffect as sa default takes a function.
+<p>Fonksiyonel bileşenlerde kullanırız. You can add it anywhere in your functional component body and useEffect as sa default takes a function. Callback funtion'ı parametre olarak alır. Şöyle ki: useEffect(()=>{})
+
 - UseEffect doğru şekilde kullanılmalıdır çünkü devamlı ayağa kalkar. It combines componentDidMount and componentDidUpdate
-Peki bu devamlı değişimi nasıl kontrol edebiliriz ? etkileneceği değeri set edebiliriz eğer boş parametre ([]) geçersek render'da sadece bir kez çalışır.</p>
+- Peki bu devamlı değişimi nasıl kontrol edebiliriz ? etkileneceği değeri set edebiliriz eğer boş parametre ([]) geçersek render'da sadece bir kez çalışır.</p>
 
 ### Memo
 <p>Memo daha önce shouldComponentUpdate methodu ile yapabildiğimiz sürekli render işlemini engellemeyi daha kolay bir hale getirir. İstenmeyen re-render işlemlerinin önüne geçmek için kullanılır. shouldComponentdidUpdate eski sürümde kullanılır ve modern bir yaklaşım değildir. shouldcomponentUpdate çok güçlü bir özelliktir ancak yalnızca class based wbileşenlerde kullanılır. Yalnız unutma ki bunlar extra kontrollerdir ve performansı doğruan etkiler. Diyelim ki 50 tane propsun var 50si için if yazıp kontrol mu edeceksin bunun onune gecmek içinde pureComponent kalıtımını kullanabilirim</p>
