@@ -11,6 +11,7 @@ body {
   opacity: 0.6;
 }
 .App{
+  padding-top: 50px;
   margin: 20px auto;
   width: 90%;
   max-width: 500px;

@@ -110,9 +110,14 @@ Myth is an application that introduces mythological creatures. The use of Redux 
 ![App-Myth](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Mythv2.gif)
 <br>
 <hr>
+19. <b>Hestia</b> <br>
+Hestia is a reactjs application that stores a list of books using localStorage. React Hooks are discussed in this study. Hooks used: useState, useContext, useReducer, useEffect. Context Api implementation is also demonstrated on functional and class-based components.
+
+![App-Hestia](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hestia.gif)
+<br>
+<hr>
 
 ### Helpfull Websites
-
 [uidesigndaily](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
 [Devto](https://dev.to/) [popmotion](https://popmotion.io) [json-server](https://github.com/typicode/json-server)
 [unsplash](https://unsplash.com/) [webgradients](https://webgradients.com/) [edamam api](https://developer.edamam.com/)
