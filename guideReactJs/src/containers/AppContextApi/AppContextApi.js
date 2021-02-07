@@ -5,6 +5,7 @@ import ThemeContextProvider from './contexts/ThemeContext';
 import AuthContextProvider from './contexts/AuthContext';
 import classes from './AppContextApi.css';
 import ThemeToggle from '../../components/ContextApp/ThemeToggle';
+import BookContextProvider from './contexts/BookContext';
 
 class AppContextApi extends PureComponent {
   render() {
@@ -13,7 +14,9 @@ class AppContextApi extends PureComponent {
         <AuthContextProvider>
           <div className={classes.main}>
             <Navbar></Navbar>
-            <BookList></BookList>
+           <BookContextProvider>
+           <BookList></BookList>
+           </BookContextProvider>
             <ThemeToggle />
           </div>
         </AuthContextProvider>
