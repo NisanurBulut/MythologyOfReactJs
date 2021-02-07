@@ -4,11 +4,11 @@ export const BookContext = createContext();
 
 const BookContextProvider = (props) => {
   const [books, setBooks] = useState([
-    { id: 1, title: 'Yerdeniz Büyücüsü', author: '' },
-    { id: 2, title: 'Satranç', author: '' },
-    { id: 3, title: 'Şeker Portakalı', author: '' },
-    { id: 4, title: 'Çalıkuşu', author: '' },
-    { id: 5, title: 'Kürk Mantolu Madonna', author: '' },
+    { id: 1, title: 'Yerdeniz Büyücüsü', author: 'Ursula K Le Guin' },
+    { id: 2, title: 'Satranç', author: 'Stefan Zweig' },
+    { id: 3, title: 'Şeker Portakalı', author: 'José Mauro de Vasconcelos' },
+    { id: 4, title: 'Çalıkuşu', author: 'Reşat Nuri Güntekin' },
+    { id: 5, title: 'Kürk Mantolu Madonna', author: 'Sabahattin Ali' },
   ]);
   const addBook = (title, author) => {
     setBooks([...books, { title: title, author: author, id: uuidv4() }]);
