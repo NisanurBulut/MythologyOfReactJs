@@ -92,20 +92,19 @@ Kronos is the god of time in Greek mythology. In this tutorial, a countdown tool
 ![App-Kronos](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Kronos.gif)
 <br>
 <hr>
-11. <b>Hades</b> <br>
+12. <b>Hades</b> <br>
 Hades is the Ancient Greek god of the Underworld, the place where human souls go after death. In time, his name became synonymous with his realm. In this tutorial project, the issue of covid is discussed. Searching and sorting operations have been done on the arrays. The axios library is used for API calls.
 
 ![App-Hades](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hades.gif)
 <br>
 <hr>
-11. <b>Zeus</b> <br>
+13. <b>Zeus</b> <br>
 Zeus is the god of the sky, lightning and the thunder in Ancient Greek religion and legends, and ruler of all the gods on Mount Olympus. In this tutorial project, weather queries have been made using api. State management is provided with the RxJs library.
 
 ![App-Zeus](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Zeusv2.gif)
 <br>
 <hr>
-
-12. <b>Myth</b> <br>
+14. <b>Myth</b> <br>
 Myth is an application that introduces mythological creatures. The use of Redux pattern with Reactjs is demonstrated. Axios library was used with the help of json-server and data reading was done. React-Pagination is used.
 
 ![App-Myth](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Mythv2.gif)
