@@ -66,6 +66,18 @@ The naming can be confusing but lifecycle .hooks have absolutely nothing to do w
 <b>ComponentDidMount:</b> is a very important lifecycle hook which you will use a lot when you are working with class based components because you create side effect. That is typical hook you would use for making http request to get new data from the web. What you shpuldnt do in here is update state. So dont call set state in here unless it's in. Let's say the then block of a promise after you sent an http request but dont call setsyate in here scynhronously. Çünkü render eder ve bu da performansu etkiler.
 </p>
 
+### Hooks
+<b>Hook Nedir?</b> Hook, React özelliklerini “bağlamanıza” izin veren özel bir fonksiyondur. Örneğin useState, React state’ini fonksiyon bileşenlerine eklemenize izin veren bir Hook’tur.
+<b> ## UseState: </b> That hook is just a function and it's going to allow us to use a piece of state inside this functional component. Bir başlangıç değeri almak ister.
+<code>
+import React, { useState } from 'react';
+function Example() {
+  // "count" adında yeni bir state değişkeni tanımlayın.
+  const [count, setCount] = useState(0);}
+  </code><br/>
+  <b>useState‘i çağırmak ne işe yarar?</b> Bu, yeni bir “state değişkeni” tanımlar. Değişkenimizin adı count; fakat farklı bir şekilde de (örneğin banana) çağırabilirdik. Bu yöntemle fonksiyon çağrıları arasında verilerinizi koruyabilirsiniz.
+  - useState ise this.state‘in sınıfta sağladığı özellikleri kullanmanın yeni bir yoludur. Normalde değişkenler fonksiyon bitiminde “kaybolur”; fakat state değişkenleri React tarafından korunur.
+
 ### UseEffect
 <p>Fonksiyonel bileşenlerde kullanırız. You can add it anywhere in your functional component body and useEffect as sa default takes a function.
 - UseEffect doğru şekilde kullanılmalıdır çünkü devamlı ayağa kalkar. It combines componentDidMount and componentDidUpdate
