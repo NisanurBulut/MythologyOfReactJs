@@ -80,31 +80,31 @@ Aphrodite is a the goddess of beautfy and is a react tutorial project promoting 
 ![App-Aphrodite](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Afrodit.gif)
 <br>
 <hr>
-10. <b>Apollo</b> <br>
+11. <b>Apollo</b> <br>
 Apollo is the god of art and is a react tutorial project promoting click events
 
 ![App-Apollo](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Apollo.gif)
 <br>
 <hr>
-11. <b>Kronos</b> <br>
+12. <b>Kronos</b> <br>
 Kronos is the god of time in Greek mythology. In this tutorial, a countdown tool was developed using react material ui with localstorage.
 
 ![App-Kronos](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Kronos.gif)
 <br>
 <hr>
-12. <b>Hades</b> <br>
+13. <b>Hades</b> <br>
 Hades is the Ancient Greek god of the Underworld, the place where human souls go after death. In time, his name became synonymous with his realm. In this tutorial project, the issue of covid is discussed. Searching and sorting operations have been done on the arrays. The axios library is used for API calls.
 
 ![App-Hades](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hades.gif)
 <br>
 <hr>
-13. <b>Zeus</b> <br>
+14. <b>Zeus</b> <br>
 Zeus is the god of the sky, lightning and the thunder in Ancient Greek religion and legends, and ruler of all the gods on Mount Olympus. In this tutorial project, weather queries have been made using api. State management is provided with the RxJs library.
 
 ![App-Zeus](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Zeusv2.gif)
 <br>
 <hr>
-14. <b>Myth</b> <br>
+15. <b>Myth</b> <br>
 Myth is an application that introduces mythological creatures. The use of Redux pattern with Reactjs is demonstrated. Axios library was used with the help of json-server and data reading was done. React-Pagination is used.
 
 ![App-Myth](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Mythv2.gif)
