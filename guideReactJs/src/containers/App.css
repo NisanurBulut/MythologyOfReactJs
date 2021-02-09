@@ -1,3 +1,10 @@
 .App {
   text-align: center;
+  padding-top: 2%;
+}
+a{
+  color:#fff;
+  font-size: larger;
+  font-weight: bold;
+  margin: 5px;
 }

@@ -1,3 +1,8 @@
+.toggledBtn{
+  background-color: steelblue;
+  color:#fff;
+  outline: none;
+}
 .main{
   max-width: 400px;
   margin: 160px auto;
