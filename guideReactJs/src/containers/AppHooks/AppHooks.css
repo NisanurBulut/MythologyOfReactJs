@@ -1,13 +1,15 @@
 li {
   text-decoration: none;
   list-style: none;
-  background-color: #ddd;
   border-radius: 5px;
   margin-top: 5px;
 }
 
 .songList {
   padding-top: 5%;
+}
+.liTag{
+  background-color: #ddd;
 }
 
 .btnAge {
