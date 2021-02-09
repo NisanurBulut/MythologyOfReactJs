@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'IM Fell DW Pica SC', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('./bookList.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.App:before{
+  opacity: 0.6;
+}
+.App{
+  padding-top: 50px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+}
+ .navbar{
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px 20px;
+  text-align: center;
+  color:#3D0102;;
+  background: rgba(238, 238, 238, 0.74);
+}
+/* .navbar h1{
+  margin: 10px 0;
+}  */
+
+.book-list{
+  margin: 20px;
+}
+.book-list ul{
+  padding: 0;
+  list-style-type: none;
+}
+.book-list li{
+  background: rgba(238, 238, 238, 0.74);
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  color:#3D0102;
+}
+.book-list li:hover{
+  opacity: 0.7;
+  text-decoration: line-through #fff;
+}
+.book-list .title{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.book-list .author{
+  font-size: 0.9em;
+}
+.empty{
+  margin: 20px;
+  text-align: center;
+}
+form{
+  padding: 20px;
+  border:0;
+  outline: none;
+}
+input{
+  color:#3D0102;
+  outline: none !important;
+  border-radius: 5px;
+}
+input[type='text']{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #ddd;
+  border: 0;
+}
+input[type='submit']{
+  margin: 10px auto;
+  background: #eee;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
+  color:#3D0102;
+  font-weight: bolder;
+}

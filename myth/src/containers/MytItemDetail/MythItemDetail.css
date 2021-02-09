@@ -1,0 +1,35 @@
+.mythWrapper {
+  margin: auto;
+  width: 75%;
+  font-style: oblique !important;
+}
+.mythWrapper .mythItemHeader {
+  text-align: center;
+  font-family: fantasy;
+  color: #b62d1e;
+  padding-top: 20px;
+}
+ hr {
+  border: 1px solid #b62d1e;;
+  width: 500px;
+}
+.mythWrapper .item {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  color: #b62d1e;
+}
+.mythWrapper img {
+  width: 350px;
+  height: 300px;
+  border-radius: 5px;
+}
+.mythWrapper p {
+  width: 600px;
+  height: 300px;
+  margin:25px 5px 5px 35px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+  font-size: large;
+}

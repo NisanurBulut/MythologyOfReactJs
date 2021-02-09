@@ -66,16 +66,52 @@ The naming can be confusing but lifecycle .hooks have absolutely nothing to do w
 <b>ComponentDidMount:</b> is a very important lifecycle hook which you will use a lot when you are working with class based components because you create side effect. That is typical hook you would use for making http request to get new data from the web. What you shpuldnt do in here is update state. So dont call set state in here unless it's in. Let's say the then block of a promise after you sent an http request but dont call setsyate in here scynhronously. Çünkü render eder ve bu da performansu etkiler.
 </p>
 
+### Hooks
+<b>Hook Nedir?</b> Hook, React özelliklerini “bağlamanıza” izin veren özel bir fonksiyondur. Örneğin useState, React state’ini fonksiyon bileşenlerine eklemenize izin veren bir Hook’tur.
+<b> ## UseState: </b> That hook is just a function and it's going to allow us to use a piece of state inside this functional component. Bir başlangıç değeri almak ister.
+<code>
+import React, { useState } from 'react';
+function Example() {
+  // "count" adında yeni bir state değişkeni tanımlayın.
+  const [count, setCount] = useState(0);}
+  </code><br/>
+  <b>useState‘i çağırmak ne işe yarar?</b> Bu, yeni bir “state değişkeni” tanımlar. Değişkenimizin adı count; fakat farklı bir şekilde de (örneğin banana) çağırabilirdik. Bu yöntemle fonksiyon çağrıları arasında verilerinizi koruyabilirsiniz.
+  - useState ise this.state‘in sınıfta sağladığı özellikleri kullanmanın yeni bir yoludur. Normalde değişkenler fonksiyon bitiminde “kaybolur”; fakat state değişkenleri React tarafından korunur.
+
 ### UseEffect
-<p>Fonksiyonel bileşenlerde kullanırız. You can add it anywhere in your functional component body and useEffect as sa default takes a function.
+<p>Fonksiyonel bileşenlerde kullanırız. You can add it anywhere in your functional component body and useEffect as sa default takes a function. Callback funtion'ı parametre olarak alır. Şöyle ki: useEffect(()=>{})
+
 - UseEffect doğru şekilde kullanılmalıdır çünkü devamlı ayağa kalkar. It combines componentDidMount and componentDidUpdate
-Peki bu devamlı değişimi nasıl kontrol edebiliriz ? etkileneceği değeri set edebiliriz eğer boş parametre ([]) geçersek render'da sadece bir kez çalışır.</p>
+- Peki bu devamlı değişimi nasıl kontrol edebiliriz ? etkileneceği değeri set edebiliriz eğer boş parametre ([]) geçersek render'da sadece bir kez çalışır.</p>
 
 ### Memo
 <p>Memo daha önce shouldComponentUpdate methodu ile yapabildiğimiz sürekli render işlemini engellemeyi daha kolay bir hale getirir. İstenmeyen re-render işlemlerinin önüne geçmek için kullanılır. shouldComponentdidUpdate eski sürümde kullanılır ve modern bir yaklaşım değildir. shouldcomponentUpdate çok güçlü bir özelliktir ancak yalnızca class based wbileşenlerde kullanılır. Yalnız unutma ki bunlar extra kontrollerdir ve performansı doğruan etkiler. Diyelim ki 50 tane propsun var 50si için if yazıp kontrol mu edeceksin bunun onune gecmek içinde pureComponent kalıtımını kullanabilirim</p>
+
+### Context API (Ağaca veri yaymak)
+<p>Context, prop'ları her seviyede manuel olarak geçmek zorunda kalmadan bileşen ağacı üzerinden veri iletmenin bir yolunu sunar.
+
+- Normal bir React uygulamasında veri proplar aracılığıyla yukarıdan aşağıya taşınır.
+- Context; mevcut kullanıcıyı doğrulama, tema veya dil seçimi gibi Reactbileşen ağacında global olarak düşünülebilecek verileri paylaşmak için kullanılır. Context kullanarak ara öğelerden prop'ları geçirmekten kaçınırız.
+- Herbir bileşenin içinden açıkça geçmeden bileşen ağacının derinliklerine bir value geçmemizi sağlar.
+- Context bileşeninin tekrar kullanılırlığını olumsuz yönde etkiler. Dolayısıyla ölçülü kullanılmalıdır.
+- React context nesnesine abone bir bileşen oluşturduğunda context'in mevcut değerini ağaçtaki en yakın Provider'dan okur.
+- Her Context nesnesi, tüketici bileşenlerin context güncellemelerine abone olmasını sağlayan bir React Provider bileşeni ile birlikte gelir.
+- Provider bileşeni, bu Provider’ın soyundan gelen tüketici bileşenlerine geçirilecek olan bir value prop’unu kabul eder.
+- Birçok tüketici bir Provider’a bağlanabilir.
+- Provider’lar ağaçtaki daha derin değerleri değiştirmek için iç içe geçirilebilirler.
+- Bir Provider’ın soyundan gelen tüm tüketiciler, Provider’ın value prop’u her değiştiğinde yeniden oluşturulur.
+- Provider’ın soyundan gelen tüketicilere (.contextType ve useContext de dahil olmak üzere) yayılması,shouldComponentUpdate metoduna tabi değildir, dolayısıyla herhangi bir bileşen güncellemeyi önlediğinde bile tüketici güncellenir.
+ ![App-ContextApi](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_ContextApiApp.gif)
+ - Context data update edilecekse, contextapi içerisinde update,click,change... eventler yazılır bu eventler üzerinden state değişimi yapılır ve consume edilirkende alt bileşenler yine bu event'lara erişerek context data'yı güncellerler.
+</p>
 
 - Understanding the Base Features & Syntax
 - Working with Lists and Conditionals
 - Styling React Components & Elements (Eğer v2 de çalışılıyorsa proje ject edildiğinde css dosyaları file.module.css şeklinde kaydedilirse webpack.config.js dosyasında değişim yapmadan çalışılmaya devam edilebilir.)
 - Diving Deeper into Components & React Internals
 </p>
+
+### Helpfull Websites
+[tr.reactjs.org](https://tr.reactjs.org/docs/getting-started.html)
+[styled-components](https://styled-components.com/)
+[The Net Ninja React Context & Hooks Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI)
