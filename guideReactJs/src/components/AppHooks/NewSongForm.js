@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classes from '../../containers/AppHooks/AppHooks.css';
 const NewSongForm = ({ addSong }) => {
   const [title, setTitle] = useState('');
   const handleSubmit = (e) => {
@@ -16,7 +17,7 @@ const NewSongForm = ({ addSong }) => {
         required
         onChange={(e) => setTitle(e.target.value)}
       />
-      <input type="submit" value="Add A Song" />
+      <input className={classes.btnAdd} type="submit" value="Add A Song" />
     </form>
   );
 };
