@@ -111,6 +111,8 @@ function Example() {
 - Diving Deeper into Components & React Internals
 </p>
 
+![App-guideReactJs](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_GuideReactJs.gif)
+
 ### Helpfull Websites
 [tr.reactjs.org](https://tr.reactjs.org/docs/getting-started.html)
 [styled-components](https://styled-components.com/)
