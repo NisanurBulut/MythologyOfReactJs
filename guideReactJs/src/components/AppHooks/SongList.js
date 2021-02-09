@@ -5,9 +5,9 @@ import classes from '../../containers/AppHooks/AppHooks.css';
 const SongList = () => {
   const [songs, setSongs] = useState([
     // array detsructing
-    { title: 'Bambaşka Biri', id: 1 },
-    { title: 'Melek', id: 2 },
-    { title: 'Seni seviyorum', id: 3 },
+    { title: 'Şarkı 1', id: 1 },
+    { title: 'Şarkı 2', id: 2 },
+    { title: 'Şarkı 3', id: 3 },
   ]);
   const addSong = (title) => {
     setSongs([...songs, { title, id: uuidv4() }]);
@@ -20,7 +20,7 @@ const SongList = () => {
     <div className={classes.songList}>
       <ul>
         {songs.map((song) => {
-          return <li key={song.id}>{song.title}</li>;
+          return <li className={classes.liTag} key={song.id}>{song.title}</li>;
         })}
       </ul>
       <NewSongForm addSong = {addSong}/>
