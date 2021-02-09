@@ -27,28 +27,28 @@ class App extends React.Component {
     return (
       <div className={classes.App}>
         <Tabs activeKey={this.state.key} onSelect={this.handleSelect}>
-          <Tab
+        <Tab
             eventKey={1}
-            title="Using Context Api"
-            className={!(this.state.key == 1) ? bs['d-none'] : ''}
-          >
-            <AppContextApi></AppContextApi>
-          </Tab>
-          <Tab
-            eventKey={2}
-            title="Using Hooks"
-            className={!(this.state.key == 2) ? bs['d-none'] : ''}
-          >
-            <AppHooks></AppHooks>
-          </Tab>
-          <Tab
-            eventKey={3}
             title="Using Components"
-            className={!(this.state.key == 3) ? bs['d-none'] : ''}
+            className={!(this.state.key == 1) ? bs['d-none'] : ''}
           >
             <WithClass classes={classes.App}>
               <AppCompleteGuide appTitle="Guide App For ReactJs" />
             </WithClass>
+          </Tab>
+          <Tab
+            eventKey={2}
+            title="Using Context Api"
+            className={!(this.state.key == 2) ? bs['d-none'] : ''}
+          >
+            <AppContextApi></AppContextApi>
+          </Tab>
+          <Tab
+            eventKey={3}
+            title="Using Hooks"
+            className={!(this.state.key == 3) ? bs['d-none'] : ''}
+          >
+            <AppHooks></AppHooks>
           </Tab>
         </Tabs>
       </div>
