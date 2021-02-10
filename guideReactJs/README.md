@@ -1,3 +1,12 @@
+### Why Would You Use Ract ?
+
+- Structure the "view" layer of your application
+- Reusable components with their own state
+- JSX — Dynamic markup
+- Interactive UIs with Virtual DOM
+- Performance and testing
+- Very popular in the Industry
+
 ### DOM vs Virtual DOM
 
 <p><i>DOM</i>, Web sayfalarının bize görünmesini sağlayan html elemanlarının belirli bir düzenle bir arada bulunmasıdır.
