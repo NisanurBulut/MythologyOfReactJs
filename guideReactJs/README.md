@@ -131,4 +131,4 @@ function Example() {
 ### Helpfull Websites
 [tr.reactjs.org](https://tr.reactjs.org/docs/getting-started.html)
 [styled-components](https://styled-components.com/)
-[The Net Ninja React Context & Hooks Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI)
+[The Net Ninja React Context & Hooks Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI) [TraversyMedia-React JS Crash Course 2021](https://www.youtube.com/watch?v=w7ejDZ8SWv8&t=18s&ab_channel=TraversyMedia)
