@@ -1,5 +1,4 @@
 ### Why Would You Use Ract ?
-
 - Structure the "view" layer of your application
 - Reusable components with their own state
 - JSX — Dynamic markup
@@ -7,6 +6,12 @@
 - Performance and testing
 - Very popular in the Industry
 
+### What Should You Know First ?
+* You should have a good handle on JavaScript. I would not suggest jumping to React without learning JavaScript firs !
+- Data types, variables, functions, loops, etc.
+- Promises & asynchronous programming
+- Array methods like ForEach() or Map()
+- Fetch API & making http request
 ### DOM vs Virtual DOM
 
 <p><i>DOM</i>, Web sayfalarının bize görünmesini sağlayan html elemanlarının belirli bir düzenle bir arada bulunmasıdır.
