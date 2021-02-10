@@ -71,6 +71,7 @@ Stateless component, prop'lar ile iletilen ya da render edilen veriyi gösterir.
 </tbody>
 <table></br>
 
+![Components](https://github.com/NisanurBulut/MythologyOfReactJs/blob/rev_guidereactjs/guideReactJs/public/assets/components-functionsVSclasses.png)
 ### Component Lifecycles
 <p>
 
