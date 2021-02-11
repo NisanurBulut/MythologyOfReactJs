@@ -14,6 +14,11 @@ function App() {
     const data = await res.json();
     return data;
   };
+  const fetchContact = async (id) => {
+    const res = await fetch(`${url}/${id}`);
+    const data = await res.json();
+    return data;
+  };
   useEffect(() => {
     const getGontacts = async () => {
       const contactsFromServer = await fetchContacts();
@@ -28,11 +33,20 @@ function App() {
     });
     setContacts(contacts.filter((a) => a.id !== id));
   };
-  const toggleReminder = (id) => {
+  const toggleReminder = async (id) => {
+    const reminderContact = await fetchContact(id);
+    const updateContact = {...reminderContact, reminder:!reminderContact.reminder}
+    const res = await fetch (`${url}/${id}`, {
+      method:'PUT',
+      headers:{'Content-type':'application/json'},
+      body:JSON.stringify(updateContact)
+    })
+    const data = await res.json();
+
     setContacts(
       contacts.map((contact) =>
         contact.id === id
-          ? { ...contact, reminder: !contact.reminder }
+          ? { ...contact, reminder: data.reminder }
           : contact
       )
     );

@@ -17,6 +17,12 @@
       "text": "Furkan's birthday",
       "day": "1 November",
       "reminder": true
+    },
+    {
+      "text": "test",
+      "day": "12 ağustos",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
