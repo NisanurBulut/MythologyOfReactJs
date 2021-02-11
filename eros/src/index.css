@@ -11,13 +11,14 @@ body {
 }
 
 .container {
-  max-width: 700px;
+  min-width: 600px;
   margin: 30px auto;
   overflow: auto;
   min-height: 500px;
   border: 3px solid #eee;
   padding: 30px;
   border-radius: 5px;
+  color:black;
 }
 
 .header {
@@ -25,6 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  color:#fff;
 }
 
 .btn {

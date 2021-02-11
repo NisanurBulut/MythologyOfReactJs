@@ -16,19 +16,31 @@ function App() {
   const deleteContact = (id) => {
     setContacts(contacts.filter((a) => a.id !== id));
   };
+  const toggleReminder = (id) => {
+    setContacts(
+      contacts.map((contact) =>
+        contact.id === id
+          ? { ...contact, reminder: !contact.reminder }
+          : contact
+      )
+    );
+  };
   return (
     <div className="App">
-      {/* <header className="App-header">
-        test
-      </header> */}
-      <div className="container">
-        <Header title="Eros" />
-        {contacts.length > 0 ? (
-          <Contacts contacts={contacts} onDelete={deleteContact} />
-        ) : (
-          'No contacts'
-        )}
-      </div>
+      <header className="App-header">
+        <div className="container">
+          <Header title="Eros" />
+          {contacts.length > 0 ? (
+            <Contacts
+              contacts={contacts}
+              onDelete={deleteContact}
+              onToggleReminder={toggleReminder}
+            />
+          ) : (
+            'No contacts'
+          )}
+        </div>
+      </header>
     </div>
   );
 }
