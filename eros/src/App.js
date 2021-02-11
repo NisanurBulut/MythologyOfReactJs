@@ -14,6 +14,24 @@ function App() {
       day: '1 November',
       reminder: true,
     },
+    {
+      id: 1,
+      text: "Furkan's birthday",
+      day: '1 November',
+      reminder: true,
+    },
+    {
+      id: 1,
+      text: "Furkan's birthday",
+      day: '1 November',
+      reminder: true,
+    },
+    {
+      id: 1,
+      text: "Furkan's birthday",
+      day: '1 November',
+      reminder: true,
+    },
   ]);
   const deleteContact = (id) => {
     setContacts(contacts.filter((a) => a.id !== id));
