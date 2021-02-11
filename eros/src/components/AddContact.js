@@ -1,10 +1,22 @@
 import React, { useState } from 'react';
+import { RiUserHeartFill } from 'react-icons/all';
+function AddContact({ onAdd }) {
 
-function AddContact() {
   const [text, setText] = useState('');
   const [day, setDay] = useState('');
+  const [reminder, setReminder] = useState(false);
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if (!text) {
+      alert('Please add a text');
+      return;
+    }
+    onAdd({ text, day, reminder });
+    setText('');
+    setDay('');
+  };
   return (
-    <form className="add-form">
+    <form className="add-form" onSubmit={onSubmit}>
       <div className="form-control">
         <input
           type="text"
@@ -19,7 +31,9 @@ function AddContact() {
           onChange={(e) => setDay(e.target.value)}
         />
       </div>
-      <input type="submit" value="save" className="btn btn-block" />
+      <button type="submit" className="btn btn-block">
+        <RiUserHeartFill className="iconStyle" size={25} />
+      </button>
     </form>
   );
 }

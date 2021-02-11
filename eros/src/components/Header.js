@@ -1,25 +1,26 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const Header =({title})=> {
-    const onClick=()=>{
-        console.log('in Header component clicked');
-    }
-        return (
-            <div className='header'>
-                <h1>{title}</h1>
-                <Button color='green' text='Add' onClick={onClick} />
-            </div>
-        )
-    }
+const Header = ({ title, onAdd, showAddContact }) => {
+  return (
+    <div className="header">
+      <h1>{title}</h1>
+      <Button
+        color={showAddContact ? 'green' : 'red'}
+        text={showAddContact ? 'close' : 'open'}
+        onClick={onAdd}
+      />
+    </div>
+  );
+};
 Header.defaultProps = {
-    title:'Love Tracker'
-}
+  title: 'Love Tracker',
+};
 
-Header.prototype={
-    title:PropTypes.string.isRequired
-}
+Header.prototype = {
+  title: PropTypes.string.isRequired,
+};
 // const headerStyle= {
 //    color:'red',
 //    backgroundColor:'black'

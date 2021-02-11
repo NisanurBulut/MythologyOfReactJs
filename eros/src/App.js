@@ -6,6 +6,7 @@ import Contacts from './components/Contacts';
 import AddContact from './components/AddContact';
 
 function App() {
+  const [showAddContact, setShowAddContact]=useState(false);
   const [contacts, setContacts] = useState([
     {
       id: 1,
@@ -26,12 +27,17 @@ function App() {
       )
     );
   };
+  const addContact = (contact)=>{
+    const id = Math.floor(Math.random()*1000)+1;
+    const newContact = { id, ...contact};
+    setContacts([...contacts, newContact]);
+  }
   return (
     <div className="App">
       <header className="App-header">
         <div className="container">
-          <AddContact />
-          <Header title="Eros" />
+          <Header title="Eros" onAdd={()=>setShowAddContact(!showAddContact)} showAddContact={showAddContact} />
+         {showAddContact &&  <AddContact onAdd={addContact} />}
           {contacts.length > 0 ? (
             <Contacts
               contacts={contacts}
