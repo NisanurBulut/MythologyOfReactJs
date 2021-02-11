@@ -1,13 +1,4 @@
-import React from 'react'
-const contacts = [
-    {
-        id:1,
-        text:'Furkan\'s birthday',
-        day:'1 November',
-        reminder:true
-    }
-]
-const Contacts = () => {
+const Contacts = ({contacts}) => {
     return (
         <div>
             {contacts.map((contact)=>(<h3 key ={contact.id}>{contact.text}</h3>))}
@@ -15,4 +6,4 @@ const Contacts = () => {
     )
 }
 
-export default Contacts
+export default Contacts;
