@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import Header from './components/Header';
 import './App.css';
@@ -6,9 +6,22 @@ import Contacts from './components/Contacts';
 import AddContact from './components/AddContact';
 
 function App() {
-  const [showAddContact, setShowAddContact]=useState(false);
-  const [contacts, setContacts] = useState([
-  ]);
+  const url = 'http://localhost:5000/contacts';
+  const [showAddContact, setShowAddContact] = useState(false);
+  const [contacts, setContacts] = useState([]);
+  const fetchContacts = async () => {
+    const res = await fetch(url);
+    const data = await res.json();
+    return data;
+  };
+  useEffect(() => {
+    const getGontacts = async () => {
+      const contactsFromServer = await fetchContacts();
+      setContacts(contactsFromServer);
+    };
+    getGontacts();
+  }, []);
+
   const deleteContact = (id) => {
     setContacts(contacts.filter((a) => a.id !== id));
   };
@@ -21,16 +34,20 @@ function App() {
       )
     );
   };
-  const addContact = (contact)=>{
-    const id = Math.floor(Math.random()*1000)+1;
-    const newContact = { id, ...contact};
+  const addContact = (contact) => {
+    const id = Math.floor(Math.random() * 1000) + 1;
+    const newContact = { id, ...contact };
     setContacts([...contacts, newContact]);
-  }
+  };
   return (
     <div className="App">
       <header className="App-header">
         <div className="container">
-          <Header title="Eros" onAdd={()=>setShowAddContact(!showAddContact)} showAddContact={showAddContact} />
+          <Header
+            title="Eros"
+            onAdd={() => setShowAddContact(!showAddContact)}
+            showAddContact={showAddContact}
+          />
 
           {contacts.length > 0 ? (
             <Contacts
@@ -41,7 +58,7 @@ function App() {
           ) : (
             'No contacts'
           )}
-          {showAddContact &&  <AddContact onAdd={addContact} />}
+          {showAddContact && <AddContact onAdd={addContact} />}
         </div>
       </header>
     </div>
