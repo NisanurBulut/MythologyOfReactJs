@@ -30,7 +30,7 @@ body {
 }
 .iconStyle {
   margin-right: 5px;
-  color: red !important;
+  color: rgb(170, 15, 18) !important;
   cursor: pointer !important;
 }
 .btn {
@@ -66,7 +66,7 @@ body {
 }
 
 .contact.reminder {
-  border-left: 5px solid green;
+  border-left: 5px solid rgb(108, 0, 2);
 }
 
 .contact h3 {
