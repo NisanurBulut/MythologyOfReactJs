@@ -1,28 +1,22 @@
 {
-"contacts":[
-  {
-    "id": 1,
-    "text": "Furkan's birthday",
-    "day": "1 November",
-    "reminder": true
-  },
-  {
-    "id": 2,
-    "text": "Furkan's birthday",
-    "day": "1 November",
-    "reminder": true
-  },
-  {
-    "id": 3,
-    "text": "Furkan's birthday",
-    "day": "1 November",
-    "reminder": true
-  },
-  {
-    "id": 4,
-    "text": "Furkan's birthday",
-    "day": "1 November",
-    "reminder": true
-  }
-]
+  "contacts": [
+    {
+      "id": 1,
+      "text": "Furkan's birthday",
+      "day": "1 November",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Furkan's birthday",
+      "day": "1 November",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Furkan's birthday",
+      "day": "1 November",
+      "reminder": true
+    }
+  ]
 }

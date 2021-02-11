@@ -22,7 +22,10 @@ function App() {
     getGontacts();
   }, []);
 
-  const deleteContact = (id) => {
+  const deleteContact = async (id) => {
+    await fetch(`${url}/${id}`, {
+      method:'DELETE'
+    });
     setContacts(contacts.filter((a) => a.id !== id));
   };
   const toggleReminder = (id) => {
