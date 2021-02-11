@@ -1,16 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-const Button = ({ color, text, onClick }) => {
+import { HiHeart, HiOutlineHeart } from 'react-icons/all';
+const Button = ({ color, onClick, showAdd }) => {
 
   return (
-    <button
-      onClick={onClick}
-      style={{ backgroundColor: color }}
-      className="btn"
-    >
-      {text}
-    </button>
+<button onClick={onClick}>
+        {showAdd ? <HiHeart className="" size={35} /> :
+        <HiOutlineHeart className="" size={35} />}
+      </button>
   );
 };
 Button.defaultProps = {
