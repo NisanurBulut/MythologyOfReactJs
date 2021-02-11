@@ -18,7 +18,7 @@ body {
   border: 3px solid #eee;
   padding: 30px;
   border-radius: 5px;
-  color:black;
+  color: black;
 }
 
 .header {
@@ -26,9 +26,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  color:#fff;
+  color: #fff;
 }
-
+.iconStyle {
+  margin-right: 5px;
+  color: red !important;
+  cursor: pointer !important;
+}
 .btn {
   display: inline-block;
   color: #fff;

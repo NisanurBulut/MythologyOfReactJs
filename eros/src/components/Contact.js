@@ -1,18 +1,24 @@
 import React from 'react';
-import { FaTimes } from 'react-icons/fa';
+import { FaHeartBroken, FaHandHoldingHeart } from 'react-icons/all';
 const Contact = ({ contact, onDelete, onToggleReminder }) => {
-  const iconStyle = {
-    color: 'red',
-    cursor: 'pointer',
-  };
   return (
     <div
       className={`contact ${contact.reminder ? 'reminder' : ''}`}
-      onDoubleClick={() => onToggleReminder(contact.id)}
     >
       <h3>
         {contact.text}
-        <FaTimes style={iconStyle} onClick={() => onDelete(contact.id)} />
+        <div className='icons'>
+          <FaHeartBroken
+          size={25}
+            className='iconStyle'
+            onClick={() => onDelete(contact.id)}
+          />
+          <FaHandHoldingHeart
+           size={25}
+             className='iconStyle'
+            onClick={() => onToggleReminder(contact.id)}
+          />
+        </div>
       </h3>
       <p>{contact.day}</p>
     </div>
