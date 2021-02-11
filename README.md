@@ -130,7 +130,7 @@ This work is practical views of reactJs tutorials.
 <br>
 <hr>
 
-<hr>
+
 ### Helpfull Websites
 [uidesigndaily](https://uidesigndaily.com/posts/sketch-birthdays-list-card-widget-day-1042)
 [Devto](https://dev.to/) [popmotion](https://popmotion.io) [json-server](https://github.com/typicode/json-server)
