@@ -37,10 +37,19 @@ function App() {
       )
     );
   };
-  const addContact = (contact) => {
-    const id = Math.floor(Math.random() * 1000) + 1;
-    const newContact = { id, ...contact };
-    setContacts([...contacts, newContact]);
+  const addContact = async (contact) => {
+    console.log(JSON.stringify(contact));
+    const res = await fetch (`${url}`, {
+      method:'POST',
+      headers:{'Content-type':'application/json'},
+      body:JSON.stringify(contact)
+    })
+    const data = await res.json();
+    setContacts([...contacts, data]);
+    setShowAddContact(false);
+    // const id = Math.floor(Math.random() * 1000) + 1;
+    // const newContact = { id, ...contact };
+    // setContacts([...contacts, newContact]);
   };
   return (
     <div className="App">
