@@ -4,12 +4,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- background-color: #6C0002;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #fff;
 }
 
 .container {
@@ -28,12 +26,9 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
-.header>h1{
-  color:#fff;
-}
+
 .btn {
   display: inline-block;
-  background: #000;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -58,18 +53,18 @@ body {
   width: 100%;
 }
 
-.task {
+.contact {
   background: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
 }
 
-.task.reminder {
+.contact.reminder {
   border-left: 5px solid green;
 }
 
-.task h3 {
+.contact h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;

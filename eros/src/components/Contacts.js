@@ -1,9 +1,13 @@
-const Contacts = ({contacts}) => {
-    return (
-        <div>
-            {contacts.map((contact)=>(<h3 key ={contact.id}>{contact.text}</h3>))}
-        </div>
-    )
-}
+import Contact from "./Contact";
+
+const Contacts = ({ contacts }) => {
+  return (
+    <div>
+      {contacts.map((contact) => (
+        <Contact key={contact.id} contact={contact} />
+      ))}
+    </div>
+  );
+};
 
 export default Contacts;
