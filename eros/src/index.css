@@ -78,6 +78,7 @@ body {
 
 .add-form {
   margin-bottom: 40px;
+  display: inline;
 }
 
 .form-control {

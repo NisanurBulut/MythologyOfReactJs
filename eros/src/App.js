@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import Header from './components/Header';
 import './App.css';
 import Contacts from './components/Contacts';
+import AddContact from './components/AddContact';
 
 function App() {
   const [contacts, setContacts] = useState([
@@ -29,6 +30,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="container">
+          <AddContact />
           <Header title="Eros" />
           {contacts.length > 0 ? (
             <Contacts
