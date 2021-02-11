@@ -8,30 +8,6 @@ import AddContact from './components/AddContact';
 function App() {
   const [showAddContact, setShowAddContact]=useState(false);
   const [contacts, setContacts] = useState([
-    {
-      id: 1,
-      text: "Furkan's birthday",
-      day: '1 November',
-      reminder: true,
-    },
-    {
-      id: 1,
-      text: "Furkan's birthday",
-      day: '1 November',
-      reminder: true,
-    },
-    {
-      id: 1,
-      text: "Furkan's birthday",
-      day: '1 November',
-      reminder: true,
-    },
-    {
-      id: 1,
-      text: "Furkan's birthday",
-      day: '1 November',
-      reminder: true,
-    },
   ]);
   const deleteContact = (id) => {
     setContacts(contacts.filter((a) => a.id !== id));
@@ -55,7 +31,7 @@ function App() {
       <header className="App-header">
         <div className="container">
           <Header title="Eros" onAdd={()=>setShowAddContact(!showAddContact)} showAddContact={showAddContact} />
-         {showAddContact &&  <AddContact onAdd={addContact} />}
+
           {contacts.length > 0 ? (
             <Contacts
               contacts={contacts}
@@ -65,6 +41,7 @@ function App() {
           ) : (
             'No contacts'
           )}
+          {showAddContact &&  <AddContact onAdd={addContact} />}
         </div>
       </header>
     </div>
