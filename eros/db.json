@@ -1,0 +1,10 @@
+{
+  "contacts": [
+    {
+      "text": "Furkan",
+      "day": "1 November",
+      "reminder": true,
+      "id": 1
+    }
+  ]
+}
