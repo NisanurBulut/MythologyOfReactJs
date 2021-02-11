@@ -4,6 +4,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background: #200122;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 body {
@@ -11,11 +15,11 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 700px;
   margin: 30px auto;
   overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
+  min-height: 500px;
+  border: 3px solid #eee;
   padding: 30px;
   border-radius: 5px;
 }
@@ -26,7 +30,9 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
-
+.header>h1{
+  color:#fff;
+}
 .btn {
   display: inline-block;
   background: #000;
