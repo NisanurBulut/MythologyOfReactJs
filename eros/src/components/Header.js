@@ -12,7 +12,11 @@ Header.defaultProps = {
     title:'Love Tracker'
 }
 
-Header.PropTypes={
+Header.prototype={
     title:PropTypes.string.isRequired
 }
+// const headerStyle= {
+//    color:'red',
+//    backgroundColor:'black'
+// }
 export default Header;
