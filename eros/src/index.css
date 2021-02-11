@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
 }
 
 body {
@@ -65,7 +65,7 @@ body {
 
 .contact {
   font-weight: 900;
-  background: #f3dede;
+  background: #f3dedec4;
   opacity: 0.65;
   margin: 5px;
   padding: 10px 20px;
@@ -81,15 +81,19 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+.contact p {
+  text-align: left;
+}
 .add-form {
   margin-bottom: 40px;
   display: inline;
-  text-align: center;
+  text-align: center !important;
+  outline: none;
 }
 
 .form-control {
   margin: 20px 0;
+  outline: none;
 }
 
 .form-control label {

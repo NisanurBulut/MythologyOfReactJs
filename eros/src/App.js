@@ -68,6 +68,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h2>Love Tracker</h2>
         <div className="container">
           <Header
             title="Eros"

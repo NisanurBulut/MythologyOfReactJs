@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 .App {
   text-align: center;
 }
@@ -19,9 +20,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   color: white;
 }
-
+.App-header h2 {
+  font-family: 'Lovers Quarrel', cursive;
+  font-size: 100px;
+}
 .App-link {
   color: #61dafb;
 }
