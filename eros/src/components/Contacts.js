@@ -1,10 +1,10 @@
 import Contact from "./Contact";
 
-const Contacts = ({ contacts }) => {
+const Contacts = ({ contacts, onDelete }) => {
   return (
     <div>
       {contacts.map((contact) => (
-        <Contact key={contact.id} contact={contact} />
+        <Contact key={contact.id} contact={contact} onDelete={onDelete} />
       ))}
     </div>
   );
