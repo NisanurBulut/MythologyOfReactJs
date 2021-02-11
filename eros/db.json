@@ -1,28 +1,10 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "text": "Furkan's birthday",
+      "text": "Furkan",
       "day": "1 November",
-      "reminder": true
-    },
-    {
-      "id": 2,
-      "text": "Furkan's birthday",
-      "day": "1 November",
-      "reminder": true
-    },
-    {
-      "id": 3,
-      "text": "Furkan's birthday",
-      "day": "1 November",
-      "reminder": true
-    },
-    {
-      "text": "test",
-      "day": "12 ağustos",
       "reminder": true,
-      "id": 4
+      "id": 1
     }
   ]
 }
