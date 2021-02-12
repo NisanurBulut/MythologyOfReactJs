@@ -17,6 +17,24 @@
 <p><i>DOM</i>, Web sayfalarının bize görünmesini sağlayan html elemanlarının belirli bir düzenle bir arada bulunmasıdır.
 <i>Virtual DOM</i> ise React tarafından render edilen DOM'un bir kopyasının tutulmuş halidir. Klasik DOM şu şekilde davranır: Sayfada bir değişiklik olduğunda DOM bütün html'i tarar ve ilgili yerdeki değişimi gerçekleştirir. Ancak bu değişim talebi bir öneki taleple aynı olsa bile yeniden gerçekleştirir. Peki bunun sonu var mı ? Performansı nasıl etkiler?(tabi ki olumsuz) React ise DOM-VDOM arasında kıyaslama yapar ve sadece değişiklik olan alanda güncelleme yapar. Ve bu değişim talebi önceki durum ile aynı değilse güncellemeyi yapmaz. </p>
 
+### Pure Functions && SideEffects ?
+
+This defining topic is important. If we want to write clear and testable codes we should know this topic.
+It is especially important in applications where we use redux.
+<b>What is Pure Function ?</b> Function in below picture, it is a pure function bacause it has no external dependencies. It only works on the input parameters. It's not using any other third-party function which might be doing stuff and it's not also change any state.
+
+![Pure Function](https://github.com/NisanurBulut/MythologyOfReactJs/blob/rev_guidereactjs/guideReactJs/public/assets/pureFunction.png)
+- Pure functions are functions that return a new value based on their arguments.
+- They do not contain requests with side effects such as database or io.
+- They just compute a new value based on their arguments.
+- When called more than once with the same arguments, it always returns the same value.
+- Also, they do not change the values of the arguments. Instead, they return a new value.
+<b>What is Impure Function ?</b> Function in below picture, it is a impure function. We have the add function takes two parameters but it doesnt value.So it has a side effect. subtractWithRandom function is not pure function because it's not producing the same result for the same inputs. We always get a different result whenever we call that function.
+
+![Impure Function](https://github.com/NisanurBulut/MythologyOfReactJs/blob/rev_guidereactjs/guideReactJs/public/assets/impureFunction.png)
+- They can contain database or network connection requests.
+- They can update the DOM when necessary.
+- They can change the values of arguments that come to them.
 ### Props
 
 <p>Props, en basit anlatımla bir componentten başka bir componente veri akışını sağlamak için kullandığımız anahtar kelimedir. Props'lar readonly'dir. Eğer bir functional component üzerinden erişiyorsak {props} class component üzerinden erişiyorsak {this.props} şeklinde olmalıdır.
