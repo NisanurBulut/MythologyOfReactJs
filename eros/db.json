@@ -5,24 +5,6 @@
       "day": "1 November",
       "reminder": true,
       "id": 1
-    },
-    {
-      "text": "gh",
-      "day": "gh",
-      "reminder": false,
-      "id": 2
-    },
-    {
-      "text": "ghfgh",
-      "day": "ghhfh",
-      "reminder": false,
-      "id": 3
-    },
-    {
-      "text": "gfh",
-      "day": "fgh",
-      "reminder": false,
-      "id": 4
     }
   ]
 }
