@@ -85,14 +85,14 @@ body {
   text-align: left;
 }
 .add-form {
+  display: flex;
+  justify-content: center;
   margin-bottom: 40px;
-  display: inline;
-  text-align: center !important;
   outline: none;
 }
 
 .form-control {
-  margin: 20px 0;
+  margin: 20px 10px 0;
   outline: none;
 }
 
@@ -104,26 +104,8 @@ body {
   width: 100%;
   height: 40px;
   margin: 5px;
+  text-align: center;
+  border-radius: 5px;
   padding: 3px 7px;
   font-size: 17px;
-}
-
-.form-control-check {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.form-control-check label {
-  flex: 1;
-}
-
-.form-control-check input {
-  flex: 2;
-  height: 20px;
-}
-
-footer {
-  margin-top: 30px;
-  text-align: center;
 }

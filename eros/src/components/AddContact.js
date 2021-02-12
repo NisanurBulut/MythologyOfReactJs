@@ -31,9 +31,11 @@ function AddContact({ onAdd }) {
           onChange={(e) => setDay(e.target.value)}
         />
       </div>
-      <button type="submit" className="btn btn-block">
+     <div className="form-control">
+     <button type="submit" className="btn btn-block">
         <RiUserHeartFill className="iconStyle" size={25} />
       </button>
+     </div>
     </form>
   );
 }
