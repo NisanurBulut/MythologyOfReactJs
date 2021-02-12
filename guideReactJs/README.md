@@ -146,6 +146,11 @@ function Example() {
 
 ![App-guideReactJs](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_GuideReactJs.gif)
 
+### Notes
+- Containers are stateful components, so components created with the class leyword or functional components using useState
+- Components going into components folder are dumb or presentational components taht dont manage state
+- No matter if they were created as a class but dont use the state or if they are functional components taht are using hooks
+
 ### Helpfull Websites
 [tr.reactjs.org](https://tr.reactjs.org/docs/getting-started.html)
 [styled-components](https://styled-components.com/)
