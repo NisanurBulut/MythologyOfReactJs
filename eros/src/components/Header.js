@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+import React, {useContext} from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
-
-const Header = ({ title, onAdd, showAddContact }) => {
+import {FormContext} from '../contexts/FormContext';
+const Header = ({title}) => {
+  const { isFormOpen, toggleForm } = useContext(FormContext);
   return (
     <div className="header">
       <h1>{title}</h1>
-      <Button showAdd={showAddContact} onClick={onAdd} />
+      <Button showAdd={isFormOpen} onClick={toggleForm} />
     </div>
   );
 };
