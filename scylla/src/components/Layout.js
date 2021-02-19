@@ -1,10 +1,13 @@
 import React from 'react'
-
-function Layout() {
+import Auxiliarity from '../hoc/Auxiliarity';
+function Layout(props) {
     return (
-        <div>
-
-        </div>
+        <Auxiliarity>
+            <div>Toolbar sideDrawer BackDrop</div>
+            <main>
+            {props.children}
+            </main>
+        </Auxiliarity>
     )
 }
 

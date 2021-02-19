@@ -1,11 +1,4 @@
-import React from 'react'
+import React from 'react';
 
-function Auxiliarity() {
-    return (
-        <div>
-
-        </div>
-    )
-}
-
-export default Auxiliarity
+const Auxiliarity = (props) => props.children;
+export default Auxiliarity;
