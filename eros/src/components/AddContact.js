@@ -33,7 +33,7 @@ function AddContact({ onAdd }) {
       </div>
      <div className="form-control">
      <button type="submit" className="btn btn-block">
-        <RiUserHeartFill className="iconStyle" size={25} />
+        <RiUserHeartFill className="iconStyle" size={15} />
       </button>
      </div>
     </form>

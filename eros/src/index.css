@@ -53,7 +53,9 @@ body {
 .btn:focus {
   outline: none;
 }
-
+.form-control:focus{
+  outline: none;
+}
 .btn:active {
   transform: scale(0.98);
 }
@@ -61,6 +63,7 @@ body {
 .btn-block {
   display: block;
   width: 100%;
+  outline: none;
 }
 
 .contact {
@@ -108,4 +111,5 @@ body {
   border-radius: 5px;
   padding: 3px 7px;
   font-size: 17px;
+  outline: none;
 }
