@@ -1,6 +1,9 @@
 ## Mythology Of React Js
 <p>This repository is actually a reactjs tutorial repository. Each warehouse is named after a mythical god.</p>
-<br><hr>
+
+## Give a Star! :star:
+
+If you like or are using this project to learn or start your solution, please give it a star. Thanks!
 
 1. <b> Hera </b> </br>
 Hera is a birthday reminder application. Refers to the input level to ReactJs.
