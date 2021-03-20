@@ -7,11 +7,6 @@ module.exports = gql`
     age: Int!
     imageUrl: String!
   }
-  type BirthdayInput {
-    name: String!
-    age: Int!
-    imageUrl: String!
-  }
   type Query {
     getBirthdays: [Birthday!]!
   }
