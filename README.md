@@ -6,12 +6,17 @@
 If you like or are using this project to learn or start your solution, please give it a star. Thanks!
 <hr>
 1. <b> Hera </b> </br>
-Hera is a birthday reminder application. Refers to the input level to ReactJs.
+Hera is a birthday reminder application and Hera is a MERNG work.Uses MongoDb for database and GraphQL for backend api.Apollo-Server was used with this entry level study.
 
 ![App-Hera](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hera.gif)
-<br>
+
+### Installation
+- npm install --save-dev nodemon
+- npm install apollo-server graphql mongoose
+- npm i graphql-tag
+-
 <hr>
-2. <b> Arena </b> </br>
+1. <b> Arena </b> </br>
 Arena is the mix project Refers to the  context Api
 
 ![App-Arena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Arena.gif)
