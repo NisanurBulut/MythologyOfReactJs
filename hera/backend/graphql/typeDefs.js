@@ -7,7 +7,15 @@ module.exports = gql`
     age: Int!
     imageUrl: String!
   }
+  type BirthdayInput {
+    name: String!
+    age: Int!
+    imageUrl: String!
+  }
   type Query {
-    getBirthdays: [Birthday]
+    getBirthdays: [Birthday!]!
+  }
+  type Mutation {
+    createBirthday(name: String!, age: Int!, imageUrl: String!): Birthday!
   }
 `;
