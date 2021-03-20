@@ -13,6 +13,7 @@ Hera is a birthday reminder application. Refers to the input level to ReactJs.
 ### Installation
 - npm install --save-dev nodemon
 - npm install apollo-server graphql mongoose
+- npm i graphql-tag
 - npm install @apollo/react-hooks apollo-cache-inmemory apollo-link-http apollo-client
 <hr>
 1. <b> Arena </b> </br>
