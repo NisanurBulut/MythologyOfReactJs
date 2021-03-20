@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import data from './data';
 import List from './List';
+import axios from 'axios';
 
 function App() {
   const [people,setPeople]=useState(data);
