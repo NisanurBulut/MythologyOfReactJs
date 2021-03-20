@@ -9,9 +9,13 @@ If you like or are using this project to learn or start your solution, please gi
 Hera is a birthday reminder application. Refers to the input level to ReactJs.
 
 ![App-Hera](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Hera.gif)
-<br>
+
+### Installation
+- npm install --save-dev nodemon
+- npm install apollo-server graphql mongoose
+- npm install @apollo/react-hooks apollo-cache-inmemory apollo-link-http apollo-client
 <hr>
-2. <b> Arena </b> </br>
+1. <b> Arena </b> </br>
 Arena is the mix project Refers to the  context Api
 
 ![App-Arena](https://github.com/NisanurBulut/MythologyOfReactJs/blob/master/Trailers/Trailer_Arena.gif)
