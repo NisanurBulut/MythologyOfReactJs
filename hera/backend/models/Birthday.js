@@ -1,4 +1,6 @@
-const { model, Schema } = require('mongoose');
+const mongoose = require('mongoose');
+
+const Schema = mongoose.Schema;
 
 const BirthdaySchema = new Schema({
   name: String,
@@ -6,4 +8,4 @@ const BirthdaySchema = new Schema({
   age: Number,
 });
 
-module.exports = model('Birthday', BirthdaySchema);
+module.exports = mongoose.model('Birthday', BirthdaySchema);
