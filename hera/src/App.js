@@ -15,9 +15,9 @@ function App() {
   return (
     <main>
       <section className="container">
-        <h3>{people.length} Doğum Günü hatırlatması </h3>
+        <h3>{people.length} Birthday Reminder </h3>
         <List people={people}></List>
-        <button onClick={getBirthdays}>Listele</button>
+        <button onClick={getBirthdays}>Refresh</button>
       </section>
     </main>
   );
