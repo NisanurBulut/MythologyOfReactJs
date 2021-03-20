@@ -1,7 +1,13 @@
-const { ApolloError } = require('apollo-server');
+const { ApolloServer } = require('apollo-server');
 const mongoose = require('mongoose');
+const typeDefs = require('./graphql/typeDefs');
+const birthdayResolvers = require('./graphql/resolvers/index');
+const { MONGO_DB } = require('./config.js');
 
-const server = new ApolloError({});
+const server = new ApolloServer({
+  typeDefs,
+  birthdayResolvers
+});
 
 mongoose
   .connect(
