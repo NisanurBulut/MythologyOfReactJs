@@ -8,7 +8,7 @@ module.exports = gql`
     imageUrl: String!
   }
   type Query {
-    getBirthdays: [Birthday!]!
+    getBirthdays: [Birthday]
   }
   type Mutation {
     createBirthday(name: String!, age: Int!, imageUrl: String!): Birthday!

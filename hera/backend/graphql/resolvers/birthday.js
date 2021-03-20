@@ -2,9 +2,10 @@ const Birthday = require('../../models/Birthday');
 
 module.exports = {
   Query: {
-    async getBirthdays() {
+     getBirthdays:async()=>{
+      debugger;
       try {
-        console.log('birthdays');
+        console.debug('5');
         const birthdays = await Birthday.find();
         return {
           getBirthdays: birthdays.map((q) => {
@@ -15,6 +16,7 @@ module.exports = {
           }),
         };
       } catch (err) {
+        console.log(err);
         throw new Error(err);
       }
     },

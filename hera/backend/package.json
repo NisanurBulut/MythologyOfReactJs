@@ -16,6 +16,7 @@
     "apollo-server": "^2.21.2",
     "graphql": "^15.5.0",
     "graphql-tag": "^2.11.0",
+    "mongodb": "^3.6.5",
     "mongoose": "^5.12.1"
   }
 }
