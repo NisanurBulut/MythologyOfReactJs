@@ -14,7 +14,7 @@ Hera is a birthday reminder application and Hera is a MERNG work.Uses MongoDb fo
 - npm install --save-dev nodemon
 - npm install apollo-server graphql mongoose
 - npm i graphql-tag
--
+
 <hr>
 1. <b> Arena </b> </br>
 Arena is the mix project Refers to the  context Api
